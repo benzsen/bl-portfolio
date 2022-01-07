@@ -34,4 +34,14 @@ img {
   -webkit-clip-path: circle();
           clip-path: circle();
 }
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutText {
+  width: 50%;
+}
 /*# sourceMappingURL=App.css.map */

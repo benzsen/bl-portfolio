@@ -26,3 +26,11 @@ section {
 img {
   clip-path: circle();
 }
+
+.aboutSection{
+  display: flex;
+}
+
+.aboutText{
+  width: 50%;
+}

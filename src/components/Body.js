@@ -14,17 +14,17 @@ const Body = () => {
       </div>
     </section>
     <section className="aboutSection">
-      <div>
+      <div className="aboutText">
         <h3>About Me</h3>
         <p>
-          I'm a web developer with a background in mechanical engineering within the automotive industry (Toyota/Tesla). 
+            I am a web developer with a background in mechanical engineering. 
           <br/>
-          I have a passion to build things with the purpose of solving problems and my drive to learn new things sparked my venture into software engineering.
+            My passion to build things with the purpose of solving problems sparked my curiosity to venture into software engineering.
           <br/>
             Through my self-teaching journey, I fell in love with web development. 
         </p>
-        <p>With my experience problem solving at Toyota, I can bring an additional perspective for troubleshooting code.</p>
-        <p>As a </p>
+        <p>Coming from the automotive industry (Toyota/Tesla), I am eager to bring a new perspective and a root-cause analysis mindset for troubleshooting and building clean code.</p>
+        <p>During my free time, I love playing PC co-op games, 3D printing and learning how to cook new recipes!</p>
         <p></p>
         <div>ProfilePic2</div>
       </div>
@@ -58,6 +58,7 @@ const Body = () => {
         <p>MongoDB</p>
         <p>Express</p>
         <p>NodeJS</p>
+        <p>Javascript, </p>
       </div>
     </section>
     <section className="contactSection">
