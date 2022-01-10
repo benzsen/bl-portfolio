@@ -23,8 +23,10 @@ section {
   border-bottom: 1px solid #282c34;
 }
 
-img {
-  clip-path: circle();
+.mainSection{
+  img {
+    clip-path: circle();
+  }
 }
 
 .aboutSection{
@@ -33,4 +35,38 @@ img {
 
 .aboutText{
   width: 50%;
+  text-align: left;
+}
+
+.portfolioSection{
+  text-align: center;
+}
+
+.aboutFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5em;
+  img {
+    clip-path: circle();
+    order: 2;
+  }
+}
+
+.ProjectFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5em;
+  img {
+    width:300px;
+    border: #282c34 1px solid;
+    
+  }
+}
+
+.projectDiv{
+  text-align: left;
+  width: 50%;
+  
 }

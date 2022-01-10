@@ -30,7 +30,7 @@ section {
   border-bottom: 1px solid #282c34;
 }
 
-img {
+.mainSection img {
   -webkit-clip-path: circle();
           clip-path: circle();
 }
@@ -42,6 +42,57 @@ img {
 }
 
 .aboutText {
+  width: 50%;
+  text-align: left;
+}
+
+.portfolioSection {
+  text-align: center;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+
+.aboutFlex img {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.ProjectFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+
+.ProjectFlex img {
+  width: 300px;
+  border: #282c34 1px solid;
+}
+
+.projectDiv {
+  text-align: left;
   width: 50%;
 }
 /*# sourceMappingURL=App.css.map */
