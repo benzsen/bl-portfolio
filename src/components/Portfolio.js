@@ -5,7 +5,7 @@ const Portfolio = () =>{
   return(
     <section className="portfolioSection">
       <h3>Projects</h3>
-      <div className="ProjectFlex">
+      <div className="projectFlex">
         <img src="./alphaType_render.png"></img>
         <div className="projectDiv">
           <div className="appHeading">
@@ -20,7 +20,7 @@ const Portfolio = () =>{
           </div>
         </div>
       </div>
-      <div className="ProjectFlex">
+      <div className="projectFlex">
         <img src="./MKCharts_render.png"></img>
         <div className="projectDiv">
           <div className="appHeading">
@@ -38,11 +38,45 @@ const Portfolio = () =>{
       <h3>Experience</h3>
       <div className="expFlex">
         <div className="devExp">
-          Freelance
+          <h3>Web Development</h3>
+          <div>
+            <p>Freelance</p>
+          </div>
         </div>
         <div className="mechExp">
-          Fulltime
-          Internshipd
+          <h3>Mechanical Engineering</h3>
+          <div className="underline hugeFont">Fulltime</div>
+          <div className="fulltimeFlex">
+            
+            <img src="toyota.svg"/>
+            <div className="alignLeft smallFont">
+              <p className="noTopMargin">Quality Engineering - Toyota RAV4<br/>2/2020 - Present</p>
+              <p className="noTopMargin">Production Engineering - Lexus RX350<br/>9/2018 - 2/2020</p>
+            </div>
+          </div>
+          <div className="underline hugeFont">Internships</div>
+          <div className="internFlex">
+            <div className="smallFont">
+              <span className="imgContainer">
+                <img src="canada-3.svg" id="canadaLogo"/>
+              </span>
+              2015
+            </div>
+            
+            <div>
+              <span className="imgContainer">
+                <img src="toyota.svg" id="toyotaLogo"/>
+              </span>
+              2016
+            </div>
+
+            <div>
+              <span className="imgContainer">
+                <img src="tesla-motors-1.svg" id="teslaLogo"/>
+              </span>
+              2017
+            </div>
+          </div>
         </div>
       </div>
     </section>

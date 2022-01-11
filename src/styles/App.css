@@ -37,21 +37,6 @@ section {
           clip-path: circle();
 }
 
-.aboutSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.aboutText {
-  width: 50%;
-  text-align: left;
-}
-
-.portfolioSection {
-  text-align: center;
-}
-
 .aboutFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,7 +60,16 @@ section {
           order: 2;
 }
 
-.ProjectFlex {
+.aboutText {
+  width: 600px;
+  text-align: left;
+}
+
+.portfolioSection {
+  text-align: center;
+}
+
+.projectFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +84,7 @@ section {
   padding-bottom: 40px;
 }
 
-.ProjectFlex img {
+.projectFlex img {
   width: 300px;
   border: #282c34 1px solid;
 }
@@ -115,12 +109,93 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
   padding: 0 40px;
 }
 
 .devExp, .mechExp {
-  width: 50%;
+  width: 350px;
   height: 300px;
   border: #282c34 1px solid;
+  border-radius: 25px;
+  padding: 0 50px 20px;
+}
+
+.internFlex, .fulltimeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  margin-top: 5px;
+}
+
+.internFlex img, .fulltimeFlex img {
+  width: 75px;
+}
+
+.imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: #afafaf 1px solid;
+  border-radius: 50%;
+  background-color: white;
+  height: 75px;
+  width: 75px;
+  margin-top: 5px;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.hugeFont {
+  font-size: large;
+}
+
+.smallFont {
+  font-size: small;
+}
+
+.underline {
+  border-bottom: black 1px solid;
+}
+
+.noTopMargin {
+  margin-top: 0;
+}
+
+#canadaLogo {
+  width: 65px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+#toyotaLogo {
+  width: 50px;
+}
+
+#teslaLogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 50px;
 }
 /*# sourceMappingURL=App.css.map */

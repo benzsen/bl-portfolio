@@ -1,3 +1,7 @@
+$exp-img-width: 75px;
+$exp-img-height: 75px;
+$toyota-img-width: 50px;
+$tesla-img-height: 50px;
 
 .App {
   text-align: center;
@@ -31,19 +35,6 @@ section {
   }
 }
 
-.aboutSection{
-  display: flex;
-}
-
-.aboutText{
-  width: 50%;
-  text-align: left;
-}
-
-.portfolioSection{
-  text-align: center;
-}
-
 .aboutFlex{
   display: flex;
   align-items: center;
@@ -56,7 +47,16 @@ section {
   }
 }
 
-.ProjectFlex{
+.aboutText{
+  width: 600px;
+  text-align: left;
+}
+
+.portfolioSection{
+  text-align: center;
+}
+
+.projectFlex{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,6 @@ section {
   align-self: flex-start;
   text-align: left;
   width: 600px;
-
 }
 
 .appHeading{
@@ -85,11 +84,76 @@ section {
 
 .expFlex{
   display: flex;
-  padding: 0 40px;
+  justify-content: center;
+  column-gap: 1em;
+  padding: 0 40px; 
 }
 
 .devExp, .mechExp{
-  width: 50%;
+  width: 350px;
   height: 300px;
   border: #282c34 1px solid;
+  border-radius: 25px;
+  padding: 0 50px 20px;
+
+}
+
+.internFlex, .fulltimeFlex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1em;
+  margin-top: 5px;
+  img{
+    width: $exp-img-width;
+  }
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+  border: rgb(175, 175, 175) 1px solid;
+  border-radius: 50%;
+  background-color: white;
+  height: $exp-img-height;
+  width: $exp-img-width;
+  margin-top: 5px;
+}
+
+.alignCenter{
+  text-align: center;
+}
+
+.alignLeft{
+  text-align: left;
+}
+
+.hugeFont{
+  font-size: large;
+}
+
+.smallFont{
+  font-size: small;
+}
+
+.underline{
+  border-bottom: black 1px solid;
+}
+
+.noTopMargin{
+  margin-top: 0;
+}
+
+#canadaLogo{
+  width: 65px;
+  clip-path: circle();
+}
+
+#toyotaLogo{
+  width: $toyota-img-width;
+}
+
+#teslaLogo{
+  align-self: center;
+  height: $tesla-img-height;
 }
