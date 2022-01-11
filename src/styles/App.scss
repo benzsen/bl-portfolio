@@ -21,10 +21,12 @@
 
 section {
   border-bottom: 1px solid #282c34;
+  padding: 20px 0;
 }
 
-.mainSection{
+.introSection{
   img {
+    height: 300px;
     clip-path: circle();
   }
 }
@@ -48,6 +50,7 @@ section {
   justify-content: center;
   column-gap: 5em;
   img {
+    width: 300px;
     clip-path: circle();
     order: 2;
   }
@@ -57,16 +60,36 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 5em;
+  column-gap: 3em;
+  padding-bottom: 40px;
   img {
     width:300px;
     border: #282c34 1px solid;
-    
   }
 }
 
 .projectDiv{
+  align-self: flex-start;
   text-align: left;
+  width: 600px;
+
+}
+
+.appHeading{
+  padding-bottom: 20px;
+  span{
+    font-weight: bold;
+    font-size: large;
+  }
+}
+
+.expFlex{
+  display: flex;
+  padding: 0 40px;
+}
+
+.devExp, .mechExp{
   width: 50%;
-  
+  height: 300px;
+  border: #282c34 1px solid;
 }
