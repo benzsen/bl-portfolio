@@ -119,28 +119,39 @@ section {
 
 .devExp, .mechExp {
   width: 350px;
-  height: 300px;
   border: #282c34 1px solid;
   border-radius: 25px;
   padding: 0 50px 20px;
+}
+
+.devExp p, .mechExp p {
+  margin-top: 10px;
 }
 
 .internFlex, .fulltimeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  margin-top: 5px;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
 }
 
 .internFlex img, .fulltimeFlex img {
   width: 75px;
+}
+
+.fulltimeFlex {
+  margin-bottom: 5px;
+}
+
+.internFlex {
+  margin-top: 5px;
 }
 
 .imgContainer {
@@ -150,7 +161,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: #afafaf 1px solid;
+  border: #e7e7e7 1px solid;
   border-radius: 50%;
   background-color: white;
   height: 75px;
@@ -170,6 +181,10 @@ section {
   font-size: large;
 }
 
+.mediumFont {
+  font-size: medium;
+}
+
 .smallFont {
   font-size: small;
 }
@@ -182,14 +197,20 @@ section {
   margin-top: 0;
 }
 
-#canadaLogo {
+#toyotaLogo {
   width: 65px;
+}
+
+#uwLogo {
+  margin-top: 5px;
   -webkit-clip-path: circle();
           clip-path: circle();
 }
 
-#toyotaLogo {
-  width: 50px;
+#canadaLogo {
+  width: 65px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
 }
 
 #teslaLogo {

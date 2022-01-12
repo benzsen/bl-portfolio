@@ -1,6 +1,6 @@
 $exp-img-width: 75px;
 $exp-img-height: 75px;
-$toyota-img-width: 50px;
+$toyota-img-width: 65px;
 $tesla-img-height: 50px;
 
 .App {
@@ -91,28 +91,37 @@ section {
 
 .devExp, .mechExp{
   width: 350px;
-  height: 300px;
   border: #282c34 1px solid;
   border-radius: 25px;
   padding: 0 50px 20px;
-
+  p{
+    margin-top: 10px;
+  }
 }
 
 .internFlex, .fulltimeFlex{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  column-gap: 1em;
-  margin-top: 5px;
+  column-gap: 2em;
   img{
     width: $exp-img-width;
   }
 }
 
+.fulltimeFlex{
+  
+  margin-bottom: 5px;
+}
+
+.internFlex{
+  margin-top: 5px;
+}
+
 .imgContainer{
   display: flex;
   justify-content: center;
-  border: rgb(175, 175, 175) 1px solid;
+  border: rgb(231, 231, 231) 1px solid;
   border-radius: 50%;
   background-color: white;
   height: $exp-img-height;
@@ -132,6 +141,10 @@ section {
   font-size: large;
 }
 
+.mediumFont{
+  font-size: medium;
+}
+
 .smallFont{
   font-size: small;
 }
@@ -144,13 +157,18 @@ section {
   margin-top: 0;
 }
 
-#canadaLogo{
-  width: 65px;
+#toyotaLogo{
+  width: $toyota-img-width;
+}
+
+#uwLogo{
+  margin-top: 5px;
   clip-path: circle();
 }
 
-#toyotaLogo{
-  width: $toyota-img-width;
+#canadaLogo{
+  width: 65px;
+  clip-path: circle();
 }
 
 #teslaLogo{

@@ -39,43 +39,30 @@ const Portfolio = () =>{
       <div className="expFlex">
         <div className="devExp">
           <h3>Web Development</h3>
-          <div>
             <p>Freelance</p>
-          </div>
         </div>
         <div className="mechExp">
           <h3>Mechanical Engineering</h3>
-          <div className="underline hugeFont">Fulltime</div>
+          <div className="underline mediumFont">Current Role</div>
           <div className="fulltimeFlex">
-            
-            <img src="toyota.svg"/>
+            <img src="toyota.svg" id="toyotaLogo"/>
             <div className="alignLeft smallFont">
-              <p className="noTopMargin">Quality Engineering - Toyota RAV4<br/>2/2020 - Present</p>
-              <p className="noTopMargin">Production Engineering - Lexus RX350<br/>9/2018 - 2/2020</p>
+              <p><b>Manufacturing Engineer</b><br/>Products: Toyota RAV4/Lexus RX350<br/>2018 - Present</p>
             </div>
           </div>
-          <div className="underline hugeFont">Internships</div>
+          <div className="underline mediumFont">Other Experience</div>
           <div className="internFlex">
+            <span className="imgContainer">
+              <img src="university-of-waterloo.svg" id="uwLogo"/>
+            </span>
             <div className="smallFont">
               <span className="imgContainer">
                 <img src="canada-3.svg" id="canadaLogo"/>
               </span>
-              2015
             </div>
-            
-            <div>
-              <span className="imgContainer">
-                <img src="toyota.svg" id="toyotaLogo"/>
-              </span>
-              2016
-            </div>
-
-            <div>
-              <span className="imgContainer">
-                <img src="tesla-motors-1.svg" id="teslaLogo"/>
-              </span>
-              2017
-            </div>
+            <span className="imgContainer">
+              <img src="tesla-motors-1.svg" id="teslaLogo"/>
+            </span>
           </div>
         </div>
       </div>
