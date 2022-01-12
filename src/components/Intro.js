@@ -3,10 +3,13 @@ const Intro = () =>{
 
   return(
     <section className="introSection">
-      <div>
-        <h1>Hi! I'm Benny</h1>
-        <p>I am a web developer, engineer and problem solver.</p>
-        <img id="profilePic" src="./bl_photo_lake.jpg"></img>
+      <div className="introFlex">
+        
+        <img id="profilePic" src="./bl_photo_lake.jpg"/>
+        <div>
+          <p className="hugeFont">Hi! I'm Benny</p>
+          <p>I am a web developer, engineer and problem solver.</p>
+        </div>
       </div>
     </section>
   )

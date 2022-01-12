@@ -28,10 +28,15 @@ section {
   padding: 20px 0;
 }
 
-.introSection{
+.introFlex{
+  display: flex;
+  justify-content: center;
+  column-gap: 3em;
   img {
     height: 300px;
     clip-path: circle();
+    //border-radius: 50%;
+    order: 1;
   }
 }
 
@@ -39,11 +44,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 5em;
+  column-gap: 3em;
   img {
     width: 300px;
     clip-path: circle();
-    order: 2;
+    order: 0;
   }
 }
 
@@ -138,6 +143,10 @@ section {
 }
 
 .hugeFont{
+  font-size: xx-large;
+}
+
+.largeFont{
   font-size: large;
 }
 
