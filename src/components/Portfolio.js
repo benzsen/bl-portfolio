@@ -6,7 +6,7 @@ const Portfolio = () =>{
     <section className="portfolioSection">
       <h3>Projects</h3>
       <div className="projectFlex">
-        <img src="./alphaType_render.png"></img>
+        <img src="./alphaType_render.PNG"></img>
         <div className="projectDiv">
           <div className="appHeading">
             <span className="appTitle">alphaType</span> 
@@ -39,15 +39,15 @@ const Portfolio = () =>{
       <div className="expFlex">
         <div className="devExp">
           <h3>Web Development</h3>
-            <p>Freelance</p>
+            <p className="underline">Freelance</p>
         </div>
         <div className="mechExp">
           <h3>Mechanical Engineering</h3>
-          <div className="underline mediumFont">Current Role</div>
+          <div className="underline largeFont">Current Role</div>
           <div className="fulltimeFlex">
             <img src="toyota.svg" id="toyotaLogo"/>
             <div className="alignLeft smallFont">
-              <p><b>Manufacturing Engineer</b><br/>Products: Toyota RAV4/Lexus RX350<br/>2018 - Present</p>
+              <p><span className="mediumFont">Manufacturing Engineer</span><br/>Products: Toyota RAV4/Lexus RX350<br/>2018 - Present</p>
             </div>
           </div>
           <div className="underline mediumFont">Other Experience</div>
@@ -55,11 +55,9 @@ const Portfolio = () =>{
             <span className="imgContainer">
               <img src="university-of-waterloo.svg" id="uwLogo"/>
             </span>
-            <div className="smallFont">
-              <span className="imgContainer">
-                <img src="canada-3.svg" id="canadaLogo"/>
-              </span>
-            </div>
+            <span className="imgContainer">
+              <img src="canada-3.svg" id="canadaLogo"/>
+            </span>
             <span className="imgContainer">
               <img src="tesla-motors-1.svg" id="teslaLogo"/>
             </span>

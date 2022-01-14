@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .App-logo {
@@ -27,7 +28,6 @@
 }
 
 section {
-  border-bottom: 1px solid #282c34;
   padding: 20px 0;
 }
 
