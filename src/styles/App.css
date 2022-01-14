@@ -28,7 +28,7 @@
 }
 
 section {
-  padding: 20px 0;
+  padding-bottom: 100px;
 }
 
 .introFlex {
@@ -40,10 +40,12 @@ section {
           justify-content: center;
   -webkit-column-gap: 3em;
           column-gap: 3em;
+  margin-bottom: 20px;
 }
 
 .introFlex img {
-  height: 300px;
+  display: none;
+  height: 250px;
   -webkit-clip-path: circle();
           clip-path: circle();
   -webkit-box-ordinal-group: 2;
@@ -98,9 +100,23 @@ section {
   padding-bottom: 40px;
 }
 
-.projectFlex img {
-  width: 300px;
+.projectImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+  width: 200px;
   border: #282c34 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.projectImg img {
+  height: 150px;
+  margin: auto;
 }
 
 .projectDiv {
@@ -183,6 +199,25 @@ section {
   margin-top: 5px;
 }
 
+.contactSection {
+  padding-bottom: 50px;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.contactFlex img {
+  width: 40px;
+}
+
 .alignCenter {
   text-align: center;
 }
@@ -192,7 +227,13 @@ section {
 }
 
 .hugeFont {
-  font-size: xx-large;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.xLargeFont {
+  font-size: x-large;
 }
 
 .largeFont {
@@ -236,5 +277,23 @@ section {
       -ms-grid-row-align: center;
       align-self: center;
   height: 50px;
+}
+
+#linkedin {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#github {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#email {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 /*# sourceMappingURL=App.css.map */

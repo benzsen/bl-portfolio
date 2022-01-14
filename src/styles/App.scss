@@ -24,15 +24,17 @@ $tesla-img-height: 50px;
 }
 
 section {
-  padding: 20px 0;
+  padding-bottom: 100px;
 }
 
 .introFlex{
   display: flex;
   justify-content: center;
   column-gap: 3em;
+  margin-bottom: 20px;
   img {
-    height: 300px;
+    display: none;
+    height: 250px;
     clip-path: circle();
     //border-radius: 50%;
     order: 1;
@@ -66,9 +68,20 @@ section {
   justify-content: center;
   column-gap: 3em;
   padding-bottom: 40px;
+  
+}
+
+.projectImg{
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 200px;
+  border: #282c34 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
   img {
-    width:300px;
-    border: #282c34 1px solid;
+    height: 150px;
+    margin: auto;
   }
 }
 
@@ -133,6 +146,19 @@ section {
   margin-top: 5px;
 }
 
+.contactSection{
+  padding-bottom: 50px;
+}
+
+.contactFlex{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  img{
+    width: 40px;
+  }
+}
+
 .alignCenter{
   text-align: center;
 }
@@ -142,7 +168,13 @@ section {
 }
 
 .hugeFont{
-  font-size: xx-large;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.xLargeFont{
+  font-size:x-large;
 }
 
 .largeFont{
@@ -182,4 +214,16 @@ section {
 #teslaLogo{
   align-self: center;
   height: $tesla-img-height;
+}
+
+#linkedin{
+  order: 1;
+}
+
+#github{
+  order: 2;
+}
+
+#email{
+  order: 3;
 }

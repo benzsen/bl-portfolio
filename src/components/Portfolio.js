@@ -3,13 +3,18 @@
 const Portfolio = () =>{
 
   return(
-    <section className="portfolioSection">
+    <section className="portfolioSection" id="portfolioSection"> 
+      <h2>Portfolio</h2>
       <h3>Projects</h3>
       <div className="projectFlex">
-        <img src="./alphaType_render.PNG"></img>
+        <div className="projectImg">
+          <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="./alphaType_render.PNG"/></a>
+        </div>
         <div className="projectDiv">
           <div className="appHeading">
-            <span className="appTitle">alphaType</span> 
+            <span className="appTitle">
+              <a href="https://alpha-type.herokuapp.com/" target="_blank">alphaType</a>
+            </span> 
             <div>Javascript, HTML, CSS, MERN (MongoDB, Express, React, Node)</div>
           </div>  
           <div>
@@ -21,10 +26,14 @@ const Portfolio = () =>{
         </div>
       </div>
       <div className="projectFlex">
-        <img src="./MKCharts_render.png"></img>
+        <div className="projectImg">
+          <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./MKCharts_render.PNG"/></a>
+        </div>
         <div className="projectDiv">
           <div className="appHeading">
-            <span className="appTitle">MKCharts</span> 
+            <span className="appTitle">
+              <a href="https://mkcharts.herokuapp.com/" target="_blank">MKCharts</a>
+            </span> 
             <div>Javascript, HTML, CSS, MERN (MongoDB, Express, React, Node)</div>
           </div>
           <div>

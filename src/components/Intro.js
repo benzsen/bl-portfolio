@@ -1,17 +1,16 @@
 
 const Intro = () =>{
+  const scrollFunc = (section) =>{
+    document.getElementById(section).scrollIntoView()
+  }
 
   return(
-    <section className="introSection">
       <div className="introFlex">
-        
-        <img id="profilePic" src="./bl_photo_lake.jpg"/>
-        <div>
-          <p className="hugeFont">Hi! I'm Benny</p>
-          <p>I am a web developer, engineer and problem solver.</p>
-        </div>
+        <input type="button" value="Portfolio" onClick={() => scrollFunc("portfolioSection")}/>
+        <button type="button">About</button>
+        <button type="button">Portfolio</button>
+        <button type="button">Contact</button>
       </div>
-    </section>
   )
 }
 

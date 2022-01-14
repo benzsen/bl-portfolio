@@ -9,10 +9,8 @@ const Body = () => {
 
   return(
   <div>
-    <Intro/>
     <About/>
     <Portfolio/>
-    <Skills/>
     <Contact/>
   </div>
   )
