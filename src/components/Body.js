@@ -1,8 +1,9 @@
 import React, {useState} from "react" 
-import Intro from "./Intro"
+
 import About from "./About"
-import Portfolio from "./Portfolio"
 import Skills from "./Skills"
+import Projects from "./Projects"
+import Experience from "./Experience"
 import Contact from "./Contact"
 
 const Body = () => {
@@ -10,7 +11,9 @@ const Body = () => {
   return(
   <div>
     <About/>
-    <Portfolio/>
+    <Skills/>
+    <Projects/>
+    <Experience/>
     <Contact/>
   </div>
   )

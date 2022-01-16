@@ -6,6 +6,7 @@ $tesla-img-height: 50px;
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: large;
 }
   
 .App-logo {
@@ -24,138 +25,228 @@ $tesla-img-height: 50px;
 }
 
 section {
-  padding-bottom: 100px;
-}
-
-.introFlex{
-  display: flex;
-  justify-content: center;
-  column-gap: 3em;
-  margin-bottom: 20px;
-  img {
-    display: none;
-    height: 250px;
-    clip-path: circle();
-    //border-radius: 50%;
-    order: 1;
+  width: 1250px;
+  margin: 50px auto 75px;
+  .sectionTitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
   }
 }
 
-.aboutFlex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 3em;
-  img {
-    width: 300px;
-    clip-path: circle();
-    order: 0;
+.aboutSection{
+  .hugeFont{
+    //font-family: 'Playfair Display', serif;
+    // font-size: 60px;
+    // margin: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 75px;
+    margin: 0px;
+  }
+
+  .aboutFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+    
+    .aboutText{
+      // width: 785px;
+      text-align: left;
+    }
+
+    #profilePic {
+      width: 350px;
+      clip-path: circle();
+      order: 0;
+    }
   }
 }
 
-.aboutText{
-  width: 600px;
-  text-align: left;
+.skillsSection{
+  margin-top: -50px;
+
+  .devSkillsLine-1, .devSkillsLine-2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: small;
+    img{
+      padding-top: 10px;
+    }
+  }
+  
+  .devSkillsLine-1{
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 2em;
+    padding-bottom: 10px;
+    img{
+      height: 75px;
+      margin-bottom: -5px;
+    }
+  }
+
+  .devSkillsLine-2{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 2em;
+    img{
+      max-width: 50px;
+      max-height: 45px;
+    }
+  }
+
+  .expFlex{
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+    border: #282c34 1px solid;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0 40px; 
+
+    p{
+      margin-bottom: 0;
+    }
+  
+    .leftContainer, .rightContainer{
+      width: 450px;
+      margin: 0 auto 20px;
+      p{
+        margin-top: 10px;
+      }
+    }
+  
+    .line{
+      border-left: grey 1px solid;
+      margin: 40px 0;
+    }
+  }
 }
 
 .portfolioSection{
   text-align: center;
-}
-
-.projectFlex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 3em;
-  padding-bottom: 40px;
+  .projectFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+    margin-bottom: 40px;
+  }
   
-}
-
-.projectImg{
-  display: flex;
-  justify-content: center;
-  height: 150px;
-  width: 200px;
-  border: #282c34 1px solid;
-  border-radius: 20px;
-  overflow: hidden;
-  img {
+  .projectImg{
+    display: flex;
+    justify-content: center;
     height: 150px;
-    margin: auto;
+    width: 300px;
+    border: #282c34 1px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      height: 150px;
+      margin: auto;
+    }
   }
-}
-
-.projectDiv{
-  align-self: flex-start;
-  text-align: left;
-  width: 600px;
-}
-
-.appHeading{
-  padding-bottom: 20px;
-  span{
-    font-weight: bold;
-    font-size: large;
-  }
-}
-
-.expFlex{
-  display: flex;
-  justify-content: center;
-  column-gap: 1em;
-  padding: 0 40px; 
-}
-
-.devExp, .mechExp{
-  width: 350px;
-  border: #282c34 1px solid;
-  border-radius: 25px;
-  padding: 0 50px 20px;
-  p{
-    margin-top: 10px;
-  }
-}
-
-.internFlex, .fulltimeFlex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 2em;
-  img{
-    width: $exp-img-width;
-  }
-}
-
-.fulltimeFlex{
   
-  margin-bottom: 5px;
+  .projectDiv{
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  .appHeading{
+    padding-bottom: 20px;
+    span{
+      font-weight: bold;
+      font-size: large;
+    }
+  } 
 }
 
-.internFlex{
-  margin-top: 5px;
-}
+.expSection{
+  .otherExpFlex, .currentExpFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+    img{
+      width: $exp-img-width;
+    }
+    #toyotaLogo{
+      width: $toyota-img-width;
+    }
+    #uwLogo{
+      margin-top: 5px;
+      clip-path: circle();
+    }
+    #canadaLogo{
+      width: 65px;
+      clip-path: circle();
+    }
+    #teslaLogo{
+      align-self: center;
+      height: $tesla-img-height;
+    }
+  }
+  
+  .currentExpFlex{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .otherExpFlex{
+    margin-top: 5px;
+  }
+  
+  .expLogoContainer{
+    display: flex;
+    justify-content: center;
+    border: rgb(231, 231, 231) 1px solid;
+    border-radius: 50%;
+    background-color: white;
+    height: $exp-img-height;
+    width: $exp-img-width;
+    margin-top: 5px;
+  }
 
-.imgContainer{
-  display: flex;
-  justify-content: center;
-  border: rgb(231, 231, 231) 1px solid;
-  border-radius: 50%;
-  background-color: white;
-  height: $exp-img-height;
-  width: $exp-img-width;
-  margin-top: 5px;
+  .expFlex{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+
+    .leftContainer, .rightContainer{
+      width: 430px;
+      border: #282c34 1px solid;
+      border-radius: 25px;
+      padding: 0 85px 20px;
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 .contactSection{
   padding-bottom: 50px;
-}
-
-.contactFlex{
-  display: flex;
-  justify-content: center;
-  column-gap: 20px;
-  img{
-    width: 40px;
+  .contactFlex{
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+    img{
+      width: 50px;
+    }
+    #linkedin{
+      order: 0;
+    }
+    #github{
+      order: 1;
+    }
+    #email{
+      order: 2;
+    }
   }
 }
 
@@ -165,12 +256,6 @@ section {
 
 .alignLeft{
   text-align: left;
-}
-
-.hugeFont{
-  font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
-  margin: 10px;
 }
 
 .xLargeFont{
@@ -195,35 +280,4 @@ section {
 
 .noTopMargin{
   margin-top: 0;
-}
-
-#toyotaLogo{
-  width: $toyota-img-width;
-}
-
-#uwLogo{
-  margin-top: 5px;
-  clip-path: circle();
-}
-
-#canadaLogo{
-  width: 65px;
-  clip-path: circle();
-}
-
-#teslaLogo{
-  align-self: center;
-  height: $tesla-img-height;
-}
-
-#linkedin{
-  order: 1;
-}
-
-#github{
-  order: 2;
-}
-
-#email{
-  order: 3;
 }

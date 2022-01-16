@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: large;
 }
 
 .App-logo {
@@ -28,32 +29,23 @@
 }
 
 section {
-  padding-bottom: 100px;
+  width: 1250px;
+  margin: 50px auto 75px;
 }
 
-.introFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
-  margin-bottom: 20px;
+section .sectionTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
-.introFlex img {
-  display: none;
-  height: 250px;
-  -webkit-clip-path: circle();
-          clip-path: circle();
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+.aboutSection .hugeFont {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 75px;
+  margin: 0px;
 }
 
-.aboutFlex {
+.aboutSection .aboutFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,12 +55,16 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
 }
 
-.aboutFlex img {
-  width: 300px;
+.aboutSection .aboutFlex .aboutText {
+  text-align: left;
+}
+
+.aboutSection .aboutFlex #profilePic {
+  width: 350px;
   -webkit-clip-path: circle();
           clip-path: circle();
   -webkit-box-ordinal-group: 1;
@@ -76,16 +72,94 @@ section {
           order: 0;
 }
 
-.aboutText {
-  width: 600px;
-  text-align: left;
+.skillsSection {
+  margin-top: -50px;
+}
+
+.skillsSection .devSkillsLine-1, .skillsSection .devSkillsLine-2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  font-size: small;
+}
+
+.skillsSection .devSkillsLine-1 img, .skillsSection .devSkillsLine-2 img {
+  padding-top: 10px;
+}
+
+.skillsSection .devSkillsLine-1 {
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  padding-bottom: 10px;
+}
+
+.skillsSection .devSkillsLine-1 img {
+  height: 75px;
+  margin-bottom: -5px;
+}
+
+.skillsSection .devSkillsLine-2 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+.skillsSection .devSkillsLine-2 img {
+  max-width: 50px;
+  max-height: 45px;
+}
+
+.skillsSection .expFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+  border: #282c34 1px solid;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.skillsSection .expFlex p {
+  margin-bottom: 0;
+}
+
+.skillsSection .expFlex .leftContainer, .skillsSection .expFlex .rightContainer {
+  width: 450px;
+  margin: 0 auto 20px;
+}
+
+.skillsSection .expFlex .leftContainer p, .skillsSection .expFlex .rightContainer p {
+  margin-top: 10px;
+}
+
+.skillsSection .expFlex .line {
+  border-left: grey 1px solid;
+  margin: 40px 0;
 }
 
 .portfolioSection {
   text-align: center;
 }
 
-.projectFlex {
+.portfolioSection .projectFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,10 +171,10 @@ section {
           justify-content: center;
   -webkit-column-gap: 3em;
           column-gap: 3em;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.projectImg {
+.portfolioSection .projectImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,57 +182,33 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   height: 150px;
-  width: 200px;
+  width: 300px;
   border: #282c34 1px solid;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.projectImg img {
+.portfolioSection .projectImg img {
   height: 150px;
   margin: auto;
 }
 
-.projectDiv {
+.portfolioSection .projectDiv {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: left;
-  width: 600px;
 }
 
-.appHeading {
+.portfolioSection .appHeading {
   padding-bottom: 20px;
 }
 
-.appHeading span {
+.portfolioSection .appHeading span {
   font-weight: bold;
   font-size: large;
 }
 
-.expFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  padding: 0 40px;
-}
-
-.devExp, .mechExp {
-  width: 350px;
-  border: #282c34 1px solid;
-  border-radius: 25px;
-  padding: 0 50px 20px;
-}
-
-.devExp p, .mechExp p {
-  margin-top: 10px;
-}
-
-.internFlex, .fulltimeFlex {
+.expSection .otherExpFlex, .expSection .currentExpFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,19 +222,49 @@ section {
           column-gap: 2em;
 }
 
-.internFlex img, .fulltimeFlex img {
+.expSection .otherExpFlex img, .expSection .currentExpFlex img {
   width: 75px;
 }
 
-.fulltimeFlex {
-  margin-bottom: 5px;
+.expSection .otherExpFlex #toyotaLogo, .expSection .currentExpFlex #toyotaLogo {
+  width: 65px;
 }
 
-.internFlex {
+.expSection .otherExpFlex #uwLogo, .expSection .currentExpFlex #uwLogo {
+  margin-top: 5px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.expSection .otherExpFlex #canadaLogo, .expSection .currentExpFlex #canadaLogo {
+  width: 65px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.expSection .otherExpFlex #teslaLogo, .expSection .currentExpFlex #teslaLogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 50px;
+}
+
+.expSection .currentExpFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.expSection .otherExpFlex {
   margin-top: 5px;
 }
 
-.imgContainer {
+.expSection .expLogoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,23 +279,63 @@ section {
   margin-top: 5px;
 }
 
+.expSection .expFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
+  width: 430px;
+  border: #282c34 1px solid;
+  border-radius: 25px;
+  padding: 0 85px 20px;
+}
+
+.expSection .expFlex .leftContainer p, .expSection .expFlex .rightContainer p {
+  margin-top: 10px;
+}
+
 .contactSection {
   padding-bottom: 50px;
 }
 
-.contactFlex {
+.contactSection .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
 }
 
-.contactFlex img {
-  width: 40px;
+.contactSection .contactFlex img {
+  width: 50px;
+}
+
+.contactSection .contactFlex #linkedin {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.contactSection .contactFlex #github {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.contactSection .contactFlex #email {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .alignCenter {
@@ -224,12 +344,6 @@ section {
 
 .alignLeft {
   text-align: left;
-}
-
-.hugeFont {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
-  margin: 10px;
 }
 
 .xLargeFont {
@@ -254,46 +368,5 @@ section {
 
 .noTopMargin {
   margin-top: 0;
-}
-
-#toyotaLogo {
-  width: 65px;
-}
-
-#uwLogo {
-  margin-top: 5px;
-  -webkit-clip-path: circle();
-          clip-path: circle();
-}
-
-#canadaLogo {
-  width: 65px;
-  -webkit-clip-path: circle();
-          clip-path: circle();
-}
-
-#teslaLogo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 50px;
-}
-
-#linkedin {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-#github {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-#email {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
 }
 /*# sourceMappingURL=App.css.map */
