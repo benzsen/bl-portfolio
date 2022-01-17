@@ -1,11 +1,10 @@
 
-
 const Projects = () =>{
 
   return(
     <section className="portfolioSection" id="portfolioSection"> 
       <div className="sectionTitle">Projects</div>
-      <div className="projectFlex">
+      <div className="projectGrid">
         <div className="projectImg">
           <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="./alphaType_render.PNG"/></a>
         </div>
@@ -17,14 +16,11 @@ const Projects = () =>{
             <div>Javascript, HTML, CSS, MERN (MongoDB, Express, React, Node)</div>
           </div>  
           <div>
-            <span>This game will challenge you against the fastest alphabet typers in the world</span>
-            <br/>
-            <span>Sign up and see how your typing speed compares to others!</span>
-            
+            <div>alphaType is a fullstack web app game that requires the user to type the alphabet under the pressure of time.</div>
+            <div>This game will challenge you against the fastest alphabet typers in the world.</div>
+            <div>Sign up and play to see how your typing speed compares to others!</div>
           </div>
         </div>
-      </div>
-      <div className="projectFlex">
         <div className="projectImg">
           <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./MKCharts_render.PNG"/></a>
         </div>

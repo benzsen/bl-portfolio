@@ -18,7 +18,7 @@ const About = () =>{
             My passion to build things with the purpose of solving problems sparked my curiosity to venture into software engineering.
             Through my self-teaching journey, I fell in love with web development.
           </p>
-          <p>Coming from the automotive industry (Toyota/Tesla), I am eager to bring a new perspective and a root-cause analysis mindset for troubleshooting and building clean code.</p>
+          <p>Coming from the automotive industry (Toyota/Tesla), I am eager to bring a fresh perspective and a root-cause analysis mindset for troubleshooting and building clean code.</p>
           <p>During my free time, I love playing co-op games, 3D printing and learning how to cook new recipes.</p>
         </div>
       </div>

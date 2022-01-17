@@ -29,8 +29,9 @@ section {
   margin: 50px auto 75px;
   .sectionTitle{
     font-size: 30px;
-    font-weight: bold;
+    // font-weight: bold;
     margin: 20px 0;
+    text-decoration: underline;
   }
 }
 
@@ -112,7 +113,6 @@ section {
     }
   
     .leftContainer, .rightContainer{
-      width: 450px;
       margin: 0 auto 20px;
       p{
         margin-top: 10px;
@@ -128,25 +128,40 @@ section {
 
 .portfolioSection{
   text-align: center;
-  .projectFlex{
-    display: flex;
+  // .projectFlex{
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   column-gap: 3em;
+  //   margin-bottom: 40px;
+  // }
+  // .sectionTitle{
+  //   border-bottom: #282c34 solid 1px;
+  // }
+
+  .projectGrid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     align-items: center;
     justify-content: center;
     column-gap: 3em;
+    row-gap: 3em;
     margin-bottom: 40px;
   }
   
   .projectImg{
     display: flex;
     justify-content: center;
-    height: 150px;
-    width: 300px;
+    height: 200px;
+    width: 400px;
     border: #282c34 1px solid;
     border-radius: 20px;
     overflow: hidden;
     img {
-      height: 150px;
+      height: 125%;
       margin: auto;
+
     }
   }
   
@@ -157,9 +172,10 @@ section {
   
   .appHeading{
     padding-bottom: 20px;
-    span{
+    a{
+      font-size: x-large;
       font-weight: bold;
-      font-size: large;
+      text-decoration: none;
     }
   } 
 }

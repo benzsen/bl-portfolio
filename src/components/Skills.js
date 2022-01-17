@@ -1,6 +1,6 @@
 
 const Skills = () =>{
-
+  const otherSkills = ["Problem Solving", "Communication", "Agile Development", "Team Player", "Quick Learner"]
   return(
     <section className="skillsSection">
       <div className="skillsFlex">
@@ -32,7 +32,6 @@ const Skills = () =>{
                 <div>CSS</div>
                 <div>SASS</div>
                 <div>Liquid</div>
-                
                 <img src="redux.svg"/>
                 <img src="jest-2.svg"/>
                 <img src="cypress.PNG"/>
@@ -49,9 +48,13 @@ const Skills = () =>{
             <div className="rightContainer">
             <h3>Other Skills</h3>
             <p className="underline">Proficient with:</p>
+              {otherSkills.map(
+                s => <p>{s}</p>
+              )}
             </div>
-          </div>
         </div>
+      </div>
+      
     </section>
   )
 }

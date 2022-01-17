@@ -35,8 +35,8 @@ section {
 
 section .sectionTitle {
   font-size: 30px;
-  font-weight: bold;
   margin: 20px 0;
+  text-decoration: underline;
 }
 
 .aboutSection .hugeFont {
@@ -142,7 +142,6 @@ section .sectionTitle {
 }
 
 .skillsSection .expFlex .leftContainer, .skillsSection .expFlex .rightContainer {
-  width: 450px;
   margin: 0 auto 20px;
 }
 
@@ -159,10 +158,13 @@ section .sectionTitle {
   text-align: center;
 }
 
-.portfolioSection .projectFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.portfolioSection .projectGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -171,6 +173,7 @@ section .sectionTitle {
           justify-content: center;
   -webkit-column-gap: 3em;
           column-gap: 3em;
+  row-gap: 3em;
   margin-bottom: 40px;
 }
 
@@ -181,15 +184,15 @@ section .sectionTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 150px;
-  width: 300px;
+  height: 200px;
+  width: 400px;
   border: #282c34 1px solid;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .portfolioSection .projectImg img {
-  height: 150px;
+  height: 125%;
   margin: auto;
 }
 
@@ -203,9 +206,10 @@ section .sectionTitle {
   padding-bottom: 20px;
 }
 
-.portfolioSection .appHeading span {
+.portfolioSection .appHeading a {
+  font-size: x-large;
   font-weight: bold;
-  font-size: large;
+  text-decoration: none;
 }
 
 .expSection .otherExpFlex, .expSection .currentExpFlex {
