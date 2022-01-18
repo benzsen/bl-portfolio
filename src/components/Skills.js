@@ -40,7 +40,7 @@ const Skills = () =>{
                   <div>Liquid</div>
                   <img src="redux.svg"/>
                   <img src="jest-2.svg"/>
-                  <img src="cypress.PNG"/>
+                  <img src="cypress.png"/>
                   <img src="git-icon.svg"/>
                   <img src="postman.svg"/>
                   <div>Redux</div>

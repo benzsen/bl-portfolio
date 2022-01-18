@@ -29,17 +29,22 @@
 }
 
 section {
-  width: 1250px;
-  margin: 50px auto 100px;
+  width: 1100px;
+  margin: 30px auto 100px;
 }
 
 section .sectionTitle {
-  font-size: 30px;
-  margin: 20px 0;
+  font-family: "Arsenal", sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
   text-decoration: underline;
 }
 
 .aboutSection .hugeFont {
+  font-family: "Arsenal", sans-serif;
   font-size: 75px;
   margin: 0px;
 }
@@ -56,16 +61,21 @@ section .sectionTitle {
           justify-content: center;
   -webkit-column-gap: 2em;
           column-gap: 2em;
+  padding-top: 10px;
 }
 
 .aboutSection .aboutFlex .aboutText {
   text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.aboutSection .aboutFlex #profilePic {
+.aboutSection #profilePic {
   width: 350px;
   -webkit-clip-path: circle();
           clip-path: circle();
+  margin-bottom: 30px;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
@@ -94,14 +104,14 @@ section .sectionTitle {
       grid-template-columns: repeat(4, auto);
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
   padding-bottom: 10px;
   margin: 0 30px;
 }
 
 .skillsSection .devSkillsLine-1 img {
-  height: 100px;
+  height: 90px;
   margin-bottom: 0px;
 }
 
@@ -131,7 +141,7 @@ section .sectionTitle {
   border: #282c34 1px solid;
   border-radius: 25px;
   margin: 0;
-  padding: 0 40px;
+  padding: 20px 40px 10px;
 }
 
 .skillsSection .expGrid .expGridTitle {
@@ -145,7 +155,7 @@ section .sectionTitle {
 }
 
 .skillsSection .expGrid .leftContainer, .skillsSection .expGrid .rightContainer {
-  width: 500px;
+  width: 450px;
   margin-bottom: 20px;
 }
 
@@ -190,6 +200,7 @@ section .sectionTitle {
       -ms-flex-pack: center;
           justify-content: center;
   width: 250px;
+  padding-top: 10px;
 }
 
 .skillsSection .expGrid .bottomContainer .otherSkillTile {
@@ -243,7 +254,7 @@ section .sectionTitle {
 }
 
 .portfolioSection .projectImg img {
-  height: 125%;
+  height: 100%;
   margin: auto;
 }
 
@@ -254,14 +265,17 @@ section .sectionTitle {
 }
 
 .portfolioSection .appHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 20px;
 }
 
 .portfolioSection .appHeading a {
   color: black;
   font-size: x-large;
-  font-weight: bold;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .expSection .otherExpFlex {
@@ -354,15 +368,13 @@ section .sectionTitle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
 }
 
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
-  width: 430px;
+  width: 525px;
   border: #282c34 1px solid;
   border-radius: 25px;
-  padding: 0 85px 20px;
+  padding: 20px 50px;
 }
 
 .expSection .expFlex .leftContainer p, .expSection .expFlex .rightContainer p {
@@ -371,12 +383,6 @@ section .sectionTitle {
 
 .contactSection {
   padding-bottom: 50px;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 10px;
-  background-color: white;
 }
 
 .contactSection .contactFlex {
@@ -391,7 +397,7 @@ section .sectionTitle {
 }
 
 .contactSection .contactFlex img {
-  width: 40px;
+  width: 25px;
 }
 
 .contactSection .contactFlex #linkedin {
@@ -410,6 +416,15 @@ section .sectionTitle {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.footerSection {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
 .alignCenter {
@@ -442,5 +457,41 @@ section .sectionTitle {
 
 .noTopMargin {
   margin-top: 0;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+}
+
+.pulseEffect {
+  -webkit-animation: opacityPulse 2s ease-out;
+          animation: opacityPulse 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
 }
 /*# sourceMappingURL=App.css.map */
