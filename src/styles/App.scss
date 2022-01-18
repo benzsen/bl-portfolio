@@ -4,13 +4,13 @@ $exp-img-height: 100px;
 $toyota-img-width: 65px;
 $tesla-img-height: 50px;
 
-$heading-font: 'Arsenal', sans-serif;
+$heading-font: 'Merriweather', serif;
 
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
   //font-family: 'Arsenal', sans-serif;
-  font-size: large;
+  // font-size: medium;
 }
   
 .App-logo {
@@ -29,30 +29,21 @@ $heading-font: 'Arsenal', sans-serif;
 }
 
 section {
-  width: 1100px;
+  width: 1080px;
   margin: 30px auto 100px;
   .sectionTitle{
-    font-family: $heading-font;
-    font-size: 32px;
-    letter-spacing: 2px;
-    font-weight: bold;
+    //font-family: $heading-font;
+    font-size: 26px;
     text-align: left;
     margin-bottom: 30px;
+    //letter-spacing: 1px;
+    //font-weight: bold;
     text-decoration: underline;
   }
 }
 
 .aboutSection{
-  .hugeFont{
-    //font-family: 'Playfair Display', serif;
-    // font-size: 60px;
-    // margin: 10px;
-    //font-family: 'Permanent Marker', cursive;
-    font-family: $heading-font;
-    font-size: 75px;
-    margin: 0px;
-  }
-
+  
   .aboutFlex{
     display: flex;
     align-items: center;
@@ -68,9 +59,9 @@ section {
   }
 
   #profilePic {
-    width: 350px;
+    width: 32%;
     clip-path: circle();
-    margin-bottom: 30px;
+    margin: 20px 0;
     order: 0;
   }
 }
@@ -85,6 +76,9 @@ section {
     font-size: medium;
     img{
       padding-top: 10px;
+    }
+    div{
+      font-size: small;
     }
   }
   
@@ -130,7 +124,7 @@ section {
     }
   
     .leftContainer, .rightContainer{
-      width: 450px;
+      width: 90%;
       margin-bottom: 20px;
       p{
         margin-top: 10px;
@@ -149,7 +143,7 @@ section {
       grid-column: 1/3;
       display: flex;
       justify-content: center;
-
+      
       .otherSkillsFlex{
         display: flex;
         align-items: center;
@@ -267,7 +261,7 @@ section {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
-    padding: 10px 0;
+    padding-bottom: 10px;
   }
   
   .otherExpFlex{
@@ -289,10 +283,10 @@ section {
   .expFlex{
     display: flex;
     justify-content: space-between;
-    //column-gap: 25px;
+    column-gap: 25px;
 
     .leftContainer, .rightContainer{
-      width: 525px;
+      width: 50%;
       border: #282c34 1px solid;
       border-radius: 25px;
       padding: 20px 50px;
@@ -342,20 +336,31 @@ section {
   text-align: left;
 }
 
+.hugeFont{
+  //font-family: 'Playfair Display', serif;
+  // font-size: 60px;
+  // margin: 10px;
+  //font-family: 'Permanent Marker', cursive;
+  font-family: $heading-font;
+  font-size: 62px;
+  margin: 0px;
+}
+
 .xLargeFont{
-  font-size:x-large;
+  font-size: 26px;
 }
 
 .largeFont{
-  font-size: large;
+  font-size: 20px;
+
 }
 
 .mediumFont{
-  font-size: medium;
+  font-size: 16px;
 }
 
 .smallFont{
-  font-size: small;
+  font-size: 16px;
 }
 
 .underline{
@@ -368,6 +373,10 @@ section {
 
 .noBottomMargin{
   margin-bottom: 0;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 //Pulse Effect Source https://tilomitra.github.io/infinite/

@@ -6,22 +6,22 @@ const Experience = () => {
       <div className="sectionTitle">Experience</div>
         <div className="expFlex">
           <div className="leftContainer">
-            <h3>Web Development</h3>
-              <p className="underline">Freelance</p>
+          <div className="largeFont">Web Development</div>
+              <p className="underline bold">Freelance</p>
           </div>
           <div className="line"></div>
           <div className="rightContainer">
-            <h3>Mechanical Engineering</h3>
-            <div className="underline">Current Role</div>
+            <div className="largeFont">Mechanical Engineering</div>
+            <p className="underline bold">Current Role</p>
             <div className="currentExpFlex">
               <img src="toyota.svg" id="toyotaLogo"/>
               <div className="alignLeft">
                 <div>Manufacturing Engineer</div>
-                <div className="mediumFont">Products: Toyota RAV4/Lexus RX350</div>
-                <div className="mediumFont">2018 - Present</div>
+                <div className="smallFont">Products: Toyota RAV4/Lexus RX350</div>
+                <div className="smallFont">2018 - Present</div>
               </div>
             </div>
-            <div className="underline">Other Experience</div>
+            <p className="underline bold">Other Experience</p>
             <div className="otherExpFlex">
               <span className="expLogoContainer">
                 <img src="university-of-waterloo.svg" id="uwLogo"/>

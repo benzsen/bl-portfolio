@@ -9,7 +9,7 @@ const Skills = () =>{
       <div className="skillsGrid">
         <div className="sectionTitle">Qualifications</div>
           <div className="expGrid">
-            <h3 className="expGridTitle">Languages/Technologies</h3>
+            <div className="expGridTitle largeFont bold">Languages/Technologies</div>
             <div className="leftContainer">
               <p className="underline">Most at Home with:</p>
               <div className="devSkillsLine-1">
@@ -33,7 +33,7 @@ const Skills = () =>{
                   <img src="css-3.svg"/>
                   <img src="sass-1.svg"/>
                   <img src="shopify.svg"/>
-                  <div>JS</div>
+                  <div className="smallFont">JS</div>
                   <div>HTML</div>
                   <div>CSS</div>
                   <div>SASS</div>
@@ -50,7 +50,7 @@ const Skills = () =>{
                   <div>Postman</div>
                 </div>
             </div>
-            <h3 className="underline expGridTitle">Other Skills</h3>
+            <div className="underline expGridTitle largeFont bold">Other Skills</div>
             <div className="bottomContainer">
               <div className="otherSkillsFlex">{otherSkills_1.map(s => <div className="otherSkillTile">{s}</div>)}</div>
               <div className="otherSkillsFlex">{otherSkills_2.map(s => <div className="otherSkillTile">{s}</div>)}</div>

@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: large;
 }
 
 .App-logo {
@@ -29,24 +28,15 @@
 }
 
 section {
-  width: 1100px;
+  width: 1080px;
   margin: 30px auto 100px;
 }
 
 section .sectionTitle {
-  font-family: "Arsenal", sans-serif;
-  font-size: 32px;
-  letter-spacing: 2px;
-  font-weight: bold;
+  font-size: 26px;
   text-align: left;
   margin-bottom: 30px;
   text-decoration: underline;
-}
-
-.aboutSection .hugeFont {
-  font-family: "Arsenal", sans-serif;
-  font-size: 75px;
-  margin: 0px;
 }
 
 .aboutSection .aboutFlex {
@@ -72,10 +62,10 @@ section .sectionTitle {
 }
 
 .aboutSection #profilePic {
-  width: 350px;
+  width: 32%;
   -webkit-clip-path: circle();
           clip-path: circle();
-  margin-bottom: 30px;
+  margin: 20px 0;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
@@ -97,6 +87,10 @@ section .sectionTitle {
 
 .skillsSection .devSkillsLine-1 img, .skillsSection .devSkillsLine-2 img {
   padding-top: 10px;
+}
+
+.skillsSection .devSkillsLine-1 div, .skillsSection .devSkillsLine-2 div {
+  font-size: small;
 }
 
 .skillsSection .devSkillsLine-1 {
@@ -155,7 +149,7 @@ section .sectionTitle {
 }
 
 .skillsSection .expGrid .leftContainer, .skillsSection .expGrid .rightContainer {
-  width: 450px;
+  width: 90%;
   margin-bottom: 20px;
 }
 
@@ -338,7 +332,7 @@ section .sectionTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 
 .expSection .otherExpFlex {
@@ -368,10 +362,12 @@ section .sectionTitle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
 }
 
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
-  width: 525px;
+  width: 50%;
   border: #282c34 1px solid;
   border-radius: 25px;
   padding: 20px 50px;
@@ -435,20 +431,26 @@ section .sectionTitle {
   text-align: left;
 }
 
+.hugeFont {
+  font-family: "Merriweather", serif;
+  font-size: 62px;
+  margin: 0px;
+}
+
 .xLargeFont {
-  font-size: x-large;
+  font-size: 26px;
 }
 
 .largeFont {
-  font-size: large;
+  font-size: 20px;
 }
 
 .mediumFont {
-  font-size: medium;
+  font-size: 16px;
 }
 
 .smallFont {
-  font-size: small;
+  font-size: 16px;
 }
 
 .underline {
@@ -461,6 +463,10 @@ section .sectionTitle {
 
 .noBottomMargin {
   margin-bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .pulseEffect {
