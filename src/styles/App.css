@@ -30,7 +30,7 @@
 
 section {
   width: 1250px;
-  margin: 50px auto 75px;
+  margin: 50px auto 100px;
 }
 
 section .sectionTitle {
@@ -40,7 +40,6 @@ section .sectionTitle {
 }
 
 .aboutSection .hugeFont {
-  font-family: 'Permanent Marker', cursive;
   font-size: 75px;
   margin: 0px;
 }
@@ -73,7 +72,7 @@ section .sectionTitle {
 }
 
 .skillsSection {
-  margin-top: -50px;
+  margin-top: -25px;
 }
 
 .skillsSection .devSkillsLine-1, .skillsSection .devSkillsLine-2 {
@@ -82,11 +81,8 @@ section .sectionTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   justify-items: center;
-  font-size: small;
+  font-size: medium;
 }
 
 .skillsSection .devSkillsLine-1 img, .skillsSection .devSkillsLine-2 img {
@@ -101,11 +97,12 @@ section .sectionTitle {
   -webkit-column-gap: 2em;
           column-gap: 2em;
   padding-bottom: 10px;
+  margin: 0 30px;
 }
 
 .skillsSection .devSkillsLine-1 img {
-  height: 75px;
-  margin-bottom: -5px;
+  height: 100px;
+  margin-bottom: 0px;
 }
 
 .skillsSection .devSkillsLine-2 {
@@ -122,36 +119,90 @@ section .sectionTitle {
   max-height: 45px;
 }
 
-.skillsSection .expFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
+.skillsSection .expGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
   border: #282c34 1px solid;
   border-radius: 25px;
   margin: 0;
   padding: 0 40px;
 }
 
-.skillsSection .expFlex p {
+.skillsSection .expGrid .expGridTitle {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.skillsSection .expGrid p {
   margin-bottom: 0;
 }
 
-.skillsSection .expFlex .leftContainer, .skillsSection .expFlex .rightContainer {
-  margin: 0 auto 20px;
+.skillsSection .expGrid .leftContainer, .skillsSection .expGrid .rightContainer {
+  width: 500px;
+  margin-bottom: 20px;
 }
 
-.skillsSection .expFlex .leftContainer p, .skillsSection .expFlex .rightContainer p {
+.skillsSection .expGrid .leftContainer p, .skillsSection .expGrid .rightContainer p {
   margin-top: 10px;
 }
 
-.skillsSection .expFlex .line {
-  border-left: grey 1px solid;
-  margin: 40px 0;
+.skillsSection .expGrid .leftContainer {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.skillsSection .expGrid .rightContainer {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.skillsSection .expGrid .bottomContainer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsSection .expGrid .bottomContainer .otherSkillsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+}
+
+.skillsSection .expGrid .bottomContainer .otherSkillTile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #dddddd 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
 }
 
 .portfolioSection {
@@ -207,41 +258,53 @@ section .sectionTitle {
 }
 
 .portfolioSection .appHeading a {
+  color: black;
   font-size: x-large;
   font-weight: bold;
   text-decoration: none;
+}
+
+.expSection .otherExpFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+.expSection .currentExpFlex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .expSection .otherExpFlex, .expSection .currentExpFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
 }
 
 .expSection .otherExpFlex img, .expSection .currentExpFlex img {
-  width: 75px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .expSection .otherExpFlex #toyotaLogo, .expSection .currentExpFlex #toyotaLogo {
-  width: 65px;
+  width: 85px;
 }
 
 .expSection .otherExpFlex #uwLogo, .expSection .currentExpFlex #uwLogo {
-  margin-top: 5px;
+  width: 95px;
+  margin-top: 10px;
   -webkit-clip-path: circle();
           clip-path: circle();
 }
 
 .expSection .otherExpFlex #canadaLogo, .expSection .currentExpFlex #canadaLogo {
-  width: 65px;
+  width: 90px;
   -webkit-clip-path: circle();
           clip-path: circle();
 }
@@ -250,7 +313,7 @@ section .sectionTitle {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 50px;
+  height: 70px;
 }
 
 .expSection .currentExpFlex {
@@ -278,9 +341,10 @@ section .sectionTitle {
   border: #e7e7e7 1px solid;
   border-radius: 50%;
   background-color: white;
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   margin-top: 5px;
+  overflow: hidden;
 }
 
 .expSection .expFlex {
@@ -307,6 +371,12 @@ section .sectionTitle {
 
 .contactSection {
   padding-bottom: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
 .contactSection .contactFlex {
@@ -316,12 +386,12 @@ section .sectionTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
 }
 
 .contactSection .contactFlex img {
-  width: 50px;
+  width: 40px;
 }
 
 .contactSection .contactFlex #linkedin {
