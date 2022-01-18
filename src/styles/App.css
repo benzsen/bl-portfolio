@@ -30,7 +30,7 @@
 
 section {
   width: 1250px;
-  margin: 50px auto 75px;
+  margin: 50px auto 100px;
 }
 
 section .sectionTitle {
@@ -40,7 +40,6 @@ section .sectionTitle {
 }
 
 .aboutSection .hugeFont {
-  font-family: 'Permanent Marker', cursive;
   font-size: 75px;
   margin: 0px;
 }
@@ -73,7 +72,7 @@ section .sectionTitle {
 }
 
 .skillsSection {
-  margin-top: -50px;
+  margin-top: -25px;
 }
 
 .skillsSection .devSkillsLine-1, .skillsSection .devSkillsLine-2 {
@@ -102,8 +101,8 @@ section .sectionTitle {
 }
 
 .skillsSection .devSkillsLine-1 img {
-  height: 75px;
-  margin-bottom: -5px;
+  height: 100px;
+  margin-bottom: 0px;
 }
 
 .skillsSection .devSkillsLine-2 {
@@ -259,6 +258,7 @@ section .sectionTitle {
 }
 
 .portfolioSection .appHeading a {
+  color: black;
   font-size: x-large;
   font-weight: bold;
   text-decoration: none;
@@ -371,6 +371,12 @@ section .sectionTitle {
 
 .contactSection {
   padding-bottom: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
 .contactSection .contactFlex {
@@ -380,12 +386,12 @@ section .sectionTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
 }
 
 .contactSection .contactFlex img {
-  width: 50px;
+  width: 40px;
 }
 
 .contactSection .contactFlex #linkedin {

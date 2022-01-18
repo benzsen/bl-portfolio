@@ -1,8 +1,8 @@
 
 const Skills = () =>{
-  const otherSkills_1 = ["Agile Development", "Project Management", "Quick Learner"]
-  const otherSkills_2 = ["Root-cause Analysis", "Toyota Production System", ""]
-  const otherSkills_3 = ["Communication", "Team Player", "Quick Learner"]
+  const otherSkills_1 = ["Agile Development", "Project Management"]
+  const otherSkills_2 = ["Root-cause Analysis", "Effective Communicatior"]
+  const otherSkills_3 = ["Team Player", "Quick Learner"]
 
   return(
     <section className="skillsSection">

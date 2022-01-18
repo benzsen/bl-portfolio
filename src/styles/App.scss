@@ -26,7 +26,7 @@ $tesla-img-height: 50px;
 
 section {
   width: 1250px;
-  margin: 50px auto 75px;
+  margin: 50px auto 100px;
   .sectionTitle{
     font-size: 30px;
     // font-weight: bold;
@@ -40,7 +40,7 @@ section {
     //font-family: 'Playfair Display', serif;
     // font-size: 60px;
     // margin: 10px;
-    font-family: 'Permanent Marker', cursive;
+    //font-family: 'Permanent Marker', cursive;
     font-size: 75px;
     margin: 0px;
   }
@@ -65,7 +65,7 @@ section {
 }
 
 .skillsSection{
-  margin-top: -50px;
+  margin-top: -25px;
 
   .devSkillsLine-1, .devSkillsLine-2{
     display: grid;
@@ -84,8 +84,8 @@ section {
     padding-bottom: 10px;
     margin: 0 30px;
     img{
-      height: 75px;
-      margin-bottom: -5px;
+      height: 100px;
+      margin-bottom: 0px;
     }
   }
 
@@ -206,6 +206,7 @@ section {
   .appHeading{
     padding-bottom: 20px;
     a{
+      color: black;
       font-size: x-large;
       font-weight: bold;
       text-decoration: none;
@@ -290,12 +291,19 @@ section {
 
 .contactSection{
   padding-bottom: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  background-color:white;
+
   .contactFlex{
     display: flex;
     justify-content: center;
-    column-gap: 2em;
+    column-gap: 1.5em;
     img{
-      width: 50px;
+      width: 40px;
     }
     #linkedin{
       order: 0;
