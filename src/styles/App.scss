@@ -11,6 +11,7 @@ $heading-font: 'Merriweather', serif;
   font-family: 'Be Vietnam Pro', sans-serif;
   //font-family: 'Arsenal', sans-serif;
   // font-size: medium;
+  // background-color: #dcdcdc;
 }
   
 .App-logo {
@@ -41,6 +42,7 @@ section {
     text-decoration: underline;
   }
 }
+
 
 .aboutSection{
   
@@ -111,7 +113,7 @@ section {
     // justify-items: center;
     column-gap: 5em;
     border: #282c34 1px solid;
-    border-radius: 25px;
+    border-radius: 10px;
     margin: 0;
     padding: 20px 40px 10px; 
 
@@ -195,7 +197,7 @@ section {
     height: 200px;
     width: 400px;
     border: #282c34 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 
     img {
@@ -288,7 +290,7 @@ section {
     .leftContainer, .rightContainer{
       width: 50%;
       border: #282c34 1px solid;
-      border-radius: 25px;
+      border-radius: 10px;
       padding: 20px 50px;
       p{
         margin-top: 10px;
@@ -302,8 +304,10 @@ section {
   
   .contactFlex{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 1.5em;
+    align-items: flex-start;
+    row-gap: 1.5em;
     img{
       width: 25px;
     }

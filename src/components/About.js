@@ -17,7 +17,8 @@ const About = () =>{
             I am a web developer with a background in mechanical engineering.
           </p>
           <p>
-            My passion to build things aiming to solve problems sparked my curiosity to venture into software engineering.
+            My passion to build things with the purpose to solving problems sparked my curiosity to venture into software engineering.
+            <br/>
             Through my self-teaching journey, I fell in love with web development.
           </p>
           <p>Coming from the automotive industry (Toyota/Tesla), I am eager to bring a fresh perspective and a root-cause analysis mindset for troubleshooting and building clean code.</p>

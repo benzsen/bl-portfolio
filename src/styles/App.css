@@ -133,7 +133,7 @@ section .sectionTitle {
   -webkit-column-gap: 5em;
           column-gap: 5em;
   border: #282c34 1px solid;
-  border-radius: 25px;
+  border-radius: 10px;
   margin: 0;
   padding: 20px 40px 10px;
 }
@@ -243,7 +243,7 @@ section .sectionTitle {
   height: 200px;
   width: 400px;
   border: #282c34 1px solid;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -369,7 +369,7 @@ section .sectionTitle {
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
   width: 50%;
   border: #282c34 1px solid;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px 50px;
 }
 
@@ -385,11 +385,17 @@ section .sectionTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 1.5em;
-          column-gap: 1.5em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 1.5em;
 }
 
 .contactSection .contactFlex img {

@@ -1,5 +1,6 @@
 import React, {useState} from "react" 
 
+import Nav from "./Nav"
 import About from "./About"
 import Skills from "./Skills"
 import Projects from "./Projects"
