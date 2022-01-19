@@ -6,7 +6,7 @@ const Skills = () =>{
 
   return(
     <section className="skillsSection">
-      <div className="skillsGrid">
+      <div className="skillsGrid sectionContainer">
         <div className="sectionTitle">Qualifications</div>
           <div className="expGrid">
             <div className="expGridTitle largeFont bold">Languages/Technologies</div>

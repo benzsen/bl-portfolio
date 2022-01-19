@@ -27,9 +27,14 @@
   color: white;
 }
 
+main {
+  margin-left: 250px;
+}
+
 section {
-  width: 1080px;
-  margin: 30px auto 100px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f5f8fd;
 }
 
 section .sectionTitle {
@@ -37,6 +42,100 @@ section .sectionTitle {
   text-align: left;
   margin-bottom: 30px;
   text-decoration: underline;
+}
+
+.sectionContainer {
+  min-width: 900px;
+  max-width: calc(1920px - 600px);
+  margin: 0 auto;
+}
+
+nav {
+  border-right: black 1px solid;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 250px;
+  padding: 25px;
+  background-color: black;
+  color: white;
+}
+
+nav .navPicContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  border: 8px solid #2c2f3f;
+}
+
+nav .navPicContainer #navPic {
+  width: 200px;
+  margin-top: -10px;
+}
+
+nav .contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+nav .contactFlex .navSvgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #2c2f3f;
+}
+
+nav .contactFlex #linkedin, nav .contactFlex #email {
+  border: 1px #d3d0c0 solid;
+  width: 80%;
+  border-radius: 50%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+nav .contactFlex #github {
+  border: 5px #d3d0c0 solid;
+  width: 80%;
+  border-radius: 50%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+nav .contactFlex #email {
+  width: 85%;
+  padding-bottom: 1px;
+}
+
+nav .largeFont {
+  padding: 10px 0;
 }
 
 .aboutSection .aboutFlex {
@@ -62,17 +161,14 @@ section .sectionTitle {
 }
 
 .aboutSection #profilePic {
-  width: 32%;
+  width: calc(100%/3);
+  max-width: calc(1080px/3);
   -webkit-clip-path: circle();
           clip-path: circle();
   margin: 20px 0;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-}
-
-.skillsSection {
-  margin-top: -25px;
 }
 
 .skillsSection .devSkillsLine-1, .skillsSection .devSkillsLine-2 {
@@ -98,10 +194,7 @@ section .sectionTitle {
       grid-template-columns: repeat(4, auto);
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
-  -webkit-column-gap: 0.5em;
-          column-gap: 0.5em;
   padding-bottom: 10px;
-  margin: 0 30px;
 }
 
 .skillsSection .devSkillsLine-1 img {
@@ -114,8 +207,6 @@ section .sectionTitle {
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
 }
 
 .skillsSection .devSkillsLine-2 img {
@@ -362,8 +453,8 @@ section .sectionTitle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
 }
 
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {

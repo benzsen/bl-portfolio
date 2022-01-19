@@ -11,11 +11,14 @@ const Body = () => {
 
   return(
   <div>
-    <About/>
-    <Skills/>
-    <Projects/>
-    <Experience/>
-    <Contact/>
+    <Nav/>
+    <main>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Experience/>
+      <Contact/>
+    </main>
   </div>
   )
 }
