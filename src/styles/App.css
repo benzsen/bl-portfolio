@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -28,12 +32,46 @@
 }
 
 main {
-  margin-left: 250px;
+  margin-left: 300px;
+}
+
+main #myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+main #myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
 
 section {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 25px;
   background-color: #f5f8fd;
 }
 
@@ -57,7 +95,8 @@ nav {
   top: 0;
   left: 0;
   bottom: 0;
-  min-width: 250px;
+  width: 15%;
+  min-width: 300px;
   padding: 25px;
   background-color: black;
   color: white;
@@ -114,7 +153,6 @@ nav .contactFlex .navSvgContainer {
 }
 
 nav .contactFlex #linkedin, nav .contactFlex #email {
-  border: 1px #d3d0c0 solid;
   width: 80%;
   border-radius: 50%;
   -webkit-filter: invert(1);
@@ -122,16 +160,30 @@ nav .contactFlex #linkedin, nav .contactFlex #email {
 }
 
 nav .contactFlex #github {
-  border: 5px #d3d0c0 solid;
-  width: 80%;
+  width: 60%;
   border-radius: 50%;
   -webkit-filter: invert(1);
           filter: invert(1);
+  padding-bottom: 2px;
 }
 
 nav .contactFlex #email {
   width: 85%;
-  padding-bottom: 1px;
+  padding: 0 0 1px 0;
+}
+
+nav .navLinkFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 25px;
 }
 
 nav .largeFont {
@@ -150,7 +202,7 @@ nav .largeFont {
           justify-content: center;
   -webkit-column-gap: 2em;
           column-gap: 2em;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .aboutSection .aboutFlex .aboutText {
@@ -165,7 +217,7 @@ nav .largeFont {
   max-width: calc(1080px/3);
   -webkit-clip-path: circle();
           clip-path: circle();
-  margin: 20px 0;
+  margin: 20px 0 0;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
@@ -227,6 +279,9 @@ nav .largeFont {
   border-radius: 10px;
   margin: 0;
   padding: 20px 40px 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .skillsSection .expGrid .expGridTitle {
@@ -336,6 +391,9 @@ nav .largeFont {
   border: #282c34 1px solid;
   border-radius: 10px;
   overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .portfolioSection .projectImg img {
@@ -361,19 +419,6 @@ nav .largeFont {
   font-size: x-large;
   text-decoration: none;
   margin-bottom: 10px;
-}
-
-.expSection .otherExpFlex {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
-}
-
-.expSection .currentExpFlex {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .expSection .otherExpFlex, .expSection .currentExpFlex {
@@ -419,14 +464,27 @@ nav .largeFont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  margin-bottom: 5px;
   padding-bottom: 10px;
 }
 
 .expSection .otherExpFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
   margin-top: 5px;
 }
 
@@ -453,15 +511,18 @@ nav .largeFont {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
   width: 50%;
   border: #282c34 1px solid;
   border-radius: 10px;
-  padding: 20px 50px;
+  padding: 20px 40px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .expSection .expFlex .leftContainer p, .expSection .expFlex .rightContainer p {
@@ -542,12 +603,8 @@ nav .largeFont {
   font-size: 20px;
 }
 
-.mediumFont {
-  font-size: 16px;
-}
-
 .smallFont {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .underline {
@@ -564,6 +621,10 @@ nav .largeFont {
 
 .bold {
   font-weight: bold;
+}
+
+.whiteBackgroud {
+  background-color: white;
 }
 
 .pulseEffect {

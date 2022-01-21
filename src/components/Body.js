@@ -18,6 +18,7 @@ const Body = () => {
       <Projects/>
       <Experience/>
       <Contact/>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>
   </div>
   )

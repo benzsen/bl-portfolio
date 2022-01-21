@@ -2,14 +2,14 @@
 const About = () =>{
 
   return(
-    <section className="aboutSection">
+    <section className="aboutSection whiteBackgroud" id="home">
       <div className="introFlex">
         <p className="hugeFont">Hey! I'm Benny.</p>
         <p className="xLargeFont">Web Developer | Engineer | Problem Solver</p>
         <img id="profilePic" src="./bl_photo(cropped).jpg"></img>
       </div>
-      
-      <div className="aboutFlex">
+
+      <div className="aboutFlex" id="aboutSection">
         <div className="aboutText">
           <div className="sectionTitle">About Me</div>
           <p>

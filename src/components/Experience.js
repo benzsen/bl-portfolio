@@ -2,7 +2,7 @@
 const Experience = () => {
   
   return(
-    <section className="expSection">
+    <section className="expSection" id="expSection">
       <div className="sectionContainer">
         <div className="sectionTitle">Experience</div>
         <div className="expFlex">

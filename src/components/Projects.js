@@ -3,7 +3,7 @@ import Badge from 'react-bootstrap/Badge'
 const Projects = () =>{
 
   return(
-    <section className="portfolioSection" id="portfolioSection"> 
+    <section className="portfolioSection whiteBackgroud" id="projectSection"> 
       <div className="sectionContainer">
         <div className="sectionTitle">Projects</div>
         <div className="projectGrid">
