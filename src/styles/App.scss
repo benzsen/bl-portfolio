@@ -150,20 +150,54 @@ nav{
     }
   }
 
+  .navSvgContainer:hover{
+    background-color: #149ddd;
+    // img{
+    //   background-color: #149ddd;
+    // }
+  }
+
   .navLinkFlex{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 50px 25px;
-    // .navLink{
-      
-    // }
   }
 
   .largeFont{
     padding: 10px 0;
+  } 
+  
+  .navLink{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    padding: 10px 0;
+    color: #a8a9b4;
+    img{
+      // filter: invert(1);
+      filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
+      height: 18px;
+    }
+  }
+  
+  .navLink:hover{
+    img{
+      filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+    }
+    color: white;
+    cursor: pointer
+  }
+
+  .navLinkAtScroll {
+    img{
+      filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+    }
+    color: white;
   }
 }
+
+
 
 .aboutSection{
 
@@ -427,7 +461,7 @@ nav{
 }
 
 .contactSection{
-  padding-bottom: 50px;
+  padding-bottom: 600px;
   
   .contactFlex{
     display: flex;

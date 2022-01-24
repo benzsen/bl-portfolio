@@ -15,8 +15,8 @@ const Body = () => {
     <main>
       <About/>
       <Skills/>
-      <Projects/>
       <Experience/>
+      <Projects/>
       <Contact/>
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>

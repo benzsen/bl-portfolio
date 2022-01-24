@@ -172,6 +172,10 @@ nav .contactFlex #email {
   padding: 0 0 1px 0;
 }
 
+nav .navSvgContainer:hover {
+  background-color: #149ddd;
+}
+
 nav .navLinkFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +192,44 @@ nav .navLinkFlex {
 
 nav .largeFont {
   padding: 10px 0;
+}
+
+nav .navLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+  padding: 10px 0;
+  color: #a8a9b4;
+}
+
+nav .navLink img {
+  -webkit-filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
+          filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
+  height: 18px;
+}
+
+nav .navLink:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav .navLink:hover img {
+  -webkit-filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+          filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+}
+
+nav .navLinkAtScroll {
+  color: white;
+}
+
+nav .navLinkAtScroll img {
+  -webkit-filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+          filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
 }
 
 .aboutSection .aboutFlex {
@@ -530,7 +572,7 @@ nav .largeFont {
 }
 
 .contactSection {
-  padding-bottom: 50px;
+  padding-bottom: 600px;
 }
 
 .contactSection .contactFlex {

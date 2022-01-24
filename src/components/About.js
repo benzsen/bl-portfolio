@@ -2,7 +2,7 @@
 const About = () =>{
 
   return(
-    <section className="aboutSection whiteBackgroud" id="home">
+    <section className="aboutSection whiteBackgroud" id="homeSection">
       <div className="introFlex">
         <p className="hugeFont">Hey! I'm Benny.</p>
         <p className="xLargeFont">Web Developer | Engineer | Problem Solver</p>
