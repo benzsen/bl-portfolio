@@ -4,7 +4,6 @@ import Nav from "./Nav"
 import About from "./About"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import Experience from "./Experience"
 import Contact from "./Contact"
 
 const Body = () => {
@@ -15,10 +14,8 @@ const Body = () => {
     <main>
       <About/>
       <Skills/>
-      <Experience/>
       <Projects/>
       <Contact/>
-      
     </main>
   </div>
   )
