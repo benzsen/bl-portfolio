@@ -15,7 +15,7 @@ const Experience = () => {
             <div className="largeFont">Mechanical Engineering</div>
             <p className="underline bold">Current Role</p>
             <div className="currentExpFlex">
-              <img src="toyota.svg" id="toyotaLogo"/>
+              <img src="exp-img/toyota.svg" id="toyotaLogo"/>
               <div className="alignLeft">
                 <div>Manufacturing Engineer</div>
                 <div className="smallFont">Products: Toyota RAV4/Lexus RX350</div>
@@ -25,13 +25,13 @@ const Experience = () => {
             <p className="underline bold">Other Experience</p>
             <div className="otherExpFlex">
               <span className="expLogoContainer">
-                <img src="university-of-waterloo.svg" id="uwLogo"/>
+                <img src="exp-img/university-of-waterloo.svg" id="uwLogo"/>
               </span>
               <span className="expLogoContainer">
-                <img src="canada-3.svg" id="canadaLogo"/>
+                <img src="exp-img/canada-3.svg" id="canadaLogo"/>
               </span>
               <span className="expLogoContainer">
-                <img src="tesla-motors-1.svg" id="teslaLogo"/>
+                <img src="exp-img/tesla-motors-1.svg" id="teslaLogo"/>
               </span>
             </div>
           </div>

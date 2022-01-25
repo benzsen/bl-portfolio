@@ -9,7 +9,7 @@ const Projects = () =>{
         <div className="projectGrid">
         
         <div className="projectImg">
-          <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./alphaType_render.PNG"/></a>
+          <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_render.PNG"/></a>
         </div>
         <div className="projectDiv">
           <div className="appHeading">
@@ -22,7 +22,7 @@ const Projects = () =>{
           </div>
           </div>
           <div className="projectImg">
-            <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./MKCharts_render.PNG"/></a>
+            <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/MKCharts_render.PNG"/></a>
           </div>
           <div className="projectDiv">
             <div className="appHeading">

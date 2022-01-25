@@ -13,10 +13,10 @@ const Skills = () =>{
             <div className="leftContainer">
               <p className="underline">Most at Home with:</p>
               <div className="devSkillsLine-1">
-                <img src="mongodb-logo.png"/>
-                <img src="express-logo.png"/>
-                <img src="react-logo.png"/>
-                <img src="nodejs-logo.png"/>
+                <img src="skills-img/mongodb-logo.png"/>
+                <img src="skills-img/express-logo.png"/>
+                <img src="skills-img/react-logo.png"/>
+                <img src="skills-img/nodejs-logo.png"/>
 
                 <div>Mongodb</div>
                 <div>Express</div>
@@ -28,21 +28,21 @@ const Skills = () =>{
             <div className="rightContainer">
               <p className="underline">Proficient with:</p>
                 <div className="devSkillsLine-2">
-                  <img src="logo-javascript.svg"/> 
-                  <img src="html-1.svg"/>
-                  <img src="css-3.svg"/>
-                  <img src="sass-1.svg"/>
-                  <img src="shopify.svg"/>
+                  <img src="skills-img/logo-javascript.svg"/> 
+                  <img src="skills-img/html-1.svg"/>
+                  <img src="skills-img/css-3.svg"/>
+                  <img src="skills-img/sass-1.svg"/>
+                  <img src="skills-img/shopify.svg"/>
                   <div>JS</div>
                   <div>HTML</div>
                   <div>CSS</div>
                   <div>SASS</div>
                   <div>Liquid</div>
-                  <img src="redux.svg"/>
-                  <img src="jest-2.svg"/>
-                  <img src="cypress.png"/>
-                  <img src="git-icon.svg"/>
-                  <img src="postman.svg"/>
+                  <img src="skills-img/redux.svg"/>
+                  <img src="skills-img/jest-2.svg"/>
+                  <img src="skills-img/cypress.png"/>
+                  <img src="skills-img/git-icon.svg"/>
+                  <img src="skills-img/postman.svg"/>
                   <div>Redux</div>
                   <div>Jest</div>
                   <div>Cypress</div>

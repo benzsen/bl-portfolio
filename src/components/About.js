@@ -6,7 +6,7 @@ const About = () =>{
       <div className="introFlex">
         <p className="hugeFont">Hey! I'm Benny.</p>
         <p className="xLargeFont">Web Developer | Engineer | Problem Solver</p>
-        <img id="profilePic" src="./bl_photo(cropped).jpg"></img>
+        <img id="profilePic" src="benny-img/bl_photo(cropped).jpg"></img>
       </div>
 
       <div className="aboutFlex" id="aboutSection">

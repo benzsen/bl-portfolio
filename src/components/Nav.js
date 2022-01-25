@@ -46,20 +46,20 @@ const Nav = () =>{
   return(
     <nav>
       <div className="navPicContainer">
-        <img id="navPic" src="bl_photo(cropped).jpg"/>
+        <img id="navPic" src="benny-img/bl_photo(cropped).jpg"/>
       </div>
       <div className="xLargeFont xBold">Benny Luo</div>
       <div className="contactFlex">
-        <div className="navSvgContainer"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="linkedin.svg" id="linkedin"/></a></div>
-        <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="email.svg" id="email"/></a></div>
-        <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="github.svg" id="github"/></a></div>
+        <div className="navSvgContainer"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="contact-img/linkedin.svg" id="linkedin"/></a></div>
+        <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="contact-img/email.svg" id="email"/></a></div>
+        <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="contact-img/github.svg" id="github"/></a></div>
       </div>
       <div className="navLinkFlex">
-        <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="/nav-pics/home.svg"/><span>Home</span></div></a>
-        <a onClick={()=>scrollTo("aboutSection")}><div className="navLink navAbout"><img src="/nav-pics/person.svg"/><span>About</span></div></a>
-        <a onClick={()=>scrollTo("skillsSection")}><div className="navLink navSkills"><img src="/nav-pics/document-2-lines.svg"/><span>Resume</span></div></a>
-        <a onClick={()=>scrollTo("projectSection")}><div className="navLink navProjects"><img src="/nav-pics/code-square.svg"/><span>Projects</span></div></a>
-        <a onClick={()=>scrollTo("contactSection")}><div className="navLink navContact"><img src="/nav-pics/phone-book.svg"/><span>Contact</span></div></a>
+        <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="nav-link-img/home.svg"/><span>Home</span></div></a>
+        <a onClick={()=>scrollTo("aboutSection")}><div className="navLink navAbout"><img src="nav-link-img/person.svg"/><span>About</span></div></a>
+        <a onClick={()=>scrollTo("skillsSection")}><div className="navLink navSkills"><img src="nav-link-img/document-2-lines.svg"/><span>Resume</span></div></a>
+        <a onClick={()=>scrollTo("projectSection")}><div className="navLink navProjects"><img src="nav-link-img/code-square.svg"/><span>Projects</span></div></a>
+        <a onClick={()=>scrollTo("contactSection")}><div className="navLink navContact"><img src="nav-link-img/phone-book.svg"/><span>Contact</span></div></a>
       </div>
     </nav>
   )
