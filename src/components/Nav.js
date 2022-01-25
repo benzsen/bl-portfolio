@@ -4,55 +4,46 @@ const Nav = () =>{
   const scrollTo = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView(true)
   }
-
+  
   document.onscroll = () => {
     const navHome = document.querySelector(".navHome")
     const navAbout = document.querySelector(".navAbout")
     const navSkills = document.querySelector(".navSkills")
     const navProjects = document.querySelector(".navProjects")
-    const navExp = document.querySelector(".navExp")
+    // const navExp = document.querySelector(".navExp")
     const navContact = document.querySelector(".navContact") 
 
     const homeSection = document.querySelector('#homeSection');
     const aboutSection = document.querySelector('#aboutSection');
     const skillsSection = document.querySelector('#skillsSection');
     const projectSection = document.querySelector('#projectSection');
-    const expSection = document.querySelector('#expSection');
+    // const expSection = document.querySelector('#expSection');
     const contactSection = document.querySelector('#contactSection');
 
-    console.log("bottom", contactSection.getBoundingClientRect().bottom );
-    
+    let otherNavLink = []
 
     if(homeSection.getBoundingClientRect().top <= 100 && homeSection.getBoundingClientRect().top >= -100){
       navHome.classList.add('navLinkAtScroll');
-
-      let otherNavLink = [navAbout, navSkills, navProjects, navExp, navContact]
-      otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
+      otherNavLink = [navAbout, navSkills, navProjects, navContact]
     }
-    else if(aboutSection.getBoundingClientRect().top <= 100 && aboutSection.getBoundingClientRect().top >= -100){
+    if(aboutSection.getBoundingClientRect().top <= 100 && aboutSection.getBoundingClientRect().top >= -100){
       navAbout.classList.add('navLinkAtScroll');
-
-      let otherNavLink = [navHome, navSkills, navProjects, navExp, navContact]
-      otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
+      otherNavLink = [navHome, navSkills, navProjects, navContact]
     }
-    else if(skillsSection.getBoundingClientRect().top <= 100 && skillsSection.getBoundingClientRect().top >= -100){
+    if(skillsSection.getBoundingClientRect().top <= 100 && skillsSection.getBoundingClientRect().top >= -100){
       navSkills.classList.add('navLinkAtScroll');
-
-      let otherNavLink = [navAbout, navHome, navProjects, navExp, navContact]
-      otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
+      otherNavLink = [navHome, navAbout, navProjects, navContact]
     }
-    else if(projectSection.getBoundingClientRect().top <= 100 && projectSection.getBoundingClientRect().top >= -100){
+    if(projectSection.getBoundingClientRect().top <= 100 && projectSection.getBoundingClientRect().top >= -100){
       navProjects.classList.add('navLinkAtScroll');
-      // console.log("project")
-      let otherNavLink = [navAbout, navHome, navSkills, navExp, navContact]
-      otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
+      otherNavLink = [navHome, navAbout, navSkills, navContact]
     }
-    else if(contactSection.getBoundingClientRect().bottom <= 100 && contactSection.getBoundingClientRect().bottom >= -100){
+    if(contactSection.getBoundingClientRect().bottom <= 1300){
       navContact.classList.add('navLinkAtScroll');
-
-      let otherNavLink = [navAbout, navHome, navSkills, navProjects, navExp]
-      otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
+      otherNavLink = [navHome, navAbout, navSkills, navProjects]
     }
+
+    otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
   }
 
   return(

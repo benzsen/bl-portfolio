@@ -18,10 +18,12 @@ const Body = () => {
       <Experience/>
       <Projects/>
       <Contact/>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      
     </main>
   </div>
   )
 }
+
+//<button onClick={topFunction()} id="myBtn" title="Go to top">Top</button>
 
 export default Body
