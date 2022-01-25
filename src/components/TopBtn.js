@@ -4,9 +4,11 @@ const TopBtn = () =>{
     const mybutton = document.getElementById("topBtn");
 
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      mybutton.style.display = "block";
+      mybutton.style.visibility = "visible";
+      mybutton.style.opacity= 1;
     } else {
-      mybutton.style.display = "none";
+      mybutton.style.visibility = "hidden";
+      mybutton.style.opacity= 0;
     }
   }
 
