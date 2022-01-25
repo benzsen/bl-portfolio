@@ -4,8 +4,8 @@ import Nav from "./Nav"
 import About from "./About"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import Experience from "./Experience"
 import Contact from "./Contact"
+import TopBtn from "./TopBtn.js"
 
 const Body = () => {
 
@@ -15,15 +15,12 @@ const Body = () => {
     <main>
       <About/>
       <Skills/>
-      <Experience/>
       <Projects/>
       <Contact/>
-      
+      <TopBtn/>
     </main>
   </div>
   )
 }
-
-//<button onClick={topFunction()} id="myBtn" title="Go to top">Top</button>
 
 export default Body

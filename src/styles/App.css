@@ -35,38 +35,35 @@ main {
   margin-left: 300px;
 }
 
-main #myBtn {
+main #topBtn {
   display: none;
-  /* Hidden by default */
+  width: 50px;
+  height: 50px;
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
-  background-color: red;
-  /* Set a background color */
-  color: white;
-  /* Text color */
+  background-color: #159bdb;
   cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
+  border-radius: 50%;
 }
 
-main #myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
+main #topBtn img {
+  margin: auto;
+  width: 70%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+main #topBtn:hover {
+  background-color: #d7e3f7;
+}
+
+main #topBtn:hover img {
+  -webkit-filter: invert(52%) sepia(46%) saturate(4655%) hue-rotate(170deg) brightness(97%) contrast(84%);
+          filter: invert(52%) sepia(46%) saturate(4655%) hue-rotate(170deg) brightness(97%) contrast(84%);
 }
 
 section {

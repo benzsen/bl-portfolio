@@ -1,8 +1,6 @@
 
 const Nav = () =>{
-  const scrollTo = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView(true)
-  }
+  const scrollTo = (sectionId) => document.getElementById(sectionId).scrollIntoView(true)
   
   document.onscroll = () => {
     const navHome = document.querySelector(".navHome")
@@ -18,7 +16,6 @@ const Nav = () =>{
     const contactSection = document.querySelector('#contactSection');
 
     let otherNavLink = []
-    console.log(window.innerHeight,window.scrollY,document.body.offsetHeight)
 
     if(homeSection.getBoundingClientRect().top <= 100 && homeSection.getBoundingClientRect().top >= -100){
       navHome.classList.add('navLinkAtScroll');
