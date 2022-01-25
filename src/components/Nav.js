@@ -1,5 +1,4 @@
-//<div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank" id="github"><img src="github.svg"/></a></div>
-//<a onClick={()=>scrollTo("expSection")}><div className="navLink navExp"><img src="/nav-pics/document-2-lines.svg"/>Experience</div></a>
+
 const Nav = () =>{
   const scrollTo = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView(true)
@@ -10,17 +9,16 @@ const Nav = () =>{
     const navAbout = document.querySelector(".navAbout")
     const navSkills = document.querySelector(".navSkills")
     const navProjects = document.querySelector(".navProjects")
-    // const navExp = document.querySelector(".navExp")
     const navContact = document.querySelector(".navContact") 
 
     const homeSection = document.querySelector('#homeSection');
     const aboutSection = document.querySelector('#aboutSection');
     const skillsSection = document.querySelector('#skillsSection');
     const projectSection = document.querySelector('#projectSection');
-    // const expSection = document.querySelector('#expSection');
     const contactSection = document.querySelector('#contactSection');
 
     let otherNavLink = []
+    console.log(window.innerHeight,window.scrollY,document.body.offsetHeight)
 
     if(homeSection.getBoundingClientRect().top <= 100 && homeSection.getBoundingClientRect().top >= -100){
       navHome.classList.add('navLinkAtScroll');
@@ -38,11 +36,10 @@ const Nav = () =>{
       navProjects.classList.add('navLinkAtScroll');
       otherNavLink = [navHome, navAbout, navSkills, navContact]
     }
-    if(contactSection.getBoundingClientRect().bottom <= 1300){
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
       navContact.classList.add('navLinkAtScroll');
       otherNavLink = [navHome, navAbout, navSkills, navProjects]
     }
-
     otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
   }
 
@@ -51,18 +48,18 @@ const Nav = () =>{
       <div className="navPicContainer">
         <img id="navPic" src="bl_photo(cropped).jpg"/>
       </div>
-      <div className="largeFont bold">Benny Luo</div>
+      <div className="xLargeFont xBold">Benny Luo</div>
       <div className="contactFlex">
         <div className="navSvgContainer"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="linkedin.svg" id="linkedin"/></a></div>
-        <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="github.svg" id="github"/></a></div>
         <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="email.svg" id="email"/></a></div>
+        <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="github.svg" id="github"/></a></div>
       </div>
       <div className="navLinkFlex">
-        <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="/nav-pics/home.svg"/>Home</div></a>
-        <a onClick={()=>scrollTo("aboutSection")}><div className="navLink navAbout"><img src="/nav-pics/person.svg"/>About</div></a>
-        <a onClick={()=>scrollTo("skillsSection")}><div className="navLink navSkills"><img src="/nav-pics/document-2-lines.svg"/>Resume</div></a>
-        <a onClick={()=>scrollTo("projectSection")}><div className="navLink navProjects"><img src="/nav-pics/code-square.svg"/>Projects</div></a>
-        <a onClick={()=>scrollTo("contactSection")}><div className="navLink navContact"><img src="/nav-pics/phone-book.svg"/>Contact</div></a>
+        <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="/nav-pics/home.svg"/><span>Home</span></div></a>
+        <a onClick={()=>scrollTo("aboutSection")}><div className="navLink navAbout"><img src="/nav-pics/person.svg"/><span>About</span></div></a>
+        <a onClick={()=>scrollTo("skillsSection")}><div className="navLink navSkills"><img src="/nav-pics/document-2-lines.svg"/><span>Resume</span></div></a>
+        <a onClick={()=>scrollTo("projectSection")}><div className="navLink navProjects"><img src="/nav-pics/code-square.svg"/><span>Projects</span></div></a>
+        <a onClick={()=>scrollTo("contactSection")}><div className="navLink navContact"><img src="/nav-pics/phone-book.svg"/><span>Contact</span></div></a>
       </div>
     </nav>
   )

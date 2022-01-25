@@ -11,17 +11,15 @@ const Projects = () =>{
         <div className="projectImg">
           <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./alphaType_render.PNG"/></a>
         </div>
-        
-          <div className="projectDiv">
-            <div className="appHeading">
-                <a href="https://alpha-type.herokuapp.com/" target="_blank">alphaType <Badge bg="secondary">Highlight</Badge></a>
-            </div>
-        
-            <div>
-              <div>This fullstack web app will challenge you to type the alphabet under the pressure of time.</div>
-              <div>Sign up and compete against the fastest alphabet typers in the world!</div>
-              <p>JS, HTML, CSS, MERN (MongoDB, Express, React, Node)</p>
-            </div>
+        <div className="projectDiv">
+          <div className="appHeading">
+              <a href="https://alpha-type.herokuapp.com/" target="_blank">alphaType <Badge bg="secondary" id="highlightBadge">Highlight Project</Badge></a>
+          </div>
+          <div>
+            <div>This fullstack web app will challenge you to type the alphabet under the pressure of time.</div>
+            <div>Sign up and compete against the fastest alphabet typers in the world!</div>
+            <p>JS, HTML, CSS, MERN (MongoDB, Express, React, Node)</p>
+          </div>
           </div>
           <div className="projectImg">
             <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="./MKCharts_render.PNG"/></a>

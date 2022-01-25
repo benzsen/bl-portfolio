@@ -16,7 +16,7 @@ const About = () =>{
             I am a web developer with a background in mechanical engineering.
           </p>
           <p>
-            My passion to build things with the purpose to solving problems sparked my curiosity to venture into software engineering.
+            My passion to build things with the purpose of solving problems sparked my curiosity to venture into software engineering.
             <br/>
             Through my self-teaching journey, I fell in love with web development.
           </p>

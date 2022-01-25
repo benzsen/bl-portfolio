@@ -7,7 +7,7 @@ const Skills = () =>{
   return(
     <section className="skillsSection" id="skillsSection">
       <div className="skillsGrid sectionContainer">
-        <div className="sectionTitle">Qualifications</div>
+        <div className="sectionTitle">Resume</div>
           <div className="expGrid">
             <div className="expGridTitle largeFont bold">Languages/Technologies</div>
             <div className="leftContainer">
@@ -33,7 +33,7 @@ const Skills = () =>{
                   <img src="css-3.svg"/>
                   <img src="sass-1.svg"/>
                   <img src="shopify.svg"/>
-                  <div className="smallFont">JS</div>
+                  <div>JS</div>
                   <div>HTML</div>
                   <div>CSS</div>
                   <div>SASS</div>
