@@ -11,13 +11,19 @@ const Body = () => {
 
   return(
   <div>
-    <About/>
-    <Skills/>
-    <Projects/>
-    <Experience/>
-    <Contact/>
+    <Nav/>
+    <main>
+      <About/>
+      <Skills/>
+      <Experience/>
+      <Projects/>
+      <Contact/>
+      
+    </main>
   </div>
   )
 }
+
+//<button onClick={topFunction()} id="myBtn" title="Go to top">Top</button>
 
 export default Body

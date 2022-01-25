@@ -2,8 +2,9 @@
 const Experience = () => {
   
   return(
-    <section className="expSection">
-      <div className="sectionTitle">Experience</div>
+    <section className="expSection" id="expSection">
+      <div className="sectionContainer">
+        <div className="sectionTitle">Experience</div>
         <div className="expFlex">
           <div className="leftContainer">
           <div className="largeFont">Web Development</div>
@@ -35,6 +36,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
+      </div>
     </section>
   )
 }

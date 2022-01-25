@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -27,9 +31,48 @@
   color: white;
 }
 
+main {
+  margin-left: 300px;
+}
+
+main #myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+main #myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
 section {
-  width: 1080px;
-  margin: 30px auto 100px;
+  width: 100%;
+  padding: 50px 25px;
+  background-color: #f5f8fd;
 }
 
 section .sectionTitle {
@@ -37,6 +80,153 @@ section .sectionTitle {
   text-align: left;
   margin-bottom: 30px;
   text-decoration: underline;
+}
+
+.sectionContainer {
+  min-width: 900px;
+  max-width: calc(1920px - 600px);
+  margin: 0 auto;
+}
+
+nav {
+  border-right: black 1px solid;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  min-width: 300px;
+  padding: 25px;
+  background-color: black;
+  color: white;
+}
+
+nav .navPicContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  border: 8px solid #2c2f3f;
+}
+
+nav .navPicContainer #navPic {
+  width: 200px;
+  margin-top: -10px;
+}
+
+nav .contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+nav .contactFlex .navSvgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #2c2f3f;
+}
+
+nav .contactFlex #linkedin, nav .contactFlex #email, nav .contactFlex #github {
+  width: 80%;
+  border-radius: 50%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+nav .contactFlex #github {
+  width: 60%;
+  padding-bottom: 2px;
+}
+
+nav .contactFlex #email {
+  width: 85%;
+  padding: 0 0 1px 0;
+}
+
+nav .navSvgContainer:hover {
+  background-color: #1483dd;
+}
+
+nav .navLinkFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 25px;
+}
+
+nav .largeFont {
+  padding: 10px 0;
+}
+
+nav .navLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+  padding: 10px 0;
+  color: #a8a9b4;
+}
+
+nav .navLink img {
+  -webkit-filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
+          filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
+  height: 18px;
+}
+
+nav .navLink:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav .navLink:hover img {
+  -webkit-filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+          filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+}
+
+nav .navLinkAtScroll {
+  color: white;
+}
+
+nav .navLinkAtScroll img {
+  -webkit-filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+          filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
 }
 
 .aboutSection .aboutFlex {
@@ -51,7 +241,7 @@ section .sectionTitle {
           justify-content: center;
   -webkit-column-gap: 2em;
           column-gap: 2em;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .aboutSection .aboutFlex .aboutText {
@@ -62,17 +252,14 @@ section .sectionTitle {
 }
 
 .aboutSection #profilePic {
-  width: 32%;
+  width: calc(100%/3);
+  max-width: calc(1080px/3);
   -webkit-clip-path: circle();
           clip-path: circle();
-  margin: 20px 0;
+  margin: 20px 0 0;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-}
-
-.skillsSection {
-  margin-top: -25px;
 }
 
 .skillsSection .devSkillsLine-1, .skillsSection .devSkillsLine-2 {
@@ -98,10 +285,7 @@ section .sectionTitle {
       grid-template-columns: repeat(4, auto);
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
-  -webkit-column-gap: 0.5em;
-          column-gap: 0.5em;
   padding-bottom: 10px;
-  margin: 0 30px;
 }
 
 .skillsSection .devSkillsLine-1 img {
@@ -114,8 +298,6 @@ section .sectionTitle {
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
 }
 
 .skillsSection .devSkillsLine-2 img {
@@ -136,6 +318,9 @@ section .sectionTitle {
   border-radius: 10px;
   margin: 0;
   padding: 20px 40px 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .skillsSection .expGrid .expGridTitle {
@@ -245,6 +430,9 @@ section .sectionTitle {
   border: #282c34 1px solid;
   border-radius: 10px;
   overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .portfolioSection .projectImg img {
@@ -270,19 +458,6 @@ section .sectionTitle {
   font-size: x-large;
   text-decoration: none;
   margin-bottom: 10px;
-}
-
-.expSection .otherExpFlex {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
-}
-
-.expSection .currentExpFlex {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .expSection .otherExpFlex, .expSection .currentExpFlex {
@@ -328,14 +503,27 @@ section .sectionTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  margin-bottom: 5px;
   padding-bottom: 10px;
 }
 
 .expSection .otherExpFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
   margin-top: 5px;
 }
 
@@ -362,15 +550,18 @@ section .sectionTitle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .expSection .expFlex .leftContainer, .expSection .expFlex .rightContainer {
   width: 50%;
   border: #282c34 1px solid;
   border-radius: 10px;
-  padding: 20px 50px;
+  padding: 20px 40px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .expSection .expFlex .leftContainer p, .expSection .expFlex .rightContainer p {
@@ -378,7 +569,7 @@ section .sectionTitle {
 }
 
 .contactSection {
-  padding-bottom: 50px;
+  padding-bottom: 600px;
 }
 
 .contactSection .contactFlex {
@@ -451,12 +642,8 @@ section .sectionTitle {
   font-size: 20px;
 }
 
-.mediumFont {
-  font-size: 16px;
-}
-
 .smallFont {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .underline {
@@ -473,6 +660,10 @@ section .sectionTitle {
 
 .bold {
   font-weight: bold;
+}
+
+.whiteBackgroud {
+  background-color: white;
 }
 
 .pulseEffect {
