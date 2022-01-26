@@ -9,9 +9,9 @@ const About = () =>{
         <img id="profilePic" src="benny-img/bl_photo(cropped).jpg"></img>
       </div>
 
-      <div className="aboutFlex" id="aboutSection">
+      <div className="aboutContainer" id="aboutSection">
+      <div className="sectionTitle">About Me</div>
         <div className="aboutText">
-          <div className="sectionTitle">About Me</div>
           <p>
             I am a web developer with a background in mechanical engineering.
           </p>
