@@ -1,5 +1,5 @@
 
-const Skills = () =>{
+const Resume = () =>{
   const otherSkills_1 = ["Agile Development", "Project Management"]
   const otherSkills_2 = ["Root-cause Analysis", "Effective Communicatior"]
   const otherSkills_3 = ["Team Player", "Quick Learner"]
@@ -52,7 +52,7 @@ const Skills = () =>{
               </div>
           </div>
 
-          <div className="underline expGridTitle largeFont bold">Other Skills</div>
+          <div className="expGridTitle largeFont bold">Other Skills</div>
 
           <div className="bottomContainer">
             <div className="otherSkillsFlex">{otherSkills_1.map(s => <div className="otherSkillTile">{s}</div>)}</div>
@@ -76,7 +76,10 @@ const Skills = () =>{
                 <img src="exp-img/toyota.svg" id="toyotaLogo"/>
                 <div className="alignLeft">
                   <div>Manufacturing Engineer</div>
-                  <div className="smallFont">Products: Toyota RAV4/Lexus RX350</div>
+                  <div className="smallFont">
+                    <span className="webText">Products: Toyota RAV4/Lexus RX350</span>
+                    <span className="mobileText">Toyota RAV4/Lexus RX350</span>
+                  </div>
                   <div className="smallFont">2018 - Present</div>
                 </div>
               </div>
@@ -101,4 +104,4 @@ const Skills = () =>{
   )
 }
 
-export default Skills
+export default Resume

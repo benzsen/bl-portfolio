@@ -2,7 +2,7 @@ import React, {useState} from "react"
 
 import Nav from "./Nav"
 import About from "./About"
-import Skills from "./Skills"
+import Resume from "./Resume"
 import Projects from "./Projects"
 import Contact from "./Contact"
 import TopBtn from "./TopBtn.js"
@@ -14,7 +14,7 @@ const Body = () => {
     <Nav/>
     <main>
       <About/>
-      <Skills/>
+      <Resume/>
       <Projects/>
       <Contact/>
       <TopBtn/>
