@@ -10,9 +10,9 @@ const Resume = () =>{
         <div className="sectionTitle">Resume</div>
         <div className="skillsGrid">
           <div className="expGridTitle largeFont bold">Languages/Technologies</div>
-
+          <p className="underline devSkillsLineTitle-1">Most at Home with:</p>
           <div className="leftContainer">
-            <p className="underline">Most at Home with:</p>
+            
 
             <div className="devSkillsLine-1">
               <img src="skills-img/mongodb-logo.png"/>
@@ -25,10 +25,10 @@ const Resume = () =>{
               <div>Node.js</div>
             </div>
           </div>
-
+          <p className="underline devSkillsLineTitle-2">Proficient with:</p>
           <div className="rightContainer">
-            <p className="underline">Proficient with:</p>
-              <div className="devSkillsLine-2">
+            
+              <div className="devSkillsLine-2 smallFont">
                 <img src="skills-img/logo-javascript.svg"/> 
                 <img src="skills-img/html-1.svg"/>
                 <img src="skills-img/css-3.svg"/>
@@ -52,7 +52,7 @@ const Resume = () =>{
               </div>
           </div>
 
-          <div className="expGridTitle largeFont bold">Other Skills</div>
+          <div className="underline expGridTitle largeFont bold">Other Skills</div>
 
           <div className="bottomContainer">
             <div className="otherSkillsFlex">{otherSkills_1.map(s => <div className="otherSkillTile">{s}</div>)}</div>
