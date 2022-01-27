@@ -198,8 +198,6 @@ nav{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  row-gap: 1em;
-
 }
 
 #profilePic {
@@ -212,37 +210,37 @@ nav{
 .skillsGrid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  column-gap: 5em;
+  grid-template-rows: repeat(5, auto);
+  column-gap: 4em;
   border-radius: 5px;
   margin: 0 0 50px;
   padding: 20px 40px 10px; 
   background-color: white;
   box-shadow: $box-shadow;
-}
-
-.expGridTitle{
-  grid-column: 1/3;
-}
-
-p{
-  margin-bottom: 0;
-}
-
-.leftContainer, .rightContainer{
-  width: 90%;
-  margin-bottom: 20px;
-  p{
-    margin-top: 10px;
+  p, .expGridTitle{
+    grid-column: 1/3;
   }
-}
+  p{
+    margin-bottom: 0;
 
-.leftContainer{
-  justify-self: end;
-}
+  }
+  .devSkillsLineTitle-1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .devSkillsLineTitle-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 
-.rightContainer{
-  justify-self: start;
+  .leftContainer, .rightContainer{
+    width: 90%;
+    justify-self: center;
+    margin-bottom: 20px;
+    p{
+      margin-top: 10px;
+    }
+  }
 }
 
 .devSkillsLine-1, .devSkillsLine-2{
@@ -250,11 +248,9 @@ p{
   align-items: center;
   justify-items: center;
   font-size: medium;
+
   img{
     padding-top: 10px;
-  }
-  div{
-    font-size: small;
   }
 }
     
@@ -280,8 +276,10 @@ p{
 .bottomContainer{
   grid-column: 1/3;
   display: flex;
+  width: 100%;
   justify-content: center;
-  border-top: rgb(182, 182, 182) 1px solid;
+  align-items: center;
+  // border-top: rgb(182, 182, 182) 1px solid;
 }
 
 .otherSkillsFlex{
@@ -363,7 +361,7 @@ p{
   align-items: center;
   // column-gap: 2em;
   margin: 0 auto 5px;
-  padding: 10px 0;
+  padding-bottom: 15px;
   max-width: 400px;
 }
 
@@ -518,10 +516,6 @@ p{
 }
 
 .hugeFont{
-  //font-family: 'Playfair Display', serif;
-  // font-size: 60px;
-  // margin: 10px;
-  //font-family: 'Permanent Marker', cursive;
   font-family: $heading-font;
   font-size: 62px;
   margin: 0px;
@@ -570,28 +564,17 @@ p{
   display: block;
 }
 
+
 @media (max-width: 768px) {
-
-}
-
-@media (max-width: 375px) {
-
-  .mobileText{
-    display: block;
-  }
-
-  .webText{
-    display: none;
-  }
   
   main{
     margin: 0;
-    font-size: 16px;
+    // font-size: 16px;
   }
 
   section{
-    width: 80%;
-    min-width: 375px;
+    width: 90%;
+    min-width: 650px;
     // max-width: calc(1920px - 600px);
     padding: 40px 10px;
     margin: 0 auto ;
@@ -602,8 +585,8 @@ p{
   }
 
   .sectionContainer{
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 600px;
+    max-width: 600px;
     margin: 0 auto ;
   }
 
@@ -627,17 +610,33 @@ p{
   .skillsGrid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(8, auto);
     // column-gap: 5em;
     // margin: 0 0 50px;
-    padding: 20px 10px 10px; 
+    padding: 20px; 
+
+    .leftContainer{
+      margin-bottom: 0px;
+    }
+
     .rightContainer{
       margin-bottom: 50px;
     }
-  }
 
-  .expGridTitle{
-    grid-column: 1/2;
+    p, .expGridTitle{
+      grid-column: 1/2;
+      padding: 15px 0;
+      margin: 0 20px;
+    }
+
+    .devSkillsLineTitle-1{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .devSkillsLineTitle-2{
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
   }
 
   .leftContainer, .rightContainer{
@@ -645,31 +644,27 @@ p{
   }
 
   .devSkillsLine-1{
-    padding: 0;
     img{
-      height: 65px;
+      height: 100px;
       margin-bottom: 0px;
     }
-
   }
+    
+  .devSkillsLine-2{
+    img{
+      max-width: 65px;
+      max-height: 55px;
+    }
+  }  
 
   .bottomContainer{
     grid-column: 1/2;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding: 10px 0;
+    justify-content: space-evenly;
   }
 
   .otherSkillsFlex{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    column-gap: 20px;
-    width: 300px;
-    padding-top: 0;
+    width: auto;
   }
 
   .expContainer{
@@ -691,6 +686,10 @@ p{
     .rightContainer{
       margin-bottom: 0;
     }
+
+    p {
+      margin: 0 30px;
+    }
   }
 
   .currentExpFlex{
@@ -698,7 +697,7 @@ p{
   }
 
   .otherExpFlex{
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 10px;
     // column-gap: 0;
   }
@@ -708,6 +707,7 @@ p{
     grid-template-rows: repeat(6, auto);
     justify-items: center;
     row-gap: 1em;
+    padding: 0 30px;
   }
 
   .appHeading{
@@ -731,12 +731,103 @@ p{
     grid-row:5/6;
   }
   
+  .xLargeFont{
+    font-size: 22px;
+  }
+  
+  .largeFont{
+    font-size: 18px;
+  }
+  
+  .smallFont{
+    font-size: 14px;
+  } 
+  
+}
+
+@media (max-width: 428px) {
+  .mobileText{
+    display: block;
+  }
+
+  .webText{
+    display: none;
+  }
+
+  main{
+    font-size: 16px;
+  }
+
+  section{
+    width: 80%;
+    min-width: 375px;
+    padding: 40px 10px;
+    margin: 0 auto ;
+  }
+
+  .sectionContainer{
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+  .skillsGrid{
+    padding: 20px 10px 10px; 
+    p, .expGridTitle{
+      margin: 0 15px;
+    }
+
+    .leftContainer{
+      margin-bottom: 20px;
+    }
+  }
+
+  .expFlex{
+    p {
+      margin: 0;
+    }
+  }
+
+  .expGridTitle{
+    grid-column: 1/2;
+  }
+
+  .devSkillsLine-1{
+    padding: 0;
+    img{
+      height: 65px;
+      margin-bottom: 0px;
+    }
+  }
+    
+  .devSkillsLine-2{
+    img{
+      max-width: 50px;
+      max-height: 45px;
+    }
+  } 
+  .bottomContainer{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  .otherSkillsFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 300px;
+    padding-top: 0;
+  }
+  
   .hugeFont{
     font-family: $heading-font;
     font-size: 36px;
     margin: 0px;
   }
-  
+
   .xLargeFont{
     font-size: 22px;
   }
