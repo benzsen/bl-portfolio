@@ -330,7 +330,11 @@ nav .navLinkAtScroll img {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  font-size: medium;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .devSkillsLine-1 img, .devSkillsLine-2 img {
@@ -744,7 +748,7 @@ nav .navLinkAtScroll img {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   main {
     margin: 0;
   }

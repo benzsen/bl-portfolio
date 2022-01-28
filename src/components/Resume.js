@@ -14,7 +14,7 @@ const Resume = () =>{
           <div className="leftContainer">
             
 
-            <div className="devSkillsLine-1">
+            <div className="devSkillsLine-1 smallFont">
               <img src="skills-img/mongodb-logo.png"/>
               <img src="skills-img/express-logo.png"/>
               <img src="skills-img/react-logo.png"/>

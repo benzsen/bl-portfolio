@@ -247,8 +247,8 @@ nav{
   display: grid;
   align-items: center;
   justify-items: center;
-  font-size: medium;
-
+  justify-content: center;
+  column-gap: 20px;
   img{
     padding-top: 10px;
   }
@@ -565,7 +565,7 @@ nav{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   
   main{
     margin: 0;
