@@ -748,10 +748,7 @@ nav .navLinkAtScroll img {
   display: block;
 }
 
-@media (max-width: 1280px) {
-  main {
-    margin: 0;
-  }
+@media (max-width: 1250px) {
   section {
     width: 90%;
     min-width: 650px;
@@ -765,9 +762,6 @@ nav .navLinkAtScroll img {
     min-width: 600px;
     max-width: 600px;
     margin: 0 auto;
-  }
-  nav {
-    display: none;
   }
   .introFlex {
     padding: 75px 0;
@@ -917,7 +911,16 @@ nav .navLinkAtScroll img {
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 967px) {
+  main {
+    margin: 0;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
   .mobileText {
     display: block;
   }
@@ -928,14 +931,12 @@ nav .navLinkAtScroll img {
     font-size: 16px;
   }
   section {
-    width: 80%;
     min-width: 375px;
     padding: 40px 10px;
     margin: 0 auto;
   }
   .sectionContainer {
     min-width: 350px;
-    max-width: 350px;
   }
   .skillsGrid {
     padding: 20px 10px 10px;
@@ -994,6 +995,13 @@ nav .navLinkAtScroll img {
             column-gap: 20px;
     width: 300px;
     padding-top: 0;
+  }
+  .currentExpFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
   }
   .hugeFont {
     font-family: "Merriweather", serif;

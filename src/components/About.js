@@ -7,9 +7,9 @@ const About = () =>{
           <div className="introFlex">
             <p className="hugeFont">Hey! I'm Benny.</p>
             <p className="xLargeFont">
-              <span className="webText">Web Developer | Engineer | Problem Solver</span>
+              <span className="webText">Full Stack Developer | Engineer | Problem Solver</span>
               <span className="mobileText">
-                <div>Web Developer</div>
+                <div>Full Stack Developer</div>
                 <div> Engineer | Problem Solver</div>
               </span>
             </p>

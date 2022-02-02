@@ -565,10 +565,10 @@ nav{
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1250px) {
   
   main{
-    margin: 0;
+    // margin: 0;
     // font-size: 16px;
   }
 
@@ -591,7 +591,7 @@ nav{
   }
 
   nav{
-    display: none;
+    // display: none;
   }
 
   .introFlex{
@@ -745,7 +745,18 @@ nav{
   
 }
 
-@media (max-width: 428px) {
+@media (max-width: 967px){
+  main{
+    margin: 0;
+  }
+
+  nav{
+    display: none;
+  }
+
+}
+
+@media (max-width: 670px) {
   .mobileText{
     display: block;
   }
@@ -759,7 +770,7 @@ nav{
   }
 
   section{
-    width: 80%;
+    // width: 80%;
     min-width: 375px;
     padding: 40px 10px;
     margin: 0 auto ;
@@ -767,8 +778,9 @@ nav{
 
   .sectionContainer{
     min-width: 350px;
-    max-width: 350px;
+    // max-width: 350px;
   }
+
 
   .skillsGrid{
     padding: 20px 10px 10px; 
@@ -820,6 +832,12 @@ nav{
     column-gap: 20px;
     width: 300px;
     padding-top: 0;
+  }
+
+  .currentExpFlex{
+    justify-content: center;
+    column-gap: 30px;
+
   }
   
   .hugeFont{
