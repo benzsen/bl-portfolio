@@ -750,7 +750,7 @@ nav .navLinkAtScroll img {
 
 @media (max-width: 1250px) {
   main {
-    margin: 250px;
+    margin-left: 250px;
   }
   section {
     width: 90%;
@@ -876,6 +876,10 @@ nav .navLinkAtScroll img {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 10px;
+  }
+  .expTitle {
+    padding: 15px 0;
+    margin: 10px 30px;
   }
   .projectGrid {
     -ms-grid-columns: 1fr;
@@ -1008,6 +1012,10 @@ nav .navLinkAtScroll img {
             justify-content: center;
     -webkit-column-gap: 30px;
             column-gap: 30px;
+  }
+  .expTitle {
+    padding: 15px 0;
+    margin: 10px 0;
   }
   .hugeFont {
     font-family: "Merriweather", serif;

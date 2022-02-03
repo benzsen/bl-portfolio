@@ -568,7 +568,7 @@ nav{
 @media (max-width: 1250px) {
   
   main{
-    margin: 250px;
+    margin-left: 250px;
     // font-size: 16px;
   }
 
@@ -700,6 +700,11 @@ nav{
     justify-content: center;
     padding-top: 10px;
     // column-gap: 0;
+  }
+
+  .expTitle{
+    padding: 15px 0;
+    margin: 10px 30px;
   }
 
   .projectGrid{
@@ -837,7 +842,11 @@ nav{
   .currentExpFlex{
     justify-content: center;
     column-gap: 30px;
+  }
 
+  .expTitle{
+    padding: 15px 0;
+    margin: 10px 0;
   }
   
   .hugeFont{

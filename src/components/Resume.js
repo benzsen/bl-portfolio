@@ -62,16 +62,16 @@ const Resume = () =>{
         </div>
       
         <div className="expContainer">
-          <div className="expGridTitle largeFont bold">Experience</div>
+          <div className="expGridTitle largeFont bold">Professional Experience</div>
           <div className="expFlex">
             <div className="leftContainer">
-              <div className="largeFont">Web Development</div>
-              <p className="underline bold">Freelance</p>
+              <div className="underline largeFont expTitle">Web Development</div>
+              
             </div>
             <div className="line"></div>
             <div className="rightContainer">
-              <div className="largeFont">Mechanical Engineering</div>
-              <p className="underline bold">Current Role</p>
+              <div className="underline largeFont expTitle">Mechanical Engineering</div>
+              
               <div className="currentExpFlex">
                 <img src="exp-img/toyota.svg" id="toyotaLogo"/>
                 <div className="alignLeft">
@@ -80,10 +80,10 @@ const Resume = () =>{
                     <span className="webText">Products: Toyota RAV4/Lexus RX350</span>
                     <span className="mobileText">Toyota RAV4/Lexus RX350</span>
                   </div>
-                  <div className="smallFont">2018 - Present</div>
+                  <div className="smallFont">2018 - Present (Fulltime)</div>
                 </div>
               </div>
-              <p className="underline bold">Other Experience</p>
+              <p className="bold">Other Experience</p>
               <div className="otherExpFlex">
                 <span className="expLogoContainer">
                   <img src="exp-img/university-of-waterloo.svg" id="uwLogo"/>
