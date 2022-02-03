@@ -496,7 +496,7 @@ nav .navLinkAtScroll img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto 5px;
+  margin: 20px auto;
   padding-bottom: 15px;
   max-width: 400px;
 }
@@ -868,18 +868,16 @@ nav .navLinkAtScroll img {
   .expFlex p {
     margin: 0 30px;
   }
-  .currentExpFlex {
-    padding: 10px 0;
-  }
   .otherExpFlex {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 10px;
+    padding-top: 0;
+    margin-top: 0;
   }
   .expTitle {
-    padding: 15px 0;
-    margin: 10px 30px;
+    margin: 25px 30px;
   }
   .projectGrid {
     -ms-grid-columns: 1fr;
@@ -1013,9 +1011,18 @@ nav .navLinkAtScroll img {
     -webkit-column-gap: 30px;
             column-gap: 30px;
   }
+  .otherExpFlex {
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+  }
   .expTitle {
-    padding: 15px 0;
-    margin: 10px 0;
+    margin: 25px 0;
+  }
+  .projectGrid {
+    padding: 0 10px;
+  }
+  .projectText {
+    padding: 10px 25px 50px;
   }
   .hugeFont {
     font-family: "Merriweather", serif;

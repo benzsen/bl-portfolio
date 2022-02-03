@@ -83,7 +83,7 @@ const Resume = () =>{
                   <div className="smallFont">2018 - Present (Fulltime)</div>
                 </div>
               </div>
-              <p className="bold">Other Experience</p>
+              <div className=""><i>Previous positions at: </i></div>
               <div className="otherExpFlex">
                 <span className="expLogoContainer">
                   <img src="exp-img/university-of-waterloo.svg" id="uwLogo"/>

@@ -360,7 +360,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   // column-gap: 2em;
-  margin: 0 auto 5px;
+  margin: 20px auto;
   padding-bottom: 15px;
   max-width: 400px;
 }
@@ -693,18 +693,19 @@ nav{
   }
 
   .currentExpFlex{
-    padding: 10px 0;
+    // padding: 10px 0;
   }
 
   .otherExpFlex{
     justify-content: center;
     padding-top: 10px;
-    // column-gap: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .expTitle{
-    padding: 15px 0;
-    margin: 10px 30px;
+    // padding: 15px 0;
+    margin: 25px 30px;
   }
 
   .projectGrid{
@@ -758,6 +759,7 @@ nav{
   nav{
     display: none;
   }
+  
 
 }
 
@@ -785,7 +787,6 @@ nav{
     min-width: 350px;
     // max-width: 350px;
   }
-
 
   .skillsGrid{
     padding: 20px 10px 10px; 
@@ -844,11 +845,22 @@ nav{
     column-gap: 30px;
   }
 
-  .expTitle{
-    padding: 15px 0;
-    margin: 10px 0;
+  .otherExpFlex {
+    column-gap: 1em;
   }
-  
+
+  .expTitle{
+    // padding: 15px 0;
+    margin: 25px 0;
+  }
+
+  .projectGrid{
+    padding: 0 10px;
+  }
+  .projectText{
+    padding: 10px 25px 50px;
+  }
+
   .hugeFont{
     font-family: $heading-font;
     font-size: 36px;
