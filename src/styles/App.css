@@ -749,6 +749,9 @@ nav .navLinkAtScroll img {
 }
 
 @media (max-width: 1250px) {
+  main {
+    margin: 250px;
+  }
   section {
     width: 90%;
     min-width: 650px;
@@ -762,6 +765,9 @@ nav .navLinkAtScroll img {
     min-width: 600px;
     max-width: 600px;
     margin: 0 auto;
+  }
+  nav {
+    width: 250px;
   }
   .introFlex {
     padding: 75px 0;

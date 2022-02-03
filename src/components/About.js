@@ -19,7 +19,7 @@ const About = () =>{
           <div className="sectionTitle">About Me</div>
             <div className="aboutText">
               <p>
-                I am a web developer with a background in mechanical engineering.
+                I am a full stack developer with a background in mechanical engineering.
               </p>
               <p>
                 My passion to build things with the purpose of solving problems sparked my curiosity to venture into software engineering.
