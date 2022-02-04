@@ -381,6 +381,7 @@ nav .navLinkAtScroll img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
 }
 
 .otherSkillsFlex {
@@ -538,22 +539,38 @@ nav .navLinkAtScroll img {
   text-align: center;
 }
 
-.projectGrid {
+.allProjectsContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: (36px 1fr)[2];
-      grid-template-rows: repeat(2, 36px 1fr);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
-  row-gap: 2em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+.projectGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 90%;
+  min-width: 425px;
+  height: 550px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #bce9ff;
+  text-align: left;
 }
 
 .projectImg {
@@ -563,10 +580,8 @@ nav .navLinkAtScroll img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 200px;
-  width: 400px;
-  border: #b9b8b8 1px solid;
-  border-radius: 5px;
+  height: 250px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
 }
@@ -574,6 +589,60 @@ nav .navLinkAtScroll img {
 .projectImg img {
   height: 100%;
   margin: auto;
+}
+
+.projectTitle, .projectText {
+  padding: 0px 20px;
+}
+
+.projectDisclaimer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  bottom: 0;
+  padding: 0 25px 25px;
+}
+
+.projectSkills {
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  padding: 0 20px 10px;
+}
+
+.projectSkillTile {
+  background-color: #6c757d;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.projectTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.projectTitle a {
+  color: black;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 10px 0;
 }
 
 .projectText {
@@ -604,20 +673,6 @@ nav .navLinkAtScroll img {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: left;
-}
-
-.appHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-}
-
-.appHeading a {
-  color: black;
-  font-size: x-large;
-  text-decoration: none;
-  margin-bottom: 10px;
 }
 
 #highlightBadge {
@@ -884,21 +939,24 @@ nav .navLinkAtScroll img {
   .expTitle {
     margin: 25px 30px;
   }
-  .projectGrid {
+  .allProjectsContainer {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[6];
-        grid-template-rows: repeat(6, auto);
-    justify-items: center;
-    row-gap: 1em;
-    padding: 0 30px;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
   }
-  .appHeading {
+  .projectGrid {
+    min-width: 375px;
+    width: 100%;
+  }
+  .projectTitle {
     padding-bottom: 0;
   }
   .projectImg {
-    height: 150px;
-    width: 300px;
+    width: 100%;
   }
   .projectText {
     padding: 10px 10px 50px;
@@ -1022,9 +1080,6 @@ nav .navLinkAtScroll img {
   }
   .expTitle {
     margin: 25px 15px;
-  }
-  .projectGrid {
-    padding: 0 10px;
   }
   .projectText {
     padding: 10px 25px 50px;
