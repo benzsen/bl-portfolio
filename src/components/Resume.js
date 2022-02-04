@@ -10,11 +10,11 @@ const Resume = () =>{
         <div className="sectionTitle">Resume</div>
         <div className="skillsGrid">
           <div className="expGridTitle largeFont bold">Languages/Technologies</div>
-          <p className="underline devSkillsLineTitle-1">Most at Home with:</p>
+          <div className="underline devSkillsLineTitle-1 largeFont">Most at Home with:</div>
           <div className="leftContainer">
             
 
-            <div className="devSkillsLine-1 smallFont">
+            <div className="devSkillsLine-1">
               <img src="skills-img/mongodb-logo.png"/>
               <img src="skills-img/express-logo.png"/>
               <img src="skills-img/react-logo.png"/>
@@ -25,10 +25,10 @@ const Resume = () =>{
               <div>Node.js</div>
             </div>
           </div>
-          <p className="underline devSkillsLineTitle-2">Proficient with:</p>
+          <div className="underline largeFont devSkillsLineTitle-2">Proficient with:</div>
           <div className="rightContainer">
             
-              <div className="devSkillsLine-2 smallFont">
+              <div className="devSkillsLine-2">
                 <img src="skills-img/logo-javascript.svg"/> 
                 <img src="skills-img/html-1.svg"/>
                 <img src="skills-img/css-3.svg"/>
@@ -75,7 +75,7 @@ const Resume = () =>{
               <div className="currentExpFlex">
                 <img src="exp-img/toyota.svg" id="toyotaLogo"/>
                 <div className="alignLeft">
-                  <div>Manufacturing Engineer</div>
+                  <div className="positionTitle">Manufacturing Engineer</div>
                   <div className="smallFont">
                     <span className="webText">Products: Toyota RAV4/Lexus RX350</span>
                     <span className="mobileText">Toyota RAV4/Lexus RX350</span>

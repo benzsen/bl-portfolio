@@ -284,14 +284,15 @@ nav .navLinkAtScroll img {
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-.skillsGrid p, .skillsGrid .expGridTitle {
+.skillsGrid .expGridTitle {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
-.skillsGrid p {
-  margin-bottom: 0;
+.skillsGrid .devSkillsLineTitle-1, .skillsGrid .devSkillsLineTitle-2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
 }
 
 .skillsGrid .devSkillsLineTitle-1 {
@@ -461,6 +462,10 @@ nav .navLinkAtScroll img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.positionTitle {
+  padding-bottom: 5px;
 }
 
 #toyotaLogo {
@@ -798,8 +803,8 @@ nav .navLinkAtScroll img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    padding: 15px 0;
-    margin: 0 20px;
+    padding: 15px 0 0;
+    margin: 15px;
   }
   .skillsGrid .devSkillsLineTitle-1 {
     -ms-grid-column: 1;
@@ -949,9 +954,6 @@ nav .navLinkAtScroll img {
   .skillsGrid {
     padding: 20px 10px 10px;
   }
-  .skillsGrid p, .skillsGrid .expGridTitle {
-    margin: 0 15px;
-  }
   .skillsGrid .leftContainer {
     margin-bottom: 20px;
   }
@@ -962,6 +964,9 @@ nav .navLinkAtScroll img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+  }
+  .devSkillsLine-1, .devSkillsLine-2 {
+    font-size: 14px;
   }
   .devSkillsLine-1 {
     padding: 0;
@@ -1016,7 +1021,7 @@ nav .navLinkAtScroll img {
             column-gap: 1em;
   }
   .expTitle {
-    margin: 25px 0;
+    margin: 25px 15px;
   }
   .projectGrid {
     padding: 0 10px;
