@@ -586,24 +586,21 @@ nav .navLinkAtScroll img {
 }
 
 .projectImg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 250px;
-  width: 100%;
   overflow: hidden;
   background-color: white;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
 }
 
 .projectImg img {
   height: 100%;
-  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 .projectTitle, .projectText {

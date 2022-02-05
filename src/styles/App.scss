@@ -431,11 +431,11 @@ nav{
 }
 
 .projectImg{
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   // text-align: center;
   height: 250px;
-  width: 100%;
+  // width: 425px;
   overflow: hidden;
   background-color: white;
   align-self: center;
@@ -444,7 +444,10 @@ nav{
   // vertical-align: center;
   img {
     height: 100%;
-    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
     // margin: auto;
     // position: absolute;
   }
