@@ -587,12 +587,14 @@ nav .navLinkAtScroll img {
 
 .projectImg {
   height: 250px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
+  position: relative;
 }
 
 .projectImg img {

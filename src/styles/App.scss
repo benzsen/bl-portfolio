@@ -435,19 +435,19 @@ nav{
   // justify-content: center;
   // text-align: center;
   height: 250px;
-  // width: 425px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
   align-self: center;
   margin: auto;
-  // position: relative;
+  position: relative;
   // vertical-align: center;
   img {
     height: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
     // margin: auto;
     // position: absolute;
   }
