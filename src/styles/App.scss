@@ -431,20 +431,18 @@ nav{
 }
 
 .projectImg{
-  // display: flex;
-  // justify-content: center;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  // text-align: center;
   height: 250px;
   width: 100%;
-  // border: #b9b8b8 1px solid;
-  // border-radius: 5px;
   overflow: hidden;
   background-color: white;
-  // box-shadow: $box-shadow;
-
+  // position: relative;
   img {
     height: 100%;
-    // margin: auto;
+    margin: auto;
+    // position: absolute;
   }
 }
 

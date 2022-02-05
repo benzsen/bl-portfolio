@@ -589,7 +589,12 @@ nav .navLinkAtScroll img {
 }
 
 .projectImg {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 250px;
   width: 100%;
   overflow: hidden;
@@ -598,6 +603,7 @@ nav .navLinkAtScroll img {
 
 .projectImg img {
   height: 100%;
+  margin: auto;
 }
 
 .projectTitle, .projectText {
