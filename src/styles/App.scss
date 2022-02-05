@@ -297,6 +297,7 @@ nav{
   width: 250px;
   padding: 20px 0;
   row-gap: 15px;
+  flex-wrap: wrap;
 }
 
 .otherSkillTile{
@@ -479,7 +480,7 @@ nav{
   background-color: #6c757d;
   // border: rgb(221, 221, 221) 1px solid;
   border-radius: 5px;
-  padding: 2px 8px;
+  padding: 2px 4px;
   margin-bottom: 15px;
   color: white;
 }
@@ -521,6 +522,7 @@ nav{
 
 #highlightBadge{
   background-color: #159bdb !important;
+  padding: 6px;
 }
 
 .contactSection{

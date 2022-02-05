@@ -403,6 +403,8 @@ nav .navLinkAtScroll img {
   width: 250px;
   padding: 20px 0;
   row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .otherSkillTile {
@@ -642,7 +644,7 @@ nav .navLinkAtScroll img {
 .projectSkillTile {
   background-color: #6c757d;
   border-radius: 5px;
-  padding: 2px 8px;
+  padding: 2px 4px;
   margin-bottom: 15px;
   color: white;
 }
@@ -694,6 +696,7 @@ nav .navLinkAtScroll img {
 
 #highlightBadge {
   background-color: #159bdb !important;
+  padding: 6px;
 }
 
 .contactSection {
