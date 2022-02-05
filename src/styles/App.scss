@@ -431,10 +431,11 @@ nav{
 }
 
 .projectImg{
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  text-align: center;
   height: 250px;
-  // width: 100%;
+  width: 100%;
   // border: #b9b8b8 1px solid;
   // border-radius: 5px;
   overflow: hidden;
@@ -443,7 +444,7 @@ nav{
 
   img {
     height: 100%;
-    margin: auto;
+    // margin: auto;
   }
 }
 
