@@ -420,7 +420,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: stretch;
+  // justify-content: stretch;
   width: 90%;
   min-width: 425px;
   height: 550px;
@@ -438,10 +438,13 @@ nav{
   width: 100%;
   overflow: hidden;
   background-color: white;
+  align-self: center;
+  margin: auto;
   // position: relative;
+  // vertical-align: center;
   img {
     height: 100%;
-    margin: auto;
+    // margin: auto;
     // position: absolute;
   }
 }
@@ -788,12 +791,10 @@ nav{
   }
 
   .allProjectsContainer{
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     row-gap: 20px;
     // justify-items: center;
-
   }
 
   .projectGrid{

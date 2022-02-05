@@ -575,9 +575,6 @@ nav .navLinkAtScroll img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
   width: 90%;
   min-width: 425px;
   height: 550px;
@@ -599,11 +596,13 @@ nav .navLinkAtScroll img {
   width: 100%;
   overflow: hidden;
   background-color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: auto;
 }
 
 .projectImg img {
   height: 100%;
-  margin: auto;
 }
 
 .projectTitle, .projectText {
@@ -947,8 +946,6 @@ nav .navLinkAtScroll img {
     margin: 25px 30px;
   }
   .allProjectsContainer {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (auto)[2];
