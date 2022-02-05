@@ -403,8 +403,6 @@ nav .navLinkAtScroll img {
   width: 250px;
   padding: 20px 0;
   row-gap: 15px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .otherSkillTile {
@@ -598,7 +596,6 @@ nav .navLinkAtScroll img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 250px;
-  width: 100%;
   overflow: hidden;
   background-color: white;
 }
@@ -644,7 +641,7 @@ nav .navLinkAtScroll img {
 .projectSkillTile {
   background-color: #6c757d;
   border-radius: 5px;
-  padding: 2px 4px;
+  padding: 2px 8px;
   margin-bottom: 15px;
   color: white;
 }
@@ -668,24 +665,6 @@ nav .navLinkAtScroll img {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-}
-
-#alphaTypeImg {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-}
-
-#MKChartsImg {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  grid-row: 3/6;
 }
 
 .projectDiv {
@@ -982,21 +961,8 @@ nav .navLinkAtScroll img {
   .projectTitle {
     padding-bottom: 0;
   }
-  .projectImg {
-    width: 100%;
-  }
   .projectText {
     padding: 10px 10px 50px;
-  }
-  #alphaTypeImg {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-  #MKChartsImg {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    grid-row: 5/6;
   }
   .xLargeFont {
     font-size: 22px;
@@ -1115,6 +1081,9 @@ nav .navLinkAtScroll img {
   }
   .projectText {
     padding: 10px 25px 50px;
+  }
+  .projectSkillTile {
+    padding: 2px 4px;
   }
   .hugeFont {
     font-family: "Merriweather", serif;
