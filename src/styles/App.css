@@ -603,6 +603,7 @@ nav .navLinkAtScroll img {
 
 .projectImg img {
   height: 100%;
+  display: none;
 }
 
 .projectTitle, .projectText {
