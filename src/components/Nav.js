@@ -33,7 +33,7 @@ const Nav = () =>{
       navProjects.classList.add('navLinkAtScroll');
       otherNavLink = [navHome, navAbout, navSkills, navContact]
     }
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+    if ((window.innerHeight + window.scrollY + 10) >= document.body.offsetHeight){
       navContact.classList.add('navLinkAtScroll');
       otherNavLink = [navHome, navAbout, navSkills, navProjects]
     }

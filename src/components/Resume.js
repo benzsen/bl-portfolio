@@ -8,12 +8,11 @@ const Resume = () =>{
     <section className="skillsSection" id="skillsSection">
       <div className="sectionContainer">
         <div className="sectionTitle">Resume</div>
+
         <div className="skillsGrid">
           <div className="expGridTitle largeFont bold">Languages/Technologies</div>
           <div className="underline devSkillsLineTitle-1 largeFont">Most at Home with:</div>
           <div className="leftContainer">
-            
-
             <div className="devSkillsLine-1">
               <img src="skills-img/mongodb-logo.png"/>
               <img src="skills-img/express-logo.png"/>
@@ -27,38 +26,38 @@ const Resume = () =>{
           </div>
           <div className="underline largeFont devSkillsLineTitle-2">Proficient with:</div>
           <div className="rightContainer">
-            
-              <div className="devSkillsLine-2">
-                <img src="skills-img/logo-javascript.svg"/> 
-                <img src="skills-img/html-1.svg"/>
-                <img src="skills-img/css-3.svg"/>
-                <img src="skills-img/sass-1.svg"/>
-                <img src="skills-img/shopify.svg"/>
-                <div>JS</div>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>SASS</div>
-                <div>Liquid</div>
-                <img src="skills-img/redux.svg"/>
-                <img src="skills-img/jest-2.svg"/>
-                <img src="skills-img/cypress.png"/>
-                <img src="skills-img/git-icon.svg"/>
-                <img src="skills-img/postman.svg"/>
-                <div>Redux</div>
-                <div>Jest</div>
-                <div>Cypress</div>
-                <div>Git</div>
-                <div>Postman</div>
-              </div>
+            <div className="devSkillsLine-2">
+              <img src="skills-img/logo-javascript.svg"/> 
+              <img src="skills-img/html-1.svg"/>
+              <img src="skills-img/css-3.svg"/>
+              <img src="skills-img/sass-1.svg"/>
+              <img src="skills-img/shopify.svg"/>
+              <div>JS</div>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>SASS</div>
+              <div>Liquid</div>
+              <img src="skills-img/redux.svg"/>
+              <img src="skills-img/jest-2.svg"/>
+              <img src="skills-img/cypress.png"/>
+              <img src="skills-img/git-icon.svg"/>
+              <img src="skills-img/postman.svg"/>
+              <div>Redux</div>
+              <div>Jest</div>
+              <div>Cypress</div>
+              <div>Git</div>
+              <div>Postman</div>
+            </div>
           </div>
 
-          <div className="underline expGridTitle largeFont bold">Other Skills</div>
+          <div className="expGridTitle largeFont bold">Other Skills</div>
 
           <div className="bottomContainer">
             <div className="otherSkillsFlex">{otherSkills_1.map(s => <div className="otherSkillTile">{s}</div>)}</div>
             <div className="otherSkillsFlex">{otherSkills_2.map(s => <div className="otherSkillTile">{s}</div>)}</div>
             <div className="otherSkillsFlex">{otherSkills_3.map(s => <div className="otherSkillTile">{s}</div>)}</div>
           </div>
+
         </div>
       
         <div className="expContainer">
@@ -66,7 +65,25 @@ const Resume = () =>{
           <div className="expFlex">
             <div className="leftContainer">
               <div className="underline largeFont expTitle">Web Development</div>
-              
+              <div className="currentExpFlex">
+                <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo"/>
+                <div>
+                  <div className="positionTitle bold">Front End Developer</div>
+                  <div className="smallFont"><span>Products: </span><span>Shopify eCommerce</span></div>
+                  <div className="smallFont"> 2021 - Present (Freelance) </div>
+                </div>
+                
+              </div>
+              <div>
+                  <div className="respTitle">Responsibilities:</div>
+                  <div className="smallFont alignLeft respDescription">
+                    <ul>
+                      <li>Utilized CSS/HTML/JS to update client stores</li>
+                      <li>Addressed bugs and updated styling</li>
+                      <li>Added functionality such as "Quick Shop" and "Recently Viewed" features</li>
+                    </ul>
+                  </div>
+                </div>
             </div>
             <div className="line"></div>
             <div className="rightContainer">
@@ -74,12 +91,13 @@ const Resume = () =>{
               
               <div className="currentExpFlex">
                 <img src="exp-img/toyota.svg" id="toyotaLogo"/>
-                <div className="alignLeft">
+                <div>
                   <div className="positionTitle">Manufacturing Engineer</div>
-                  <div className="smallFont">
+                  {/* <div className="smallFont">
                     <span className="webText">Products: Toyota RAV4/Lexus RX350</span>
                     <span className="mobileText">Toyota RAV4/Lexus RX350</span>
-                  </div>
+                  </div> */}
+                  <div className="smallFont">Products: Toyota RAV4/Lexus RX350</div>
                   <div className="smallFont">2018 - Present (Fulltime)</div>
                 </div>
               </div>

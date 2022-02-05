@@ -282,7 +282,11 @@ nav{
   width: 100%;
   justify-content: center;
   align-items: center;
+  // padding: 10px 0 ;
   // border-top: rgb(182, 182, 182) 1px solid;
+  background-color: #e7effd;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .otherSkillsFlex{
@@ -291,16 +295,17 @@ nav{
   flex-direction: column;
   justify-content: center;
   width: 250px;
-  padding-top: 10px;
+  padding: 20px 0;
+  row-gap: 15px;
 }
 
 .otherSkillTile{
   display: flex;
   align-items: center;
   border: rgb(221, 221, 221) 1px solid;
+  background-color: white;
   border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 15px;
+  padding: 2px 8px;
 }
 
 .expContainer{
@@ -341,8 +346,21 @@ nav{
   }
 }
 
+.respTitle{
+  margin-bottom: 10px;
+}
+
+.respDescription{
+  padding: 0 25px;
+}
+
 .positionTitle{
   padding-bottom: 5px;
+}
+
+#pixelWalrusLogo{
+  width: 150px;
+  // height: 75px;
 }
 
 #toyotaLogo{
@@ -395,24 +413,35 @@ nav{
   text-align: center;
 }
 
-.projectGrid{
+.allProjectsContainer{
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, 36px 1fr);
-  align-items: start;
-  justify-content: center;
-  column-gap: 3em;
-  row-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+.projectGrid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  width: 90%;
+  min-width: 425px;
+  height: 550px;
   // margin-bottom: 40px;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  background-color: #c9dbf5;
+  text-align: left;
 }
 
 .projectImg{
   display: flex;
   justify-content: center;
-  height: 200px;
-  width: 400px;
-  border: #b9b8b8 1px solid;
-  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  // border: #b9b8b8 1px solid;
+  // border-radius: 5px;
   overflow: hidden;
   background-color: white;
   // box-shadow: $box-shadow;
@@ -422,6 +451,53 @@ nav{
     margin: auto;
   }
 }
+
+.projectTitle, .projectText{
+  padding: 0px 20px ;
+}
+
+.projectDisclaimer{
+  align-self: flex-start;
+  display: flex;
+  align-items: flex-end;
+  // vertical-align: bottom;
+  flex-grow: 1;
+  // bottom: 0;
+  padding: 0 25px 25px;
+}
+
+.projectSkills{
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 0 20px 10px;
+  // align-items: center;
+}
+
+.projectSkillTile{
+  background-color: #6c757d;
+  // border: rgb(221, 221, 221) 1px solid;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.projectTitle{
+  display: flex;
+  // padding: 20px 0;
+  // justify-content: flex-start;
+  align-self: flex-start;
+  
+  a{
+    color: black;
+    font-size: x-large;
+    // font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+} 
 
 .projectText{
   align-self: start;
@@ -442,17 +518,6 @@ nav{
   text-align: left;
 }
 
-.appHeading{
-  display: flex;
-  padding-bottom: 20px;
-  a{
-    color: black;
-    font-size: x-large;
-    // font-weight: bold;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-} 
 
 #highlightBadge{
   background-color: #159bdb !important;
@@ -568,7 +633,7 @@ nav{
 }
 
 .webText{
-  display: block;
+  // display: block;
 }
 
 
@@ -630,10 +695,9 @@ nav{
       margin-bottom: 50px;
     }
 
-    p, .expGridTitle{
+    .expGridTitle{
       grid-column: 1/2;
-      padding: 15px 0 0;
-      margin: 15px;
+      
     }
 
     .devSkillsLineTitle-1{
@@ -644,6 +708,10 @@ nav{
       grid-column: 1/2;
       grid-row: 4/5;
     }
+  }
+
+  .expGridTitle{
+    margin-top: 15px;
   }
 
   .leftContainer, .rightContainer{
@@ -681,6 +749,10 @@ nav{
     padding: 20px 15px 10px; 
   }
 
+  .line{
+    display: none;
+  }
+
   .expFlex{
     display: flex;
     flex-direction: column;
@@ -694,13 +766,18 @@ nav{
       margin-bottom: 0;
     }
 
+    .leftContainer{
+      padding-bottom: 0;
+    }
+
     p {
       margin: 0 30px;
     }
   }
 
   .currentExpFlex{
-    // padding: 10px 0;
+    margin: 0 auto 20px;
+    max-width: 400px;
   }
 
   .otherExpFlex{
@@ -715,21 +792,34 @@ nav{
     margin: 25px 30px;
   }
 
-  .projectGrid{
+  .allProjectsContainer{
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    justify-items: center;
-    row-gap: 1em;
-    padding: 0 30px;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    // justify-items: center;
+
   }
 
-  .appHeading{
+  .projectGrid{
+    min-width: 350px;
+    width: 100%;
+    // max-width: 500px;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: repeat(6, auto);
+    // justify-items: center;
+    // row-gap: 1em;
+    // padding: 0 30px;
+  }
+
+  .projectTitle{
     padding-bottom: 0;
   }
 
   .projectImg{
-    height: 150px;
-    width: 300px;
+    width: 100%;
+    // height: 150px;
+    // width: 300px;
   }
 
   .projectText{
@@ -766,8 +856,6 @@ nav{
   nav{
     display: none;
   }
-  
-
 }
 
 @media (max-width: 670px) {
@@ -836,7 +924,7 @@ nav{
   .bottomContainer{
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    // margin: auto;
     padding: 10px 0;
   }
 
@@ -847,12 +935,18 @@ nav{
     flex-direction: row;
     column-gap: 20px;
     width: 300px;
-    padding-top: 0;
+    padding: 10px;
   }
 
   .currentExpFlex{
+    flex-direction: column;
     justify-content: center;
-    column-gap: 30px;
+    row-gap: 20px;
+    // column-gap: 30px;
+  }
+
+  .respDescription{
+    padding: 0;
   }
 
   .otherExpFlex {
@@ -861,12 +955,9 @@ nav{
 
   .expTitle{
     // padding: 15px 0;
-    margin: 25px 15px;
+    margin: 0 15px 25px;
   }
 
-  .projectGrid{
-    padding: 0 10px;
-  }
   .projectText{
     padding: 10px 25px 50px;
   }

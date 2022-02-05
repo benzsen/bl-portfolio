@@ -381,6 +381,9 @@ nav .navLinkAtScroll img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #e7effd;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .otherSkillsFlex {
@@ -398,7 +401,8 @@ nav .navLinkAtScroll img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 250px;
-  padding-top: 10px;
+  padding: 20px 0;
+  row-gap: 15px;
 }
 
 .otherSkillTile {
@@ -409,9 +413,9 @@ nav .navLinkAtScroll img {
       -ms-flex-align: center;
           align-items: center;
   border: #dddddd 1px solid;
+  background-color: white;
   border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 15px;
+  padding: 2px 8px;
 }
 
 .expContainer {
@@ -464,8 +468,20 @@ nav .navLinkAtScroll img {
       align-self: center;
 }
 
+.respTitle {
+  margin-bottom: 10px;
+}
+
+.respDescription {
+  padding: 0 25px;
+}
+
 .positionTitle {
   padding-bottom: 5px;
+}
+
+#pixelWalrusLogo {
+  width: 150px;
 }
 
 #toyotaLogo {
@@ -538,22 +554,38 @@ nav .navLinkAtScroll img {
   text-align: center;
 }
 
-.projectGrid {
+.allProjectsContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: (36px 1fr)[2];
-      grid-template-rows: repeat(2, 36px 1fr);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
-  row-gap: 2em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+.projectGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 90%;
+  min-width: 425px;
+  height: 550px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #c9dbf5;
+  text-align: left;
 }
 
 .projectImg {
@@ -563,10 +595,8 @@ nav .navLinkAtScroll img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 200px;
-  width: 400px;
-  border: #b9b8b8 1px solid;
-  border-radius: 5px;
+  height: 250px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
 }
@@ -574,6 +604,62 @@ nav .navLinkAtScroll img {
 .projectImg img {
   height: 100%;
   margin: auto;
+}
+
+.projectTitle, .projectText {
+  padding: 0px 20px;
+}
+
+.projectDisclaimer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 25px 25px;
+}
+
+.projectSkills {
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  padding: 0 20px 10px;
+}
+
+.projectSkillTile {
+  background-color: #6c757d;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.projectTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.projectTitle a {
+  color: black;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 10px 0;
 }
 
 .projectText {
@@ -604,20 +690,6 @@ nav .navLinkAtScroll img {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: left;
-}
-
-.appHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-}
-
-.appHeading a {
-  color: black;
-  font-size: x-large;
-  text-decoration: none;
-  margin-bottom: 10px;
 }
 
 #highlightBadge {
@@ -749,10 +821,6 @@ nav .navLinkAtScroll img {
   display: none;
 }
 
-.webText {
-  display: block;
-}
-
 @media (max-width: 1250px) {
   main {
     margin-left: 250px;
@@ -799,12 +867,10 @@ nav .navLinkAtScroll img {
   .skillsGrid .rightContainer {
     margin-bottom: 50px;
   }
-  .skillsGrid p, .skillsGrid .expGridTitle {
+  .skillsGrid .expGridTitle {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    padding: 15px 0 0;
-    margin: 15px;
   }
   .skillsGrid .devSkillsLineTitle-1 {
     -ms-grid-column: 1;
@@ -821,6 +887,9 @@ nav .navLinkAtScroll img {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+  }
+  .expGridTitle {
+    margin-top: 15px;
   }
   .leftContainer, .rightContainer {
     -ms-grid-column-align: center;
@@ -855,6 +924,9 @@ nav .navLinkAtScroll img {
     border-radius: 5px;
     padding: 20px 15px 10px;
   }
+  .line {
+    display: none;
+  }
   .expFlex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -870,8 +942,15 @@ nav .navLinkAtScroll img {
   .expFlex .rightContainer {
     margin-bottom: 0;
   }
+  .expFlex .leftContainer {
+    padding-bottom: 0;
+  }
   .expFlex p {
     margin: 0 30px;
+  }
+  .currentExpFlex {
+    margin: 0 auto 20px;
+    max-width: 400px;
   }
   .otherExpFlex {
     -webkit-box-pack: center;
@@ -884,21 +963,24 @@ nav .navLinkAtScroll img {
   .expTitle {
     margin: 25px 30px;
   }
-  .projectGrid {
+  .allProjectsContainer {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[6];
-        grid-template-rows: repeat(6, auto);
-    justify-items: center;
-    row-gap: 1em;
-    padding: 0 30px;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
   }
-  .appHeading {
+  .projectGrid {
+    min-width: 350px;
+    width: 100%;
+  }
+  .projectTitle {
     padding-bottom: 0;
   }
   .projectImg {
-    height: 150px;
-    width: 300px;
+    width: 100%;
   }
   .projectText {
     padding: 10px 10px 50px;
@@ -987,7 +1069,6 @@ nav .navLinkAtScroll img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: auto;
     padding: 10px 0;
   }
   .otherSkillsFlex {
@@ -1007,24 +1088,27 @@ nav .navLinkAtScroll img {
     -webkit-column-gap: 20px;
             column-gap: 20px;
     width: 300px;
-    padding-top: 0;
+    padding: 10px;
   }
   .currentExpFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
+    row-gap: 20px;
+  }
+  .respDescription {
+    padding: 0;
   }
   .otherExpFlex {
     -webkit-column-gap: 1em;
             column-gap: 1em;
   }
   .expTitle {
-    margin: 25px 15px;
-  }
-  .projectGrid {
-    padding: 0 10px;
+    margin: 0 15px 25px;
   }
   .projectText {
     padding: 10px 25px 50px;
