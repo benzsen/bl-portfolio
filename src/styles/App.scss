@@ -102,8 +102,8 @@ nav{
     border:8px solid #2c2f3f;
 
     #navPic{
-      width: 200px;
-      margin-top: -10px;
+      width: 135px;
+      margin-top: -5px;
     }
   }
 
@@ -420,7 +420,6 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: stretch;
   width: 90%;
   min-width: 425px;
   height: 550px;
@@ -431,9 +430,6 @@ nav{
 }
 
 .projectImg{
-  // display: flex;
-  // justify-content: center;
-  // text-align: center;
   height: 250px;
   width: 100%;
   overflow: hidden;
@@ -441,15 +437,12 @@ nav{
   align-self: center;
   margin: auto;
   position: relative;
-  // vertical-align: center;
   img {
     height: 100%;
     position: absolute;
-   left: 50%;
-   top: 50%;
-   -webkit-transform: translateY(-50%) translateX(-50%);
-    // margin: auto;
-    // position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
   }
 }
 
@@ -685,8 +678,6 @@ nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
-    // column-gap: 5em;
-    // margin: 0 0 50px;
     padding: 20px; 
 
     .leftContainer{

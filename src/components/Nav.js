@@ -43,7 +43,7 @@ const Nav = () =>{
   return(
     <nav>
       <div className="navPicContainer">
-        <img id="navPic" src="benny-img/bl_photo(cropped).jpg"/>
+        <img id="navPic" src="benny-img/bl_portrait_2.jpg"/>
       </div>
       <div className="xLargeFont xBold">Benny Luo</div>
       <div className="contactFlex">
