@@ -10,7 +10,7 @@ const Projects = () =>{
       <div className="sectionContainer">
         <div className="sectionTitle">Projects</div>
         <div className='allProjectsContainer'>
-          <div className="projectGrid">
+          <div className="projectFlex">
             <div className="projectImg" id="alphaTypeImg">
               <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_render.png"/></a>
             </div>
@@ -27,7 +27,7 @@ const Projects = () =>{
             <div className="smallFont projectDisclaimer webText"><i>* Page load time may vary due to Heroku's dyno sleeping.</i></div>
             <div className="smallFont projectDisclaimer mobileText"><i>*Heroku dyno sleeping may affect load time.</i></div>
           </div>
-          <div className="projectGrid">
+          <div className="projectFlex">
             <div className="projectImg" id="MKChartsImg">
               <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/MKCharts_render.png"/></a>
             </div>
