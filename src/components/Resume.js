@@ -1,7 +1,7 @@
 
 const Resume = () =>{
   const otherSkills_1 = ["Agile Development", "Kanban"]
-  const otherSkills_2 = ["Root-cause Analysis", "Effective Communicatior"]
+  const otherSkills_2 = ["Root-cause Analysis", "Effective Communicator"]
   const otherSkills_3 = ["Team Player", "Quick Learner"]
 
   return(
@@ -101,7 +101,7 @@ const Resume = () =>{
                   <div className="smallFont">2018 - Present (Fulltime)</div>
                 </div>
               </div>
-              <div className=""><i>Previous positions at: </i></div>
+              <div className=""><i>Previously worked at: </i></div>
               <div className="otherExpFlex">
                 <span className="expLogoContainer">
                   <img src="exp-img/university-of-waterloo.svg" id="uwLogo"/>

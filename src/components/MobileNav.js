@@ -1,4 +1,5 @@
 
+import React from "react"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Offcanvas from 'react-bootstrap/Offcanvas'
@@ -6,7 +7,9 @@ import Container from 'react-bootstrap/Container'
 
 const MobileNav = () => {
 
-  const scrollTo = (sectionId) => document.getElementById(sectionId).scrollIntoView(true)
+  const scrollTo = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView(true)
+  }
 
   const showNavButton = () => {
     const navBtn = document.getElementById("navButton");
@@ -23,7 +26,7 @@ const MobileNav = () => {
   document.addEventListener("scroll", showNavButton)
 
   return(
-    <Navbar bg="light" expand={false} id="navButton">
+    <Navbar bg="light" expand={false} collapseOnSelect={true} id="navButton">
       <Container fluid>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas

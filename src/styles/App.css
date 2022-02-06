@@ -1003,6 +1003,7 @@ section {
     display: flex;
     margin: auto;
     position: fixed;
+    z-index: 999;
     top: 20px;
     right: 30px;
     padding: 0;
@@ -1017,6 +1018,9 @@ section {
   }
   #offcanvasNavbar {
     width: 200px;
+  }
+  .navbar-toggler {
+    margin: 0;
   }
 }
 

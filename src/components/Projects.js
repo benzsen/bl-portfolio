@@ -20,7 +20,7 @@ const Projects = () =>{
             <div className="projectSkills smallFont bold">{alphaTypeSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
-                <div>This fullstack web app will challenge you to type the alphabet under the pressure of time.</div>
+                <div>This full stack web app will challenge you to type the alphabet under the pressure of time.</div>
                 <div>Sign up and compete against the fastest alphabet typers in the world!</div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const Projects = () =>{
             <div className="projectSkills smallFont bold">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
-                <div>This app allows user to input Mario Kart scores between my roomates and I</div>
+                <div>This app allows user to input Mario Kart scores between my roomates and I.</div>
                 <div>Due to the competitive nature between my roomates and I, we needed a reliable tool to track our scores after each game.</div>
               </div>
             </div>
