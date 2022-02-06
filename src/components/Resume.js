@@ -78,7 +78,7 @@ const Resume = () =>{
                   <div className="respTitle">Responsibilities:</div>
                   <div className="smallFont alignLeft respDescription">
                     <ul>
-                      <li>Utilized CSS/HTML/JS to update client stores</li>
+                      <li>Utilized CSS/HTML/Liquid/JS to update client stores</li>
                       <li>Addressed bugs and updated styling</li>
                       <li>Added functionality such as "Quick Shop" and "Recently Viewed" features</li>
                     </ul>

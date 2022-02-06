@@ -2,7 +2,7 @@
 const Nav = () =>{
   const scrollTo = (sectionId) => document.getElementById(sectionId).scrollIntoView(true)
   
-  document.onscroll = () => {
+  const navLinkHighlight = () => {
     const navHome = document.querySelector(".navHome")
     const navAbout = document.querySelector(".navAbout")
     const navSkills = document.querySelector(".navSkills")
@@ -13,7 +13,6 @@ const Nav = () =>{
     const aboutSection = document.querySelector('#aboutSection');
     const skillsSection = document.querySelector('#skillsSection');
     const projectSection = document.querySelector('#projectSection');
-    const contactSection = document.querySelector('#contactSection');
 
     let otherNavLink = []
 
@@ -40,16 +39,18 @@ const Nav = () =>{
     otherNavLink.forEach(link => link.classList.remove('navLinkAtScroll'))
   }
 
+  document.addEventListener("scroll", navLinkHighlight)
+
   return(
-    <nav>
+    <nav className="webNav">
       <div className="navPicContainer">
         <img id="navPic" src="benny-img/bl_portrait_2.jpg"/>
       </div>
       <div className="xLargeFont xBold">Benny Luo</div>
       <div className="contactFlex">
         <div className="navSvgContainer"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="contact-img/linkedin.svg" id="linkedin"/></a></div>
-        <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="contact-img/email.svg" id="email"/></a></div>
         <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="contact-img/github.svg" id="github"/></a></div>
+        <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="contact-img/email.svg" id="email"/></a></div>
       </div>
       <div className="navLinkFlex">
         <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="nav-link-img/home.svg"/><span>Home</span></div></a>

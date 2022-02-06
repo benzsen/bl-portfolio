@@ -1,8 +1,8 @@
 
 const TopBtn = () =>{
-  window.onscroll = () => {
+  const showTopBtn = () => {
     const mybutton = document.getElementById("topBtn");
-
+    
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       mybutton.style.visibility = "visible";
       mybutton.style.opacity= 1;
@@ -11,6 +11,8 @@ const TopBtn = () =>{
       mybutton.style.opacity= 0;
     }
   }
+
+  document.addEventListener("scroll", showTopBtn)
 
   const topFunction = () => {
     document.body.scrollTop = 0; 

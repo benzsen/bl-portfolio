@@ -5,7 +5,8 @@ import About from "./About"
 import Resume from "./Resume"
 import Projects from "./Projects"
 import Contact from "./Contact"
-import TopBtn from "./TopBtn.js"
+import TopBtn from "./TopBtn"
+import MobileNav from "./MobileNav"
 
 const Body = () => {
 
@@ -13,6 +14,7 @@ const Body = () => {
   <div>
     <Nav/>
     <main>
+      <MobileNav/>
       <About/>
       <Resume/>
       <Projects/>

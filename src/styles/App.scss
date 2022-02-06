@@ -79,7 +79,7 @@ section {
   margin: 0 auto ;
 }
 
-nav{
+.webNav{
   display: block;
   position: fixed;
   top: 0;
@@ -153,38 +153,57 @@ nav{
   .largeFont{
     padding: 10px 0;
   } 
-  
+
   .navLink{
-    display: grid;
-    grid-template-columns: 25px auto;
-    align-items: center;
-    justify-items: center;
-    column-gap: 10px;
-    padding: 10px 0;
     color: #a8a9b4;
     img{
       // Invert svg with black lines
       filter: invert(71%) sepia(6%) saturate(367%) hue-rotate(197deg) brightness(95%) contrast(91%);
-      height: 18px;
     }
-    span{
-      justify-self: start;
-    }
-  }
-  
-  .navLink:hover{
-    img{
-      filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
-    }
-    color: white;
-    cursor: pointer
   }
 
+  .navLink:hover{
+    color: white;
+  }
+  
   .navLinkAtScroll {
     img{
       filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
     }
     color: white;
+  }
+}
+
+.navLink{
+  display: grid;
+  grid-template-columns: 25px auto;
+  align-items: center;
+  justify-items: center;
+  column-gap: 10px;
+  padding: 10px 0;
+  img{
+    height: 18px;
+  }
+  span{
+    justify-self: start;
+  }
+}
+
+.navLink:hover{
+  img{
+    filter: invert(43%) sepia(94%) saturate(505%) hue-rotate(156deg) brightness(99%) contrast(95%);
+  }
+  cursor: pointer
+}
+
+//Mobile React Bootstrap nav
+.navbar{
+  display: none;
+}
+
+#offcanvasNavbar{
+  .navLink, .navLink:hover{
+    color: black;
   }
 }
 
@@ -416,7 +435,7 @@ nav{
   justify-items: center;
 }
 
-.projectGrid{
+.projectFlex{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -471,7 +490,6 @@ nav{
 
 .projectSkillTile{
   background-color: #6c757d;
-  // border: rgb(221, 221, 221) 1px solid;
   border-radius: 5px;
   padding: 2px 8px;
   margin-bottom: 15px;
@@ -480,14 +498,11 @@ nav{
 
 .projectTitle{
   display: flex;
-  // padding: 20px 0;
-  // justify-content: flex-start;
   align-self: flex-start;
   
   a{
     color: black;
     font-size: x-large;
-    // font-weight: bold;
     text-decoration: none;
     margin: 10px 0;
   }
@@ -495,16 +510,6 @@ nav{
 
 .projectText{
   align-self: start;
-}
-
-#alphaTypeImg{
-  // grid-column:1/2;
-  // grid-row:1/3;
-}
-
-#MKChartsImg{
-  // grid-column:1/2;
-  // grid-row:3/6;
 }
 
 .projectDiv{
@@ -627,11 +632,6 @@ nav{
   display: none;
 }
 
-.webText{
-  // display: block;
-}
-
-
 @media (max-width: 1250px) {
   
   main{
@@ -657,7 +657,7 @@ nav{
     margin: 0 auto ;
   }
 
-  nav{
+  .webNav{
     width: 250px;
   }
 
@@ -665,10 +665,7 @@ nav{
     padding: 75px 0;
   }
 
-  #profilePic {
-    width: 275px;
-    padding: 50px 0;
-  }
+  
 
   .aboutText{
     padding: 0 10px;
@@ -792,37 +789,17 @@ nav{
     // justify-items: center;
   }
 
-  .projectGrid{
+  .projectFlex{
     min-width: 350px;
     width: 100%;
-    // max-width: 500px;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: repeat(6, auto);
-    // justify-items: center;
-    // row-gap: 1em;
-    // padding: 0 30px;
   }
 
   .projectTitle{
     padding-bottom: 0;
   }
 
-  .projectImg{
-    // width: 100%;
-    // height: 150px;
-    // width: 300px;
-  }
-
   .projectText{
     padding: 10px 10px 50px;
-  }
-
-  #alphaTypeImg{
-    // grid-row:2/3;
-  }
-  
-  #MKChartsImg{
-    // grid-row:5/6;
   }
   
   .xLargeFont{
@@ -844,9 +821,37 @@ nav{
     margin: 0;
   }
 
-  nav{
+  .webNav{
     display: none;
   }
+
+  .navbar{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: flex;
+    margin: auto;
+    position: fixed;
+    top: 20px; 
+    right: 30px; 
+    padding: 0;
+  }
+  
+  //Boostrap mobile nav
+  .container-fluid{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bg-light{
+    background-color: white !important;
+    border-radius: 0.25rem;
+  }
+  
+  #offcanvasNavbar{
+    width: 200px;
+  }
+
 }
 
 @media (max-width: 670px) {
@@ -874,10 +879,19 @@ nav{
     // max-width: 350px;
   }
 
+  //bootstrap mobile Nav 
+  #offcanvasNavbar{
+    width: 150px;
+  }
+
+  #profilePic {
+    width: 275px;
+    padding: 50px 0;
+  }
+
   .skillsGrid{
     padding: 20px 10px 10px; 
     
-
     .leftContainer{
       margin-bottom: 20px;
     }
