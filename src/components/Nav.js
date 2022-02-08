@@ -44,7 +44,7 @@ const Nav = () =>{
   return(
     <nav className="webNav">
       <div className="navPicContainer">
-        <img id="navPic" src="benny-img/bl_portrait_3.jpg"/>
+        <img id="navPic" src="benny-img/bl_portrait_4.png"/>
       </div>
       <div className="xLargeFont xBold">Benny Luo</div>
       <div className="contactFlex">
