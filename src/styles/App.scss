@@ -497,14 +497,22 @@ section {
 }
 
 .projectTitle{
-  display: flex;
   align-self: flex-start;
+  display: flex;
+  align-items: baseline;
+  font-size: x-large;
+  column-gap: 10px;
   
   a{
     color: black;
-    font-size: x-large;
+    
     text-decoration: none;
     margin: 10px 0;
+  }
+
+  #github{
+    width: 25px;
+    padding-bottom: 5px;
   }
 } 
 

@@ -14,10 +14,16 @@ const Projects = () =>{
             <div className="projectImg" id="alphaTypeImg">
               <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_render.png"/></a>
             </div>
-            <div className="projectTitle bold">
-              <a href="https://alpha-type.herokuapp.com/" target="_blank">alphaType <Badge bg="secondary" id="highlightBadge">Highlight Project</Badge></a>
+            <div className="projectTitle">
+              <a href="https://alpha-type.herokuapp.com/" target="_blank"><span className="bold">alphaType</span></a> 
+              
+              <a href="https://github.com/orgs/alphaType-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github"/></a>
+              <Badge bg="secondary" id="highlightBadge">
+              <span className="webText">Highlight Project</span>
+              <span className="mobileText">Highlight</span>
+              </Badge>
             </div>
-            <div className="projectSkills smallFont bold">{alphaTypeSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
+            <div className="projectSkills smallFont">{alphaTypeSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
                 <div>This full stack web app will challenge you to type the alphabet under the pressure of time.</div>
@@ -33,6 +39,7 @@ const Projects = () =>{
             </div>
             <div className="projectTitle bold">
               <a href="https://mkcharts.herokuapp.com/" target="_blank">MKCharts</a>
+              <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github"/></a>
             </div>
             <div className="projectSkills smallFont bold">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
