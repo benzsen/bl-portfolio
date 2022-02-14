@@ -1,21 +1,21 @@
 
-const Contact = () =>{
+const Contact = ({email, linkedin, github}) =>{
 
   return(
     <section className="contactSection" id="contactSection"> 
       <div className="sectionContainer">
-        <div className="sectionTitle">Contact</div>
+        <h2 className="sectionTitle">Contact</h2>
         <div className="contactBox">
           <div className="contactGrid smallFont">
-            <div id="email"><a href="mailto:bennyluodev@gmail.com"><img src="contact-img/mail.svg"/></a></div>
+            <div id="email"><a href={`mailto:${email}`}><img src="contact-img/mail.svg"/></a></div>
             <div className="bold">Email:</div>
-            <div className="contactInfo"><a href="mailto:bennyluodev@gmail.com">bennyluodev@gmail.com</a></div>
-            <div id="github"><a href="https://github.com/benzsen" target="_blank"><img src="contact-img/github.svg"/></a></div>
+            <div className="contactInfo"><a href={`mailto:${email}`}>{email}</a></div>
+            <div id="github"><a href={github} target="_blank"><img src="contact-img/github.svg"/></a></div>
             <div className="bold">Github:</div>
-            <div className="contactInfo"><a href="https://github.com/benzsen" target="_blank">github.com/benzsen</a></div>
-            <div id="linkedin"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="contact-img/linkedin-icon.svg"/></a></div>
+            <div className="contactInfo"><a href={github} target="_blank">{github}</a></div>
+            <div id="linkedin"><a href={linkedin} target="_blank"><img src="contact-img/linkedin-icon.svg"/></a></div>
             <div className="bold">LinkedIn:</div>
-            <div className="contactInfo"><a href="https://www.linkedin.com/in/luobenny/" target="_blank">linkedin.com/in/luobenny</a></div>
+            <div className="contactInfo"><a href={linkedin} target="_blank">{linkedin}</a></div>
           </div>
         </div>
       </div>

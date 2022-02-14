@@ -8,7 +8,7 @@ const Projects = () =>{
   return(
     <section className="portfolioSection whiteBackgroud" id="projectSection"> 
       <div className="sectionContainer">
-        <div className="sectionTitle">Projects</div>
+        <h2 className="sectionTitle">Projects</h2>
         <div className='allProjectsContainer'>
           <div className="projectFlex">
             <div className="projectImg" id="alphaTypeImg">
@@ -41,7 +41,7 @@ const Projects = () =>{
               <a href="https://mkcharts.herokuapp.com/" target="_blank">MKCharts</a>
               <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github"/></a>
             </div>
-            <div className="projectSkills smallFont bold">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
+            <div className="projectSkills smallFont">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
                 <div>This app allows user to input Mario Kart scores between my roomates and I.</div>

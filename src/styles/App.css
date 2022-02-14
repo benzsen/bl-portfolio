@@ -75,7 +75,7 @@ section {
   background-color: #f5f8fd;
 }
 
-.sectionTitle {
+h2.sectionTitle {
   font-size: 26px;
   text-align: left;
   margin-bottom: 30px;
@@ -118,6 +118,7 @@ section {
   margin: 5px auto 10px;
   border-radius: 50%;
   border: 8px solid #2c2f3f;
+  background-color: #d1d2cd;
 }
 
 .webNav .navPicContainer #navPic {
@@ -188,7 +189,7 @@ section {
   padding: 50px 25px;
 }
 
-.webNav .largeFont {
+.webNav h3, .webNav .largeFont {
   padding: 10px 0;
 }
 
@@ -440,7 +441,7 @@ section {
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 20px 40px 10px;
+  padding: 25px 40px 10px;
 }
 
 .expFlex {
@@ -784,17 +785,17 @@ section {
   text-align: left;
 }
 
-.hugeFont {
+h1 {
   font-family: "Merriweather", serif;
   font-size: 62px;
   margin: 0px;
 }
 
-.xLargeFont {
+h2 {
   font-size: 26px;
 }
 
-.largeFont {
+h3, .largeFont {
   font-size: 20px;
 }
 
@@ -840,9 +841,6 @@ section {
     padding: 40px 10px;
     margin: 0 auto;
   }
-  .sectionTitle {
-    font-size: 26px;
-  }
   .sectionContainer {
     min-width: 600px;
     max-width: 600px;
@@ -853,6 +851,9 @@ section {
   }
   .introFlex {
     padding: 75px 0;
+  }
+  .introFlex h1 {
+    padding: 10px 0;
   }
   .aboutText {
     padding: 0 10px;
@@ -985,10 +986,10 @@ section {
   .projectText {
     padding: 10px 10px 50px;
   }
-  .xLargeFont {
+  h2 {
     font-size: 22px;
   }
-  .largeFont {
+  h3, .largeFont {
     font-size: 18px;
   }
   .smallFont {
@@ -1142,15 +1143,15 @@ section {
   .projectSkillTile {
     padding: 2px 4px;
   }
-  .hugeFont {
+  h1 {
     font-family: "Merriweather", serif;
     font-size: 36px;
     margin: 0px;
   }
-  .xLargeFont {
+  h2 {
     font-size: 22px;
   }
-  .largeFont {
+  h3, .largeFont {
     font-size: 18px;
   }
   .smallFont {

@@ -1,5 +1,5 @@
 
-const Nav = () =>{
+const Nav = ({email, linkedin, github}) =>{
   const scrollTo = (sectionId) => document.getElementById(sectionId).scrollIntoView(true)
   
   const navLinkHighlight = () => {
@@ -46,11 +46,11 @@ const Nav = () =>{
       <div className="navPicContainer">
         <img id="navPic" src="benny-img/bl_portrait_4.png"/>
       </div>
-      <div className="xLargeFont xBold">Benny Luo</div>
+      <h2 className="xBold">Benny Luo</h2>
       <div className="contactFlex">
-        <div className="navSvgContainer"><a href="https://www.linkedin.com/in/luobenny/" target="_blank"><img src="contact-img/linkedin.svg" id="linkedin"/></a></div>
-        <div className="navSvgContainer"><a href="https://github.com/benzsen" target="_blank"><img src="contact-img/github.svg" id="github"/></a></div>
-        <div className="navSvgContainer"><a href="mailto:bennyluo95@gmail.com"><img src="contact-img/email.svg" id="email"/></a></div>
+        <div className="navSvgContainer"><a href={linkedin} target="_blank"><img src="contact-img/linkedin.svg" id="linkedin"/></a></div>
+        <div className="navSvgContainer"><a href={github} target="_blank"><img src="contact-img/github.svg" id="github"/></a></div>
+        <div className="navSvgContainer"><a href={`mailto:${email}`}><img src="contact-img/email.svg" id="email"/></a></div>
       </div>
       <div className="navLinkFlex">
         <a onClick={()=>scrollTo("homeSection")}><div className="navLink navHome"><img src="nav-link-img/home.svg"/><span>Home</span></div></a>
