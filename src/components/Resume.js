@@ -1,30 +1,29 @@
 
 const Resume = () =>{
-  const otherSkills_1 = ["Agile Development", "Kanban"]
-  const otherSkills_2 = ["Root-cause Analysis", "Effective Communicator"]
+  const otherSkills_2 = ["Agile Development", "Effective Communicator"]
+  const otherSkills_1 = ["Data-Driven Mindset", "Root-cause Analysis"]
   const otherSkills_3 = ["Team Player", "Quick Learner"]
 
   return(
     <section className="skillsSection" id="skillsSection">
       <div className="sectionContainer">
-        <div className="sectionTitle">Resume</div>
-
+        <h2 className="sectionTitle">Resume</h2>
         <div className="skillsGrid">
-          <div className="expGridTitle largeFont bold">Languages/Technologies</div>
-          <div className="underline devSkillsLineTitle-1 largeFont">Most at Home with:</div>
+          <h3 className="expGridTitle bold">Languages/Technologies</h3>
+          <h3 className="underline devSkillsLineTitle-1 ">Most at Home with:</h3>
           <div className="leftContainer">
             <div className="devSkillsLine-1">
-              <img src="skills-img/mongodb-logo.png"/>
-              <img src="skills-img/express-logo.png"/>
               <img src="skills-img/react-logo.png"/>
               <img src="skills-img/nodejs-logo.png"/>
-              <div>Mongodb</div>
-              <div>Express</div>
+              <img src="skills-img/mongodb-logo.png"/>
+              <img src="skills-img/express-logo.png"/>
               <div>React</div>
               <div>Node.js</div>
+              <div>Mongodb</div>
+              <div>Express</div>
             </div>
           </div>
-          <div className="underline largeFont devSkillsLineTitle-2">Proficient with:</div>
+          <h3 className="underline devSkillsLineTitle-2">Proficient with:</h3>
           <div className="rightContainer">
             <div className="devSkillsLine-2">
               <img src="skills-img/logo-javascript.svg"/> 
@@ -50,7 +49,7 @@ const Resume = () =>{
             </div>
           </div>
 
-          <div className="expGridTitle largeFont bold">Other Skills</div>
+          <h3 className="expGridTitle bold">Other Skills</h3>
 
           <div className="bottomContainer">
             <div className="otherSkillsFlex">{otherSkills_1.map(s => <div className="otherSkillTile">{s}</div>)}</div>
@@ -61,10 +60,10 @@ const Resume = () =>{
         </div>
       
         <div className="expContainer">
-          <div className="expGridTitle largeFont bold">Professional Experience</div>
+          <h3 className="expGridTitle bold">Professional Experience</h3>
           <div className="expFlex">
             <div className="leftContainer">
-              <div className="underline largeFont expTitle">Web Development</div>
+              <h3 className="underline expTitle">Web Development</h3>
               <div className="currentExpFlex">
                 <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo"/>
                 <div>
@@ -87,7 +86,7 @@ const Resume = () =>{
             </div>
             <div className="line"></div>
             <div className="rightContainer">
-              <div className="underline largeFont expTitle">Mechanical Engineering</div>
+              <h3 className="underline expTitle">Mechanical Engineering</h3>
               
               <div className="currentExpFlex">
                 <img src="exp-img/toyota.svg" id="toyotaLogo"/>
