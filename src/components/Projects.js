@@ -12,7 +12,7 @@ const Projects = () =>{
         <div className='allProjectsContainer'>
           <div className="projectFlex">
             <div className="projectImg" id="alphaTypeImg">
-              <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_render.png"/></a>
+              <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_banner.png"/></a>
             </div>
             <div className="projectTitle">
               <a href="https://alpha-type.herokuapp.com/" target="_blank"><span className="bold">alphaType</span></a> 
