@@ -21,7 +21,7 @@ const TopBtn = () =>{
 
   return(
     <button onClick={()=>topFunction()} id="topBtn" title="Go to top">
-      <img src="/nav-link-img/up.svg"/>
+      <img src="/nav-link-img/up.svg" alt="Up Arrow Symbol"/>
     </button>
   )
 }

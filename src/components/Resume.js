@@ -13,10 +13,10 @@ const Resume = () =>{
           <h3 className="underline devSkillsLineTitle-1 ">Most at Home with:</h3>
           <div className="leftContainer">
             <div className="devSkillsLine-1">
-              <img src="skills-img/react-logo.png"/>
-              <img src="skills-img/nodejs-logo.png"/>
-              <img src="skills-img/mongodb-logo.png"/>
-              <img src="skills-img/express-logo.png"/>
+              <img src="skills-img/react-logo.png" alt="React Logo"/>
+              <img src="skills-img/nodejs-logo.png" alt="NodeJS Logo"/>
+              <img src="skills-img/mongodb-logo.png" alt="MongoDB Logo"/>
+              <img src="skills-img/express-logo.png" alt="Express Logo"/>
               <div>React</div>
               <div>Node.js</div>
               <div>Mongodb</div>
@@ -26,21 +26,21 @@ const Resume = () =>{
           <h3 className="underline devSkillsLineTitle-2">Proficient with:</h3>
           <div className="rightContainer">
             <div className="devSkillsLine-2">
-              <img src="skills-img/logo-javascript.svg"/> 
-              <img src="skills-img/html-1.svg"/>
-              <img src="skills-img/css-3.svg"/>
-              <img src="skills-img/sass-1.svg"/>
-              <img src="skills-img/shopify.svg"/>
+              <img src="skills-img/logo-javascript.svg" alt="Javascript Logo"/> 
+              <img src="skills-img/html-1.svg" alt="HTML Logo"/>
+              <img src="skills-img/css-3.svg" alt="CSS Logo"/>
+              <img src="skills-img/sass-1.svg" alt="SASS Logo"/>
+              <img src="skills-img/shopify.svg" alt="Shopify Logo"/>
               <div>JS</div>
               <div>HTML</div>
               <div>CSS</div>
               <div>SASS</div>
               <div>Liquid</div>
-              <img src="skills-img/redux.svg"/>
-              <img src="skills-img/jest-2.svg"/>
-              <img src="skills-img/cypress.png"/>
-              <img src="skills-img/git-icon.svg"/>
-              <img src="skills-img/postman.svg"/>
+              <img src="skills-img/redux.svg" alt="Redux Logo"/>
+              <img src="skills-img/jest-2.svg" alt="Jest Logo"/>
+              <img src="skills-img/cypress.png" alt="Cypress Logo"/>
+              <img src="skills-img/git-icon.svg" alt="Git Logo"/>
+              <img src="skills-img/postman.svg" alt="Postman Logo"/>
               <div>Redux</div>
               <div>Jest</div>
               <div>Cypress</div>
@@ -65,7 +65,7 @@ const Resume = () =>{
             <div className="leftContainer">
               <h3 className="underline expTitle">Web Development</h3>
               <div className="currentExpFlex">
-                <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo"/>
+                <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo" alt="Pixel Walrus Logo"/>
                 <div>
                   <div className="positionTitle bold">Front End Developer</div>
                   <div className="smallFont"><span>Products: </span><span>Shopify eCommerce</span></div>
@@ -89,7 +89,7 @@ const Resume = () =>{
               <h3 className="underline expTitle">Mechanical Engineering</h3>
               
               <div className="currentExpFlex">
-                <img src="exp-img/toyota.svg" id="toyotaLogo"/>
+                <img src="exp-img/toyota.svg" id="toyotaLogo" alt="Toyota Logo"/>
                 <div>
                   <div className="positionTitle">Manufacturing Engineer</div>
                   {/* <div className="smallFont">
@@ -103,13 +103,13 @@ const Resume = () =>{
               <div className=""><i>Previously worked at: </i></div>
               <div className="otherExpFlex">
                 <span className="expLogoContainer">
-                  <img src="exp-img/university-of-waterloo.svg" id="uwLogo"/>
+                  <img src="exp-img/university-of-waterloo.svg" id="uwLogo" alt="University of Waterloo Logo"/>
                 </span>
                 <span className="expLogoContainer">
-                  <img src="exp-img/canada-3.svg" id="canadaLogo"/>
+                  <img src="exp-img/canada-3.svg" id="canadaLogo" alt="Government of Canada Logo"/>
                 </span>
                 <span className="expLogoContainer">
-                  <img src="exp-img/tesla-motors-1.svg" id="teslaLogo"/>
+                  <img src="exp-img/tesla-motors-1.svg" id="teslaLogo" alt="Tesla Logo"/>
                 </span>
               </div>
             </div>

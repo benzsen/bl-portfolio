@@ -13,7 +13,7 @@ const About = () =>{
                 <div> Engineer | Problem Solver</div>
               </span>
             </h2>
-            <img id="profilePic" src="benny-img/bl_portrait_1.png"></img>
+            <img id="profilePic" alt="Benny Luo profile picture" src="benny-img/bl_portrait_1.png"></img>
           </div>
           <div className="aboutContainer" id="aboutSection">
           <h2 className="sectionTitle">About Me</h2>

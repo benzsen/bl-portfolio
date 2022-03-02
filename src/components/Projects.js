@@ -12,12 +12,12 @@ const Projects = () =>{
         <div className='allProjectsContainer'>
           <div className="projectFlex">
             <div className="projectImg" id="alphaTypeImg">
-              <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_banner.png"/></a>
+              <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_banner.png" alt="alphaType Project Banner"/></a>
             </div>
             <div className="projectTitle">
               <a href="https://alpha-type.herokuapp.com/" target="_blank"><span className="bold">alphaType</span></a> 
               
-              <a href="https://github.com/orgs/alphaType-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github"/></a>
+              <a href="https://github.com/orgs/alphaType-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
               <Badge bg="secondary" id="highlightBadge">
               <span className="webText">Highlight Project</span>
               <span className="mobileText">Highlight</span>
@@ -35,11 +35,11 @@ const Projects = () =>{
           </div>
           <div className="projectFlex">
             <div className="projectImg" id="MKChartsImg">
-              <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/MKCharts_render.png"/></a>
+              <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/MKCharts_render.png" alt="MKCharts Project Logo"/></a>
             </div>
             <div className="projectTitle bold">
               <a href="https://mkcharts.herokuapp.com/" target="_blank">MKCharts</a>
-              <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github"/></a>
+              <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
             </div>
             <div className="projectSkills smallFont">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
