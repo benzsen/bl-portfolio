@@ -11,8 +11,8 @@ import MobileNav from "./MobileNav"
 const Body = () => {
 
   const email = "bennyluodev@gmail.com"
-  const linkedin = "linkedin.com/in/luobenny"
-  const github = "github.com/benzsen"
+  const linkedin = "www.linkedin.com/in/luobenny"
+  const github = "www.github.com/benzsen"
 
   return(
   <div>
