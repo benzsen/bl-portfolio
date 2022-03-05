@@ -12,10 +12,10 @@ const Contact = ({email, linkedin, github}) =>{
             <div className="contactInfo"><a href={`mailto:${email}`}>{email}</a></div>
             <div id="github"><a href={github} target="_blank"><img src="contact-img/github.svg" alt="Github Logo"/></a></div>
             <div className="bold">Github:</div>
-            <div className="contactInfo"><a href={github} target="_blank">{github}</a></div>
+            <div className="contactInfo"><a href={github} target="_blank">{github.slice(8)}</a></div>
             <div id="linkedin"><a href={linkedin} target="_blank"><img src="contact-img/linkedin-icon.svg" alt="LinkedIn Logo"/></a></div>
             <div className="bold">LinkedIn:</div>
-            <div className="contactInfo"><a href={linkedin} target="_blank">{linkedin}</a></div>
+            <div className="contactInfo"><a href={linkedin} target="_blank">{linkedin.slice(8)}</a></div>
           </div>
         </div>
       </div>
