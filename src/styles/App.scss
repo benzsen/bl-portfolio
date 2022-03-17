@@ -458,6 +458,7 @@ h2.sectionTitle{
   align-self: center;
   margin: auto;
   position: relative;
+
   img {
     height: 100%;
     position: absolute;
@@ -465,6 +466,10 @@ h2.sectionTitle{
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
   }
+}
+
+#portfolioMetaImg{
+  background-color: #2f3136c4;
 }
 
 .projectTitle, .projectText{

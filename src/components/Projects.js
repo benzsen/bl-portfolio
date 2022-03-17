@@ -34,11 +34,11 @@ const Projects = () =>{
             <div className="smallFont projectDisclaimer mobileText"><i>*Heroku dyno sleeping may affect load time.</i></div>
           </div>
           <div className="projectFlex">
-            <div className="projectImg" id="MKChartsImg">
-              <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/MKCharts_render.png" alt="MKCharts Project Logo"/></a>
+            <div className="projectImg" id="portfolioMetaImg">
+              <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/bl_portfolio_meta_tags.png" alt="Benny's Portfolio Meta Taag Preview"/></a>
             </div>
             <div className="projectTitle bold">
-              <a href="https://mkcharts.herokuapp.com/" target="_blank">MKCharts</a>
+              <a href="https://mkcharts.herokuapp.com/" target="_blank">This Portfolio</a>
               <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
             </div>
             <div className="projectSkills smallFont">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>

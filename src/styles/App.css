@@ -624,6 +624,10 @@ h2.sectionTitle {
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
+#portfolioMetaImg {
+  background-color: #2f3136c4;
+}
+
 .projectTitle, .projectText {
   padding: 0px 20px;
 }
