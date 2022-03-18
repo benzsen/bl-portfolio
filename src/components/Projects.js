@@ -2,8 +2,8 @@ import Badge from 'react-bootstrap/Badge'
 
 const Projects = () =>{
 
-  const alphaTypeSkills = ["React", "Node", "Express", "Mongo", "Redux"]
-  const portfolioSkills = ["HTML", "SASS", "Javascript", "React", "DOM"]
+  const alphaTypeSkills = ["React", "Node.js", "Express", "Mongo", "Redux"]
+  const portfolioSkills = ["React", "HTML", "SASS", "Javascript", "DOM"]
 
   return(
     <section className="portfolioSection whiteBackgroud" id="projectSection"> 
@@ -12,12 +12,12 @@ const Projects = () =>{
         <div className='allProjectsContainer'>
           <div className="projectFlex">
             <div className="projectImg" id="alphaTypeImg">
-              <a href="https://alpha-type.herokuapp.com/" target="_blank"><img src="projects-img/alphaType_banner.png" alt="alphaType Project Banner"/></a>
+              <a href="https://alpha-type.herokuapp.com/" target="_blank" rel="noreferrer"><img src="projects-img/alphaType_banner.png" alt="alphaType Project Banner"/></a>
             </div>
             <div className="projectTitle">
-              <a href="https://alpha-type.herokuapp.com/" target="_blank"><span className="bold">alphaType</span></a> 
+              <a href="https://alpha-type.herokuapp.com/" target="_blank" rel="noreferrer"><span className="bold">alphaType</span></a> 
               
-              <a href="https://github.com/orgs/alphaType-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
+              <a href="https://github.com/orgs/alphaType-benny/repositories" target="_blank" rel="noreferrer"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
               <Badge bg="secondary" id="highlightBadge">
               <span className="webText">Highlight Project</span>
               <span className="mobileText">Highlight</span>
@@ -39,7 +39,7 @@ const Projects = () =>{
             </div>
             <div className="projectTitle bold">
               <span>This Portfolio</span>
-              <a href="https://github.com/benzsen/bl-portfolio" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
+              <a href="https://github.com/benzsen/bl-portfolio" target="_blank" rel="noreferrer"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
             </div>
             <div className="projectSkills smallFont">{portfolioSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">

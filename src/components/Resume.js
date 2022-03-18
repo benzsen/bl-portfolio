@@ -19,7 +19,7 @@ const Resume = () =>{
               <img src="skills-img/express-logo.png" alt="Express Logo"/>
               <div>React</div>
               <div>Node.js</div>
-              <div>Mongodb</div>
+              <div>MongoDB</div>
               <div>Express</div>
             </div>
           </div>
