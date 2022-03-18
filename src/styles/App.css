@@ -596,7 +596,7 @@ h2.sectionTitle {
           align-items: center;
   width: 90%;
   min-width: 425px;
-  height: 550px;
+  height: 500px;
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -616,15 +616,17 @@ h2.sectionTitle {
 }
 
 .projectImg img {
-  height: 110%;
+  height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
-#portfolioMetaImg {
-  background-color: #2f3136;
+#projectImgBkgd {
+  width: 100%;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
 }
 
 .projectTitle, .projectText {
@@ -697,6 +699,10 @@ h2.sectionTitle {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+}
+
+.projectText div {
+  padding-bottom: 5px;
 }
 
 .projectDiv {

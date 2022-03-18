@@ -35,7 +35,8 @@ const Projects = () =>{
           </div>
           <div className="projectFlex">
             <div className="projectImg" id="portfolioMetaImg">
-              <span><img src="projects-img/bl_portfolio_meta_tags.png" alt="Benny's Portfolio Meta Taag Preview"/></span>
+              <img src="projects-img/bl_portfolio_meta_tags1.png" id="projectImgBkgd" alt="Benny's Portfolio Preview Background"/>
+              <img src="projects-img/bl_portfolio_meta_tags1.png" alt="Benny's Portfolio Meta Tag Preview"/>
             </div>
             <div className="projectTitle bold">
               <span>This Portfolio</span>
@@ -44,8 +45,9 @@ const Projects = () =>{
             <div className="projectSkills smallFont">{portfolioSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
-                <div>This app allows user to input Mario Kart scores between my roomates and I.</div>
-                <div>Due to the competitive nature between my roomates and I, we needed a reliable tool to track our scores after each game.</div>
+                <div>This responsive portfolio was created using React.</div>
+                <div>Website is hosted through Netlify.</div>
+                <div>SSL Certificate provided through Let's Encrypt.</div>
               </div>
             </div>
           </div>

@@ -443,7 +443,7 @@ h2.sectionTitle{
   align-items: center;
   width: 90%;
   min-width: 425px;
-  height: 550px;
+  height: 500px;
   box-shadow: $box-shadow;
   border-radius: 5px;
   background-color: #c9dbf5;
@@ -460,7 +460,7 @@ h2.sectionTitle{
   position: relative;
 
   img {
-    height: 110%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -468,8 +468,9 @@ h2.sectionTitle{
   }
 }
 
-#portfolioMetaImg{
-  background-color: #2f3136;
+#projectImgBkgd{
+  width: 100%;
+  filter: blur(15px);
 }
 
 .projectTitle, .projectText{
@@ -525,6 +526,9 @@ h2.sectionTitle{
 
 .projectText{
   align-self: start;
+  div{
+    padding-bottom: 5px;
+  }
 }
 
 .projectDiv{
