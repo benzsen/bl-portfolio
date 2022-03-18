@@ -3,7 +3,7 @@ import Badge from 'react-bootstrap/Badge'
 const Projects = () =>{
 
   const alphaTypeSkills = ["React", "Node", "Express", "Mongo", "Redux"]
-  const MKChartsSkills = ["React", "Node", "Express", "Mongo"]
+  const portfolioSkills = ["HTML", "SASS", "Javascript", "React", "DOM"]
 
   return(
     <section className="portfolioSection whiteBackgroud" id="projectSection"> 
@@ -35,21 +35,19 @@ const Projects = () =>{
           </div>
           <div className="projectFlex">
             <div className="projectImg" id="portfolioMetaImg">
-              <a href="https://mkcharts.herokuapp.com/" target="_blank"><img src="projects-img/bl_portfolio_meta_tags.png" alt="Benny's Portfolio Meta Taag Preview"/></a>
+              <span><img src="projects-img/bl_portfolio_meta_tags.png" alt="Benny's Portfolio Meta Taag Preview"/></span>
             </div>
             <div className="projectTitle bold">
-              <a href="https://mkcharts.herokuapp.com/" target="_blank">This Portfolio</a>
-              <a href="https://github.com/orgs/MKCharts-benny/repositories" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
+              <span>This Portfolio</span>
+              <a href="https://github.com/benzsen/bl-portfolio" target="_blank"><img src="contact-img/github.svg" id="github" alt="Github Logo"/></a>
             </div>
-            <div className="projectSkills smallFont">{MKChartsSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
+            <div className="projectSkills smallFont">{portfolioSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
                 <div>This app allows user to input Mario Kart scores between my roomates and I.</div>
                 <div>Due to the competitive nature between my roomates and I, we needed a reliable tool to track our scores after each game.</div>
               </div>
             </div>
-            <div className="smallFont projectDisclaimer webText"><i>* Page load time may vary due to Heroku's dyno sleeping.</i></div>
-            <div className="smallFont projectDisclaimer mobileText"><i>*Heroku dyno sleeping may affect load time.</i></div>
           </div>
         </div>
       </div>
