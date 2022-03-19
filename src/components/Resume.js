@@ -68,7 +68,7 @@ const Resume = () =>{
                 <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo" alt="Pixel Walrus Logo"/>
                 <div>
                   <div className="positionTitle bold">Front End Developer</div>
-                  <div className="smallFont"><span>Products: </span><span>Shopify eCommerce</span></div>
+                  <div className="smallFont"><span>Products: </span><span>Shopify Stores</span></div>
                   <div className="smallFont"> 2021 - Present (Freelance) </div>
                 </div>
                 
@@ -77,9 +77,10 @@ const Resume = () =>{
                   <div className="respTitle">Responsibilities:</div>
                   <div className="smallFont alignLeft respDescription">
                     <ul>
-                      <li>Utilized CSS/HTML/Liquid/JS to update client stores</li>
-                      <li>Addressed bugs and updated styling</li>
+                      <li>Utilized JS/Liquid/CSS/HTML to create features for eCommerce stores</li>
                       <li>Added functionality such as "Quick Shop" and "Recently Viewed" features</li>
+                      <li>Incorporated styling based on UI/UX design on Abobe XD</li>
+                      <li>Closed tickets by resolving bugs and addressing styling requests</li>
                     </ul>
                   </div>
                 </div>
