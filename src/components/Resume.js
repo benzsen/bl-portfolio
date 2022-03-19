@@ -77,9 +77,9 @@ const Resume = () =>{
                   <div className="respTitle">Responsibilities:</div>
                   <div className="smallFont alignLeft respDescription">
                     <ul>
-                      <li>Utilized JS/Liquid/CSS/HTML to create features for eCommerce stores</li>
+                      <li>Utilized JS/CSS/HTML/Liquid to improve eCommerce stores</li>
                       <li>Added functionality such as "Quick Shop" and "Recently Viewed" features</li>
-                      <li>Incorporated styling based on UI/UX design on Abobe XD</li>
+                      <li>Incorporated styling based on UI/UX design provided through Abobe XD</li>
                       <li>Closed tickets by resolving bugs and addressing styling requests</li>
                     </ul>
                   </div>
