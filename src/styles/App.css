@@ -492,7 +492,7 @@ h2.sectionTitle {
 }
 
 .respDescription {
-  padding: 0 25px;
+  padding: 0 40px;
 }
 
 .positionTitle {
@@ -840,6 +840,12 @@ h3, .largeFont {
 
 .mobileText {
   display: none;
+}
+
+@media (max-width: 1599px) {
+  .respDescription {
+    padding: 0 25px;
+  }
 }
 
 @media (max-width: 1250px) {
