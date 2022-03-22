@@ -78,9 +78,9 @@ const Resume = () =>{
                   <div className="smallFont alignLeft respDescription">
                     <ul>
                       <li>Utilized JS/CSS/HTML/Liquid to improve eCommerce stores</li>
-                      <li>Added functionality such as "Quick Shop" and "Recently Viewed" features</li>
-                      <li>Incorporated styling based on UI/UX design provided through Abobe XD</li>
-                      <li>Closed tickets by resolving bugs and addressing styling requests</li>
+                      <li>Closed tickets by adding features and resolving bugs</li>
+                      <li>Incorporated styling based on Adobe XD design mockups</li>
+                      <li>Collaborated through code review and proposal meetings</li>
                     </ul>
                   </div>
                 </div>
