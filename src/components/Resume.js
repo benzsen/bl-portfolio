@@ -1,7 +1,7 @@
 
 const Resume = () =>{
   const otherSkills_2 = ["Agile Development", "Effective Communicator"]
-  const otherSkills_1 = ["Data-Driven Mindset", "Root-cause Analysis"]
+  const otherSkills_1 = ["Data-Driven Mindset", "Root Cause Analysis"]
   const otherSkills_3 = ["Team Player", "Quick Learner"]
 
   return(
