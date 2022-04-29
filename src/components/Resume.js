@@ -97,7 +97,7 @@ const Resume = () =>{
                     <span className="webText">Products: Toyota RAV4/Lexus RX350</span>
                     <span className="mobileText">Toyota RAV4/Lexus RX350</span>
                   </div> */}
-                  <div className="smallFont">Products: Toyota RAV4/Lexus RX350</div>
+                  <div className="smallFont">Products: Toyota RAV4/Lexus NX350</div>
                   <div className="smallFont">2018 - Present (Fulltime)</div>
                 </div>
               </div>
