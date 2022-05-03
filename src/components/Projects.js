@@ -3,7 +3,7 @@ import Badge from 'react-bootstrap/Badge'
 const Projects = () =>{
 
   const alphaTypeSkills = ["React", "Node.js", "Express", "Mongo", "Redux"]
-  const portfolioSkills = ["React", "HTML", "SASS", "Javascript", "DOM"]
+  const portfolioSkills = ["React", "HTML", "SASS", "JavaScript", "DOM"]
 
   return(
     <section className="portfolioSection whiteBackgroud" id="projectSection"> 
@@ -26,7 +26,7 @@ const Projects = () =>{
             <div className="projectSkills smallFont">{alphaTypeSkills.map(s => <div className="projectSkillTile">{s}</div>)}</div>
             <div className="projectDiv">
               <div className="projectText">
-                <div>This MERN full stack web app will challenge you to type the alphabet under the pressure of time.</div>
+                <div>This full stack MERN web app will challenge you to type the alphabet under the pressure of time.</div>
                 <div>Sign up and compete against the fastest alphabet typers in the world!</div>
               </div>
             </div>
