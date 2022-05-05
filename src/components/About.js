@@ -7,10 +7,10 @@ const About = () =>{
           <div className="introFlex">
             <h1>Hey! I'm Benny.</h1>
             <h2>
-              <span className="webText">Web Developer | Engineer | Problem Solver</span>
+              <span className="webText">Software Developer | Engineer | Problem Solver</span>
               <span className="mobileText">
-                <div>Web Developer</div>
-                <div> Engineer | Problem Solver</div>
+                <div>Software Developer</div>
+                <div>Engineer | Problem Solver</div>
               </span>
             </h2>
             <img id="profilePic" alt="Benny Luo profile picture" src="benny-img/bl_portrait_1.png"></img>
@@ -22,7 +22,7 @@ const About = () =>{
                 I am a web developer with a background in mechanical engineering.
               </p>
               <p>
-                My passion to build things with the purpose of solving problems, sparked my curiosity to venture into software engineering.
+                My passion to build things with the purpose of solving problems sparked my curiosity to venture into software engineering.
                 <br/>
                 Through my self-teaching journey, I fell in love with web development.
               </p>
