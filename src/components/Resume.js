@@ -30,22 +30,22 @@ const Resume = () =>{
               <img src="skills-img/html-1.svg" alt="HTML Logo"/>
               <img src="skills-img/css-3.svg" alt="CSS Logo"/>
               <img src="skills-img/sass-1.svg" alt="SASS Logo"/>
-              <img src="skills-img/shopify.svg" alt="Shopify Logo"/>
+              <img src="skills-img/Figma-logo.svg" alt="Figma Logo"/>
               <div>JS</div>
               <div>HTML</div>
               <div>CSS</div>
               <div>SASS</div>
-              <div>Liquid</div>
+              <div>Figma</div>
               <img src="skills-img/redux.svg" alt="Redux Logo"/>
               <img src="skills-img/jest-2.svg" alt="Jest Logo"/>
               <img src="skills-img/cypress.png" alt="Cypress Logo"/>
               <img src="skills-img/git-icon.svg" alt="Git Logo"/>
-              <img src="skills-img/postman.svg" alt="Postman Logo"/>
+              <img src="skills-img/shopify.svg" alt="Shopify Logo"/>
               <div>Redux</div>
               <div>Jest</div>
               <div>Cypress</div>
               <div>Git</div>
-              <div>Postman</div>
+              <div>Liquid</div>
             </div>
           </div>
 
