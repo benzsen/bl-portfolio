@@ -9,7 +9,7 @@ const Resume = () =>{
       <div className="sectionContainer">
         <h2 className="sectionTitle">Resume</h2>
         <div className="skillsGrid">
-          <h3 className="expGridTitle bold">Languages/Technologies</h3>
+          <h3 className="expGridTitle bold">Techstack/Toolbox</h3>
           <h3 className="underline devSkillsLineTitle-1 ">Most at Home with:</h3>
           <div className="leftContainer">
             <div className="devSkillsLine-1">
