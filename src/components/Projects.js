@@ -2,7 +2,7 @@ import Badge from 'react-bootstrap/Badge'
 
 const Projects = () =>{
 
-  const alphaTypeSkills = ["React", "Node.js", "Express", "Mongo", "Redux"]
+  const alphaTypeSkills = ["React", "Node.js", "Express", "MongoDB", "Redux"]
   const portfolioSkills = ["React", "HTML", "SASS", "JavaScript", "DOM"]
 
   return(
