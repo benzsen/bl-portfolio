@@ -112,13 +112,13 @@ const Resume = () =>{
               <div className=""><i>Previously worked at: </i></div>
               <div className="otherExpFlex">
                 <span className="expLogoContainer">
-                  <img src="exp-img/university-of-waterloo.svg" id="uwLogo" alt="University of Waterloo Logo"/>
+                  <img src="exp-img/tesla-motors-1.svg" id="teslaLogo" alt="Tesla Logo"/>
                 </span>
                 <span className="expLogoContainer">
                   <img src="exp-img/canada-3.svg" id="canadaLogo" alt="Government of Canada Logo"/>
                 </span>
                 <span className="expLogoContainer">
-                  <img src="exp-img/tesla-motors-1.svg" id="teslaLogo" alt="Tesla Logo"/>
+                  <img src="exp-img/university-of-waterloo.svg" id="uwLogo" alt="University of Waterloo Logo"/>
                 </span>
               </div>
             </div>
