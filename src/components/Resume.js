@@ -7,7 +7,14 @@ const Resume = () =>{
   return(
     <section className="skillsSection" id="skillsSection">
       <div className="sectionContainer">
-        <h2 className="sectionTitle">Resume</h2>
+        <div className="resumeTitle">
+          <h2 className="sectionTitle">Resume</h2>
+            <div className="resumeDownload" title="Download Resume">
+              <a href="resume/BennyLuo-Resume-RA1008.pdf" target="_blank">
+              <img src="nav-link-img/download.svg" id="download" alt="Download Resume"/>
+            </a>
+          </div>
+        </div>
         <div className="skillsGrid">
           <h3 className="expGridTitle bold">Tech Stack/Toolbox</h3>
           <h3 className="underline devSkillsLineTitle-1 ">Most at Home with:</h3>

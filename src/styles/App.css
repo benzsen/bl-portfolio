@@ -286,6 +286,27 @@ h2.sectionTitle {
           order: 0;
 }
 
+.skillsSection h2 {
+  margin: 0;
+}
+
+.skillsSection .resumeTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  margin: 8px 0 30px;
+}
+
+.skillsSection .resumeDownload {
+  font-size: 14px;
+  min-width: 23px;
+}
+
 .skillsGrid {
   display: -ms-grid;
   display: grid;

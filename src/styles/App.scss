@@ -228,6 +228,25 @@ h2.sectionTitle{
   order: 0;
 }
 
+.skillsSection{
+  h2{
+    margin: 0
+  }
+  .resumeTitle{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin: 8px 0 30px;
+  }
+  
+  .resumeDownload{
+    font-size: 14px;
+    min-width: 23px;
+  }
+  
+}
+
+
 .skillsGrid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
