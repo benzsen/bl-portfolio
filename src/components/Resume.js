@@ -87,7 +87,7 @@ const Resume = () =>{
                     <ul>
                       <li>Utilized JS/CSS/HTML/Liquid to improve eCommerce stores</li>
                       <li>Closed tickets by adding features and resolving bugs</li>
-                      <li>Incorporated styling based on Adobe XD design mockups</li>
+                      <li>Incorporated styling based on Figma design mockups</li>
                       <li>Collaborated through code review and proposal meetings</li>
                     </ul>
                   </div>
