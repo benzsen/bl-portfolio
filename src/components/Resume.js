@@ -10,7 +10,7 @@ const Resume = () =>{
         <div className="resumeTitle">
           <h2 className="sectionTitle">Resume</h2>
             <div className="resumeDownload" title="Download Resume">
-              <a href="resume/BennyLuo-Resume-RA1008.pdf" target="_blank">
+              <a href="resume/BennyLuo-Resume.pdf" target="_blank">
               <img src="nav-link-img/download.svg" id="download" alt="Download Resume"/>
             </a>
           </div>
