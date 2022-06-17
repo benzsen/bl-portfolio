@@ -76,7 +76,7 @@ const Resume = () =>{
                 <img src="exp-img/pixel-walrus-logo.svg" id="pixelWalrusLogo" alt="Pixel Walrus Logo"/>
                 <div>
                   <div className="positionTitle bold">Front End Developer</div>
-                  <div className="smallFont"><span>Products: </span><span>Shopify Stores</span></div>
+                  <div className="smallFont"><span>Products: </span><span>Ecommerce Stores</span></div>
                   <div className="smallFont"> 2021 - Present (Freelance) </div>
                 </div>
                 
@@ -85,10 +85,11 @@ const Resume = () =>{
                   <div className="respTitle">Responsibilities:</div>
                   <div className="smallFont alignLeft respDescription">
                     <ul>
-                      <li>Utilized JS/CSS/HTML/Liquid to improve eCommerce stores</li>
-                      <li>Closed tickets by adding features and resolving bugs</li>
+                      <li>Toolbox: JavaScript/CSS/HTML/Liquid/Figma</li>
+                      <li>Created accessible, responsive high traffic web pages</li>
+                      <li>Added features such as: Quick Shop, Recently Viewed, Toggle View</li>
                       <li>Incorporated styling based on Figma design mockups</li>
-                      <li>Collaborated through code review and proposal meetings</li>
+                      <li>Collaborated with dev lead on sprint grooming and planning</li>
                     </ul>
                   </div>
                 </div>
